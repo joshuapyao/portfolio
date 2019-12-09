@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="UX Designer Portfolio">
+    <meta name="author" content="Joshua Yao">
+
+    <title>Joshua Yao | V-Style</title>
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+	<link href="css/bootstrap-toc.min.css"rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107932342-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-107932342-1');
+	</script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" class="vstyle">
+<header>
+      <div class="article vstyle" id="art1" data-color="#d1d1d1" data-background='#C8D1E6'>
+      	<a href="index.html#portfolio" class="sticky-top goback downloadbtn">&larr; Return</a>
+         <div class="header-image">
+         	<img src="images/vstyle/vstyle.png" alt='V-Style' class="banner">
+            <div class="scrollContainer down">
+			  <div class="chevron"></div>
+			  <div class="chevron"></div>
+			  <div class="chevron"></div>
+			  <span class="text">Scroll down</span>
+			</div>
+        </div>
+        <!-- Page Content -->
+        <div class="container">
+        	<div class="piece-nav">
+				<button class="tablink" onclick="openPage('Final', this)" id="defaultOpen">Final Design</button>
+        		<button class="tablink" onclick="openPage('Process', this)" id="process-btn">Design Process</button>
+        		<div id="tab-selector"></div>
+        		<hr class="tab-divider">
+        	</div>
+        	<h1 data-toc-text="Overview" id="overview"></h1>
+			<div id="Final" class="tabcontent">
+				<div class="feature-block">
+					<div class="col-sm-6"><h4>An information visulization system <span class="highlight">built for the fashion-curious in the world.</span></h4></div>
+					<div class="col-sm-6"><img src="images/vstyle/vstyle-screen.jpg" alt="High-fidelity UX mockup"></div>
+				</div>
+				<div class="feature-block">
+					<div class="col-sm-6">
+						<video autoplay muted playsinline loop>
+							<source src="images/vstyle/hover-fd.webm" type="video/webm" />
+						  <source src="images/vstyle/hover-fd.mp4" type="video/mp4" />
+						  Your browser does not support the video tag.
+						</video>
+					</div>
+					<div class="col-sm-6"><h4><span class="highlight">Visual representations of styles</span> for easy scanning and discovery.</h4></div>
+				</div>
+				<div class="feature-block">
+					<div class="col-sm-6"><h4>Timeline scanning to see how styles evolve over the year <span class="highlight">giving advanced insight on fashion trends and differences.</span></h4></div>
+					<div class="col-sm-6">
+						<video autoplay muted playsinline loop>
+						<source src="images/vstyle/select-fd.webm" type="video/webm" />
+						  <source src="images/vstyle/select-fd.mp4" type="video/mp4" />
+						  Your browser does not support the video tag.
+						</video>
+					</div>
+				</div>
+				<div class="feature-block">
+					<div class="col-sm-6">
+						<video autoplay muted playsinline loop>
+							<source src="images/vstyle/compare-fd.webm" type="video/webm" />
+						  <source src="images/vstyle/compare-fd.mp4" type="video/mp4" />
+						  Your browser does not support the video tag.
+						</video>
+					</div>
+					<div class="col-sm-6"><h4><span class="highlight">See exactly the source of the data</span> so users can see live world examples of styles.</h4></div>
+				</div>
+				<div class="center-container">
+					<a href="https://vstyle-infoviz.github.io/" class="prototype" target="_blank">Explore V-Style</a>
+					<a onclick="openProcess()" class="prototype">See the Design Process</a>
+				</div>
+				<hr class="featurette-divider">
+				<div class="scrollContainer up">
+				  <div class="chevron"></div>
+				  <div class="chevron"></div>
+				  <div class="chevron"></div>
+				</div>
+			</div>
+			<div id="Process" class="tabcontent">
+            <div class="row">
+		      <!-- sidebar, which will move to the top on a small screen -->
+		      <div class="col-sm-2">
+		        <nav id="toc" data-toggle="toc" class="sticky-top"></nav>
+		      </div>
+		      <div class="col-sm-9">
+          <!-- First Featurette -->
+            <div class="detailed">
+				<div class="overview">
+						<div class="overview-image">
+						  <a href="images/vstyle/vstyle-screen.jpg"><img src="images/vstyle/vstyle-screen.jpg" alt="Home Screen of V-Style"></a>
+						</div>
+						<div class="goal">Creating a visualization that allows people to compare popular styles across the world.</div>
+							<div class="details">
+							<div>
+						  <p><strong>The User.</strong></p>
+						  <div class="strong-underline"></div>
+						  <p>People concious about styles and fashion.</p>
+						  </div>
+						  <div>
+						  <p><strong>The Span.</strong></p>
+						  <div class="strong-underline"></div>
+						  <p>10 weeks.</p>
+						  </div>
+						  <div>
+						  <p><strong>The Tools.</strong></p>
+						  <div class="strong-underline"></div>
+						  <p>Sketch, HTML, CSS, JavaScript, and D3.</p>
+						  </div>
+						  <div>
+							<p><strong>The Team.</strong></p>
+							<div class="strong-underline"></div>
+							<p>Yujia Wang, Yizhou Liu, and Yuan Zhou.</p>
+						  </div>
+						</div>
+					</div>				
+					<hr class="featurette-divider">
+						<div class="headliner">
+							<a class="downloadbtn more" style="text-align:center;" target="_blank" href="https://vstyle-infoviz.github.io/">Explore V-Style</a>
+						</div>
+						<hr class="featurette-divider">
+					  <h2 id="contributions">MY CONTRIBUTIONS</h2>
+						<p>I contributed in interpreting how the data from the dataset could be interpreted, as well as identifying what users would value from this visualization.</p>
+						<p>I also did exploration of what was technically feasible, and was responsible for a large part of the frontend and backend development.</p>
+					  <hr class="featurette-divider">
+				<h2 id="intro">intro</h2>
+              <p>People wear clothes everyday. As well as for practical reasons, it is also a way for people to show personal identity and an important part of culture. Every culture, or even every city has its own clothing style at certain time of the year. <span class="highlight">This information visualization system aims to capture and present style trends of cities worldwide at different times of the year and enable users to explore and get a better sense of worldwide clothing trends for inspiration.</span></p>
+              <p>To create this system, we coded it with D3.js and were limited by an open-source dataset from Cornell University, which contains over data from over 27,000 pictures from Instagram taken in 44 major cities worldwide.</p>
+            	<hr class="featurette-divider">
+            	<h1 id="userresearch">USER RESEARCH</h1>
+            		<p>Before designing, we wanted to better understand our user and what they would look for. Due to the nature of the data, we wanted to identify how people interested in fashion would use large amounts of data to inform their decisions. <span class="highlight">The main audience for our system ended up with people interested in personal fashion and curious with the fashion styles of other countries compared to their own.</span></p>
+					<p>At first, we devised a survey asking users on what information would they want to get out of a dataset with these various features of data. We quickly learned that this method was not very useful, <span class="highlight">as it was hard for users to find value in non-formatted data.</span> From this we discovered that we not only had to design the interactions for exploring the dataset, but also provide and present specific points of the data for it to bring value to users.</p>
+					<p>In our next iteration of research, <span class="highlight">we instead presented participants with a range of choices on narrowed down aspects of the dataset</span> they would like to see, such as “I would want to see what clothes people in Germany wear in the fall”. From this, we were able to better identify what information our primary users wanted to see from this dataset.</p>
+					<p>At the end of this phase, we identified a few primary questions that users would want answered when approaching this dataset:</p>
+					<ol>
+						<li>What are the different styles in different areas?</li>
+						<li>What patterns in worldwide style trends occur over time?</li>
+						<li>How do styles compare between different countries?</li>
+						<li>How can I inspire my own fashion choices based on what I learn?</li>
+					</ol>
+
+				<br/>
+            	<h1 id="intialdesigns">INITIAL DESIGNS</h1>
+            	<p>For brainstorming on how to address our identified questions, <span class='highlight'>we first began by individually sketching out our own designs to solve our goal.</span> We focused on designing out how we would visualize the information, and then created rough high-fidelities to communicate our ideas. We took these concepts and introduced them to lots of people for general feedback. Below are our initial design interations:
+	        	<figure>
+				  <img src="images/vstyle/concept1.jpg" alt="The World Style Concept">
+				  <figcaption>The first concept emphasized clothing combinations in different cities across the world using Chord Diagrams.</figcaption>
+				</figure>
+				<figure>
+				  <img src="images/vstyle/concept2.jpg" alt="Secondary Research Results">
+				  <figcaption>The second concept used Chernoff faces to give a rough idea how each city dressed during a certain time.</figcaption>
+				</figure>
+				<figure>
+				  <img src="images/vstyle/concept3.jpg" alt="Secondary Research Results">
+				  <figcaption>The third concept focused on the color changes in a city depending on time and temperature with a Spiral Chart.</figcaption>
+				</figure>
+				<figure>
+				  <img src="images/vstyle/concept4.jpg" alt="Secondary Research Results">
+				  <figcaption>The final concept used Cartographs and Charts to show how each major attribute fluctuated in a city across the year.</figcaption>
+				</figure>
+				<p>Based on our feedback, we decided to move in the direction of our second concept with the Chernoff faces due to its attractive visual nature and easy-to-understand nature. This strongly resonated with our primary user because <span class='highlight'>it offered a very visual way in displaying an inherently visual medium.</span> We also pulled in different ideas from the other concepts to expand our design and give it more flexibility and breadth in presenting information.</p>
+
+				<br/>
+				<h1 id="iterationsandtesting">ITERATIONS AND TESTING</h1>
+					<p>We began coding and testing mocks in parallel in order to meet nearby deadlines. Through our iterations, <span class='highlight'>we learned a lot regarding visualizations for our primary users and what made sense for our data.</span> For example, we explored using chord charts within our visualization as a way for people to get a deeper understanding of clothing combinations. Initially, we thought this was a strong visual way to show distinct clothing combos. However, we found that users were confused about what the diagram actually represented, as well as the chord chart being strong favoring most common combos, such as people wearing shirts and people with collars.</p>
+					<figure>
+						<video autoplay muted playsinline loop>
+							<source src="images/vstyle/iterate-1.webm" type="video/webm" />
+						  <source src="images/vstyle/iterate-1.mp4" type="video/mp4" />
+						  Your browser does not support the video tag.
+						</video>
+					  <figcaption>An interactive chord chart showing the strength and color of clothing combinations in a city.</figcaption>
+					</figure>
+					<p>We also ran into issues with coding with our dataset, which we quickly learned that we had to take into account edge cases that wouldn’t skew an accurate perception of the data.</p>
+					<figure>
+					  <img src="images/vstyle/iterate-2.png" alt="Edge cases">
+					  <figcaption>Though possible, this generated figure inaccurately represents a city's major styles.</figcaption>
+					</figure>
+					<p>However, <span class='highlight'>at the end of our iterations, we were finally able to determine exactly what we had to offer, what visualizations worked best, and what interactions were most intuitive.</span> Also, because of our parallel workflow, we were able to start off on our final design running.</p>
+				<br />
+	            <h1 id="finaldesign">FINAL DESIGN</h1>
+	            <p>At the end of our iterations and coding, our final design offered the user the ability to:</p>
+				<ol>
+					<li>Sort by style strength</li>
+					<li>Instantly visualize a city’s major style at a given time</li>
+					<li>Compare and contrast between different cities</li>
+					<li>Explore clothing trends in a city</li>
+					<li>Identify a city’s most common clothing combinations</li>
+					<li>See real pictures that represent the data</li>
+				</ol>
+				<br/>
+	        	<p>For the main interaction and information visualization, we used Chernoff faces, or glyphs, to present each city’s most popular fashion attributes at each certain city at a certain time. By hovering over each human glyph, users can view text description of the most popular attributes for a deeper view.</p>
+
+	        	<figure>
+					<video autoplay muted playsinline loop>
+						<source src="images/vstyle/hover-fd.webm" type="video/webm" />
+					  <source src="images/vstyle/hover-fd.mp4" type="video/mp4" />
+					  Your browser does not support the video tag.
+					</video>
+				  <figcaption>Hovering reveals style information regarding that city.</figcaption>
+				</figure>
+
+				<p>Once a city is selected by clicking the human glyph, the graph on the right side of the main screen will be activated. Users can click on ‘trend’ to view the line chart showing how percentage of certain fashion attribute in each city changes over time. Different attributes can be selected using the drop down menu. Users can also click on ‘Combos’ to view a correlation matrix of the common combos of fashion style in that city, with the color showing the dominant color of that combo, and the saturation showing the combo’s prevalence in the city. By clicking on a cell, corresponding pictures will show up.</p>
+
+	        	<figure>
+					<video autoplay muted playsinline loop>
+						<source src="images/vstyle/select-fd.webm" type="video/webm" />
+					  <source src="images/vstyle/select-fd.mp4" type="video/mp4" />
+					  Your browser does not support the video tag.
+					</video>
+				  <figcaption>Selecting reveals detailed combo and trend information.</figcaption>
+				</figure>
+
+	        	<p>When one city is selected, the other city’s human glyph will dim with respect to how similar these two cities’ fashion trend are, similar to a heatmap. Users can also click on a secondary city when a primary city is selected to compare specific fashion trends or combos between the two cities on the right side of the screen.</p>
+
+	        	<figure>
+					<video autoplay muted playsinline loop>
+						<source src="images/vstyle/compare-fd.webm" type="video/webm" />
+					  <source src="images/vstyle/compare-fd.mp4" type="video/mp4" />
+					  Your browser does not support the video tag.
+					</video>
+				  <figcaption>Selecting another compares that city to the primary selection.</figcaption>
+				</figure>
+
+				<p>This project was coded with HTML, CSS, JavaScript, and D3 and can be explored by clicking the button below.</p>
+              	<a class="downloadbtn more" style="text-align:center;" target="_blank" href="https://vstyle-infoviz.github.io/">click to explore V-Style</a>
+              	<hr class="featurette-divider">
+              	<div class="scrollContainer up">
+				  <div class="chevron"></div>
+				  <div class="chevron"></div>
+				  <div class="chevron"></div>
+				</div>
+            </div>
+            </div>
+            <div class="col-sm-1"></div>
+	      </div>
+	    </div>
+	</div>
+	  </div>
+</header>
+    <!-- jQuery -->
+<script src="js/jquery.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.js"></script>
+
+    <!-- main.js -->
+<script src="js/main.js"></script>
+    <!-- Script to Activate the Carousel -->
+<script>
+    $('.carousel').carousel({
+        interval: false //changes the speed
+    })
+</script>
+
+</body>
+
+</html>

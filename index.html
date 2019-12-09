@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="UX Designer Portfolio">
+    <meta name="author" content="Joshua Yao">
+
+    <title>Joshua Yao</title>
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+    <link href="css/lightbox.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107932342-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-107932342-1');
+	</script>
+
+</head>
+
+<body>
+    <!-- Half Page Image Background Carousel Header -->
+<header id="myCarousel" class="carousel slide">
+        <!-- /.container -->
+        <div class="carousel-inner">
+
+        	<!-- Portfolio -->
+            <div class="item active main-slide">
+                <div id="landing-page">
+                    <div id="splash-text">
+                        <h1>Joshua Yao.</h1>
+                        <h2>UX Designer and <span id="moonlight">a film-maker</span></h2>
+                    </div>
+                    <div class="down-cta" onclick="scrollDown()">
+                        <p>Portfolio.</p>
+                        <span class="down-line"></span>
+                    </div>
+                </div>
+            	<div class="container-fluid" id="portfolio">
+            	<div class="statement">
+            		<h1>Projects that make me happy.</h1>
+            	</div>
+                  <div id="works"> <!-- -->
+                    <a onclick="openPiece('homedepot.html',this)"  class="big-project entry homedepot"><img src="images/homedepot/homedepot.png" alt="The Home Depot" class="img-responsive" id="2"><span class="hover-text">Scan To Start.<br/><span class="hover-subtitle">A project with The Home Depot to redesign their in-store enterprise tool: The FirstPhone.</span><span class="hover-arrow">
+                        <svg width="90" height="49" viewBox="0 0 90 49" fill="none"><path d="M62.9062 0.968817C62.5062 0.983213 62.1197 1.11729 61.7967 1.35372C61.4737 1.59014 61.2291 1.91803 61.0945 2.29498C60.9598 2.67194 60.9414 3.08061 61.0416 3.46815C61.1417 3.85569 61.3558 4.20428 61.6562 4.46882L81.8437 23.0001H2.99995H2.81245C1.76511 23.0491 0.857106 24.0464 0.9062 25.0938C0.955294 26.1411 1.95263 27.0494 2.99995 27.0001H81.8437L61.6562 45.5001C61.46 45.6762 61.3005 45.8893 61.1868 46.1272C61.0732 46.3651 61.0076 46.6232 60.994 46.8865C60.9803 47.1498 61.0188 47.4132 61.1072 47.6616C61.1956 47.91 61.3322 48.1385 61.5092 48.334C61.6861 48.5295 61.8999 48.6881 62.1383 48.8007C62.3768 48.9133 62.6351 48.9777 62.8984 48.9902C63.1618 49.0028 63.425 48.9632 63.6731 48.8737C63.9211 48.7842 64.149 48.6466 64.3437 48.4688L88.3437 26.4688C88.5513 26.2813 88.7173 26.0523 88.8309 25.7966C88.9445 25.5409 89.0032 25.2642 89.0032 24.9844C89.0032 24.7047 88.9445 24.428 88.8309 24.1723C88.7173 23.9166 88.5513 23.6876 88.3437 23.5001L64.3437 1.50007C64.1508 1.32137 63.9245 1.18247 63.6778 1.09131C63.4312 1.00015 63.169 0.958526 62.9062 0.968817V0.968817Z" fill="#555555"/></svg>                            
+                    </span></span></a>
+                    <a onclick="openPiece('infuseview.html',this)"  class="big-project entry infuseview"><img src="images/hospital/infuseview.png" alt="InfuseView" class="img-responsive" id="1"><span class="hover-text">InfuseView.<br/><span class="hover-subtitle">A project sponsored by the Seattle Children's Hospital to improve IV system interfaces.</span><span class="hover-arrow">
+                        <svg width="90" height="49" viewBox="0 0 90 49" fill="none"><path d="M62.9062 0.968817C62.5062 0.983213 62.1197 1.11729 61.7967 1.35372C61.4737 1.59014 61.2291 1.91803 61.0945 2.29498C60.9598 2.67194 60.9414 3.08061 61.0416 3.46815C61.1417 3.85569 61.3558 4.20428 61.6562 4.46882L81.8437 23.0001H2.99995H2.81245C1.76511 23.0491 0.857106 24.0464 0.9062 25.0938C0.955294 26.1411 1.95263 27.0494 2.99995 27.0001H81.8437L61.6562 45.5001C61.46 45.6762 61.3005 45.8893 61.1868 46.1272C61.0732 46.3651 61.0076 46.6232 60.994 46.8865C60.9803 47.1498 61.0188 47.4132 61.1072 47.6616C61.1956 47.91 61.3322 48.1385 61.5092 48.334C61.6861 48.5295 61.8999 48.6881 62.1383 48.8007C62.3768 48.9133 62.6351 48.9777 62.8984 48.9902C63.1618 49.0028 63.425 48.9632 63.6731 48.8737C63.9211 48.7842 64.149 48.6466 64.3437 48.4688L88.3437 26.4688C88.5513 26.2813 88.7173 26.0523 88.8309 25.7966C88.9445 25.5409 89.0032 25.2642 89.0032 24.9844C89.0032 24.7047 88.9445 24.428 88.8309 24.1723C88.7173 23.9166 88.5513 23.6876 88.3437 23.5001L64.3437 1.50007C64.1508 1.32137 63.9245 1.18247 63.6778 1.09131C63.4312 1.00015 63.169 0.958526 62.9062 0.968817V0.968817Z" fill="#555555"/></svg>                            
+                    </span></span></a>
+                    <a onclick="openPiece('fanconnect.html',this)" class="big-project entry fanconnect"><img src="images/fanconnect/fanconnect.png" alt="Fan Connect" class="img-responsive" id="3"><span class="hover-text">Fan Connect.<br/><span class="hover-subtitle">An app that was developed with the goal of bringing home the stadium experience.</span><span class="hover-arrow">
+                        <svg width="90" height="49" viewBox="0 0 90 49" fill="none"><path d="M62.9062 0.968817C62.5062 0.983213 62.1197 1.11729 61.7967 1.35372C61.4737 1.59014 61.2291 1.91803 61.0945 2.29498C60.9598 2.67194 60.9414 3.08061 61.0416 3.46815C61.1417 3.85569 61.3558 4.20428 61.6562 4.46882L81.8437 23.0001H2.99995H2.81245C1.76511 23.0491 0.857106 24.0464 0.9062 25.0938C0.955294 26.1411 1.95263 27.0494 2.99995 27.0001H81.8437L61.6562 45.5001C61.46 45.6762 61.3005 45.8893 61.1868 46.1272C61.0732 46.3651 61.0076 46.6232 60.994 46.8865C60.9803 47.1498 61.0188 47.4132 61.1072 47.6616C61.1956 47.91 61.3322 48.1385 61.5092 48.334C61.6861 48.5295 61.8999 48.6881 62.1383 48.8007C62.3768 48.9133 62.6351 48.9777 62.8984 48.9902C63.1618 49.0028 63.425 48.9632 63.6731 48.8737C63.9211 48.7842 64.149 48.6466 64.3437 48.4688L88.3437 26.4688C88.5513 26.2813 88.7173 26.0523 88.8309 25.7966C88.9445 25.5409 89.0032 25.2642 89.0032 24.9844C89.0032 24.7047 88.9445 24.428 88.8309 24.1723C88.7173 23.9166 88.5513 23.6876 88.3437 23.5001L64.3437 1.50007C64.1508 1.32137 63.9245 1.18247 63.6778 1.09131C63.4312 1.00015 63.169 0.958526 62.9062 0.968817V0.968817Z" fill="#555555"/></svg>                            
+                    </span></span></a>
+                    <a onclick="openPiece('socialar.html',this)"  class="big-project entry socialar"><img src="images/socialar/socialar.png" alt="Social AR" class="img-responsive" id="4"><span class="hover-text">Social AR.<br/><span class="hover-subtitle">A ubiquitous computing exploration on how augmented reality can support social interactions.</span><span class="hover-arrow">
+                        <svg width="90" height="49" viewBox="0 0 90 49" fill="none"><path d="M62.9062 0.968817C62.5062 0.983213 62.1197 1.11729 61.7967 1.35372C61.4737 1.59014 61.2291 1.91803 61.0945 2.29498C60.9598 2.67194 60.9414 3.08061 61.0416 3.46815C61.1417 3.85569 61.3558 4.20428 61.6562 4.46882L81.8437 23.0001H2.99995H2.81245C1.76511 23.0491 0.857106 24.0464 0.9062 25.0938C0.955294 26.1411 1.95263 27.0494 2.99995 27.0001H81.8437L61.6562 45.5001C61.46 45.6762 61.3005 45.8893 61.1868 46.1272C61.0732 46.3651 61.0076 46.6232 60.994 46.8865C60.9803 47.1498 61.0188 47.4132 61.1072 47.6616C61.1956 47.91 61.3322 48.1385 61.5092 48.334C61.6861 48.5295 61.8999 48.6881 62.1383 48.8007C62.3768 48.9133 62.6351 48.9777 62.8984 48.9902C63.1618 49.0028 63.425 48.9632 63.6731 48.8737C63.9211 48.7842 64.149 48.6466 64.3437 48.4688L88.3437 26.4688C88.5513 26.2813 88.7173 26.0523 88.8309 25.7966C88.9445 25.5409 89.0032 25.2642 89.0032 24.9844C89.0032 24.7047 88.9445 24.428 88.8309 24.1723C88.7173 23.9166 88.5513 23.6876 88.3437 23.5001L64.3437 1.50007C64.1508 1.32137 63.9245 1.18247 63.6778 1.09131C63.4312 1.00015 63.169 0.958526 62.9062 0.968817V0.968817Z" fill="#555555"/></svg>                            
+                    </span></span></a>
+                    <a onclick="openPiece('vstyle.html',this)"  class="big-project entry vstyle"><img src="images/vstyle/vstyle.png" alt="V-Style" class="img-responsive" id="5"><span class="hover-text">V-Style.<br/><span class="hover-subtitle">An information visualization project that shows different styles around the world.</span><span class="hover-arrow">
+                        <svg width="90" height="49" viewBox="0 0 90 49" fill="none"><path d="M62.9062 0.968817C62.5062 0.983213 62.1197 1.11729 61.7967 1.35372C61.4737 1.59014 61.2291 1.91803 61.0945 2.29498C60.9598 2.67194 60.9414 3.08061 61.0416 3.46815C61.1417 3.85569 61.3558 4.20428 61.6562 4.46882L81.8437 23.0001H2.99995H2.81245C1.76511 23.0491 0.857106 24.0464 0.9062 25.0938C0.955294 26.1411 1.95263 27.0494 2.99995 27.0001H81.8437L61.6562 45.5001C61.46 45.6762 61.3005 45.8893 61.1868 46.1272C61.0732 46.3651 61.0076 46.6232 60.994 46.8865C60.9803 47.1498 61.0188 47.4132 61.1072 47.6616C61.1956 47.91 61.3322 48.1385 61.5092 48.334C61.6861 48.5295 61.8999 48.6881 62.1383 48.8007C62.3768 48.9133 62.6351 48.9777 62.8984 48.9902C63.1618 49.0028 63.425 48.9632 63.6731 48.8737C63.9211 48.7842 64.149 48.6466 64.3437 48.4688L88.3437 26.4688C88.5513 26.2813 88.7173 26.0523 88.8309 25.7966C88.9445 25.5409 89.0032 25.2642 89.0032 24.9844C89.0032 24.7047 88.9445 24.428 88.8309 24.1723C88.7173 23.9166 88.5513 23.6876 88.3437 23.5001L64.3437 1.50007C64.1508 1.32137 63.9245 1.18247 63.6778 1.09131C63.4312 1.00015 63.169 0.958526 62.9062 0.968817V0.968817Z" fill="#555555"/></svg>                            
+                    </span></span></a>
+                    <a onclick="openPiece('nobleplaces.html',this)"  class="big-project entry nobleplaces"><img src="images/noble/nobleplaces.png" alt="NoblePlaces" class="img-responsive" id="6"><span class="hover-text">Noble Places.<br/><span class="hover-subtitle">A website redesigned and developed using UX design principles.</span><span class="hover-arrow">
+                        <svg width="90" height="49" viewBox="0 0 90 49" fill="none"><path d="M62.9062 0.968817C62.5062 0.983213 62.1197 1.11729 61.7967 1.35372C61.4737 1.59014 61.2291 1.91803 61.0945 2.29498C60.9598 2.67194 60.9414 3.08061 61.0416 3.46815C61.1417 3.85569 61.3558 4.20428 61.6562 4.46882L81.8437 23.0001H2.99995H2.81245C1.76511 23.0491 0.857106 24.0464 0.9062 25.0938C0.955294 26.1411 1.95263 27.0494 2.99995 27.0001H81.8437L61.6562 45.5001C61.46 45.6762 61.3005 45.8893 61.1868 46.1272C61.0732 46.3651 61.0076 46.6232 60.994 46.8865C60.9803 47.1498 61.0188 47.4132 61.1072 47.6616C61.1956 47.91 61.3322 48.1385 61.5092 48.334C61.6861 48.5295 61.8999 48.6881 62.1383 48.8007C62.3768 48.9133 62.6351 48.9777 62.8984 48.9902C63.1618 49.0028 63.425 48.9632 63.6731 48.8737C63.9211 48.7842 64.149 48.6466 64.3437 48.4688L88.3437 26.4688C88.5513 26.2813 88.7173 26.0523 88.8309 25.7966C88.9445 25.5409 89.0032 25.2642 89.0032 24.9844C89.0032 24.7047 88.9445 24.428 88.8309 24.1723C88.7173 23.9166 88.5513 23.6876 88.3437 23.5001L64.3437 1.50007C64.1508 1.32137 63.9245 1.18247 63.6778 1.09131C63.4312 1.00015 63.169 0.958526 62.9062 0.968817V0.968817Z" fill="#555555"/></svg>                            
+                    </span></span></a>
+                    <a onclick="openPiece('tapyoca.html',this)"  class="big-project entry tapyoca"><img src="images/tapyoca/tapyoca.png" alt="Tapyoca" class="img-responsive" id="7"><span class='hover-text'>Tapyoca.<br/><span class="hover-subtitle">UX design project aimed to enhance the bubble tea purchasing experience.</span><span class="hover-arrow">
+                        <svg width="90" height="49" viewBox="0 0 90 49" fill="none"><path d="M62.9062 0.968817C62.5062 0.983213 62.1197 1.11729 61.7967 1.35372C61.4737 1.59014 61.2291 1.91803 61.0945 2.29498C60.9598 2.67194 60.9414 3.08061 61.0416 3.46815C61.1417 3.85569 61.3558 4.20428 61.6562 4.46882L81.8437 23.0001H2.99995H2.81245C1.76511 23.0491 0.857106 24.0464 0.9062 25.0938C0.955294 26.1411 1.95263 27.0494 2.99995 27.0001H81.8437L61.6562 45.5001C61.46 45.6762 61.3005 45.8893 61.1868 46.1272C61.0732 46.3651 61.0076 46.6232 60.994 46.8865C60.9803 47.1498 61.0188 47.4132 61.1072 47.6616C61.1956 47.91 61.3322 48.1385 61.5092 48.334C61.6861 48.5295 61.8999 48.6881 62.1383 48.8007C62.3768 48.9133 62.6351 48.9777 62.8984 48.9902C63.1618 49.0028 63.425 48.9632 63.6731 48.8737C63.9211 48.7842 64.149 48.6466 64.3437 48.4688L88.3437 26.4688C88.5513 26.2813 88.7173 26.0523 88.8309 25.7966C88.9445 25.5409 89.0032 25.2642 89.0032 24.9844C89.0032 24.7047 88.9445 24.428 88.8309 24.1723C88.7173 23.9166 88.5513 23.6876 88.3437 23.5001L64.3437 1.50007C64.1508 1.32137 63.9245 1.18247 63.6778 1.09131C63.4312 1.00015 63.169 0.958526 62.9062 0.968817V0.968817Z" fill="#555555"/></svg>                            
+                    </span></span></a>
+                    <a onclick="openPiece('vent.html',this)"  class="big-project entry vent"><img src="images/vent/vent.png" alt="VENT" class="img-responsive" id="8"><span class="hover-text">VENT.<br/><span class="hover-subtitle">An app design project aiming to enhance a user's lifestyle with local event discovery.</span><span class="hover-arrow">
+                        <svg width="90" height="49" viewBox="0 0 90 49" fill="none"><path d="M62.9062 0.968817C62.5062 0.983213 62.1197 1.11729 61.7967 1.35372C61.4737 1.59014 61.2291 1.91803 61.0945 2.29498C60.9598 2.67194 60.9414 3.08061 61.0416 3.46815C61.1417 3.85569 61.3558 4.20428 61.6562 4.46882L81.8437 23.0001H2.99995H2.81245C1.76511 23.0491 0.857106 24.0464 0.9062 25.0938C0.955294 26.1411 1.95263 27.0494 2.99995 27.0001H81.8437L61.6562 45.5001C61.46 45.6762 61.3005 45.8893 61.1868 46.1272C61.0732 46.3651 61.0076 46.6232 60.994 46.8865C60.9803 47.1498 61.0188 47.4132 61.1072 47.6616C61.1956 47.91 61.3322 48.1385 61.5092 48.334C61.6861 48.5295 61.8999 48.6881 62.1383 48.8007C62.3768 48.9133 62.6351 48.9777 62.8984 48.9902C63.1618 49.0028 63.425 48.9632 63.6731 48.8737C63.9211 48.7842 64.149 48.6466 64.3437 48.4688L88.3437 26.4688C88.5513 26.2813 88.7173 26.0523 88.8309 25.7966C88.9445 25.5409 89.0032 25.2642 89.0032 24.9844C89.0032 24.7047 88.9445 24.428 88.8309 24.1723C88.7173 23.9166 88.5513 23.6876 88.3437 23.5001L64.3437 1.50007C64.1508 1.32137 63.9245 1.18247 63.6778 1.09131C63.4312 1.00015 63.169 0.958526 62.9062 0.968817V0.968817Z" fill="#555555"/></svg>                            
+                    </span></span></a>
+                  </div>
+                <br />
+                <br />
+              </div>
+            </div>
+
+            <!-- Visuals -->
+            <div class="item">
+                    <div class="fill visual-hero"><video autoplay muted playsinline loop id="visualsVideo">
+                        <source src="images/floating-visuals.webm" type="video/webm">
+                        <source src="images/floating-visuals.mp4" type="video/mp4"></video>
+                        <h1 class="large-caption">Visualize this.</h1>
+                        <div class="down-cta" onclick="scrollDown()">
+                                <p>Shutters.</p>
+                                <span class="down-line"></span>
+                        </div>
+                    </div>        
+	            <div id="main">
+                    <div class="statement">
+                        <h1>Every successful shot is backed by a hundred failures.</h1>
+                    </div>
+					<div class="inner">
+						<div class="columns">
+
+						<!-- Column 1 (horizontal, vertical, horizontal, vertical) -->
+							<div class="image fit">
+								<a href="images/visuals/image01.jpg" data-lightbox="image-1"  data-title="Orcas Island. Shot with a GH4 and temperature dropped."><img class="fade1" src="images/visuals/pic01.jpg" alt="" /></a>
+							</div>
+							<div class="image fit">
+								<a href="images/visuals/image02.jpg" data-lightbox="image-2"  data-title="Wat. Shot underneath the tallest Wat in Bangkok, Thailand."><img class="fade2" src="images/visuals/pic02.jpg" alt="" /></a>
+							</div>
+							<div class="image fit">
+								<a href="images/visuals/image03.jpg" data-lightbox="image-3"  data-title="Kirkland Woods. Shot with a GH4 at 200mm f/2.8."><img class="fade3" src="images/visuals/pic03.jpg" alt="" /></a>
+							</div>
+							<div class="image fit">
+								<a href="images/visuals/image04.jpg" data-lightbox="image-4"  data-title="Starlight. Shot indoors with the contrast created by dropping exposure in post."><img class="fade1" src="images/visuals/pic04.jpg" alt="" /></a>
+							</div>
+                            <div class="image fit">
+                                <a href="images/visuals/image17.jpg" data-lightbox="image-17"  data-title="Shinigami. Long exposure in Japan."><img class="fade1" src="images/visuals/pic17.jpg" alt="" /></a>
+                            </div>
+                            <div class="image fit">
+                                <a href="images/visuals/image18.jpg" data-lightbox="image-18"  data-title="Seattle Mountaintops around Big Four Ice Caves."><img class="fade1" src="images/visuals/pic18.jpg" alt="" /></a>
+                            </div>                            
+
+						<!-- Column 2 (vertical, horizontal, vertical, horizontal) -->
+							<div class="image fit">
+								<a href="images/visuals/image05.jpg" data-lightbox="image-5"  data-title="University of Washington Cherry Blossoms. Shot during my sophmore year at UW Seattle."><img class="fade2" src="images/visuals/pic05.jpg" alt="" /></a>
+							</div>
+							<div class="image fit">
+								<a href="images/visuals/image06.jpg" data-lightbox="image-6"  data-title="Outdoor Patio. An exercise in constrating information weight from left to right."><img class="fade3" src="images/visuals/pic06.jpg" alt="" /></a>
+							</div>
+							<div class="image fit">
+								<a href="images/visuals/image07.jpg" data-lightbox="image-7"  data-title="The Bridge. Shot in Tokyo, Japan from the top of the Tokyo Tower."><img class="fade1" src="images/visuals/pic07.jpg" alt="" /></a>
+							</div>
+							<div class="image fit">
+								<a href="images/visuals/image08.jpg" data-lightbox="image-8"  data-title="Seattle. Shot with a GH4 from Jose Rizal Bridge at night with long exposure."><img class="fade2" src="images/visuals/pic08.jpg" alt="" /></a>
+							</div>
+                            <div class="image fit">
+                                <a href="images/visuals/image19.jpg" data-lightbox="image-19"  data-title="The Cupbearer. A fountain in Thailand, with crushed blacks to draw out the subject."><img class="fade1" src="images/visuals/pic19.jpg" alt="" /></a>
+                            </div>
+                            <div class="image fit">
+                                <a href="images/visuals/image20.jpg" data-lightbox="image-20"  data-title="Waves. An art Installation at the Seattle Center."><img class="fade3" src="images/visuals/pic20.jpg" alt="" /></a>
+                            </div>
+						<!-- Column 3 (horizontal, vertical, horizontal, vertical) -->
+							<div class="image fit">
+								<a href="images/visuals/image09.jpg" data-lightbox="image-9"  data-title="Yosemite. An attempt to capture the almost serene mystical atmosphere of the woods."><img class="fade3"src="images/visuals/pic09.jpg" alt="" /></a>
+							</div>
+							<div class="image fit">
+								<a href="images/visuals/image10.jpg" data-lightbox="image-10"  data-title="Skyline. The purple sky from the mixture of city lights and the sunset in Seoul, Korea."><img class="fade3" src="images/visuals/pic10.jpg" alt="" /></a>
+							</div>
+							<div class="image fit">
+								<a href="images/visuals/image11.jpg" data-lightbox="image-11"  data-title="Golden Gate Bridge. Shot in the morning with a heavy overcast, then shifted in color to create the effect."><img class="fade2" src="images/visuals/pic11.jpg" alt="" /></a>
+							</div>
+							<div class="image fit">
+								<a href="images/visuals/image12.jpg" data-lightbox="image-12"  data-title="Fenced. Shot in the Art District of Los Angeles. A practice in using composition to tell a story."><img class="fade3" src="images/visuals/pic12.jpg" alt="" /></a>
+							</div>
+                            <div class="image fit">
+                                <a href="images/visuals/image21.jpg" data-lightbox="image-21"  data-title="Peace. Nara Deer at Nara Park in Nara, Japan."><img class="fade1" src="images/visuals/pic21.jpg" alt="" /></a>
+                            </div>
+                            <div class="image fit">
+                                <a href="images/visuals/image22.jpg" data-lightbox="image-22"  data-title="Drift. Hualien, Taiwan rock cliff near the oceanside."><img class="fade3" src="images/visuals/pic22.jpg" alt="" /></a>
+                            </div>                            
+
+						<!-- Column 4 (vertical, horizontal, vertical, horizontal) -->
+							<div class="image fit">
+								<a href="images/visuals/image13.jpg" data-lightbox="image-13"  data-title="Icon. A straight shot of the Seattle skyline from Alki Beach."><img class="fade1" src="images/visuals/pic13.jpg" alt="" /></a>
+							</div>
+							<div class="image fit">
+								<a href="images/visuals/image14.jpg" data-lightbox="image-14"  data-title="Blossoms. Used lens flare, harsh abberations, and telephoto lens to create the dreamy effect."><img class="fade2" src="images/visuals/pic14.jpg" alt="" /></a>
+							</div>
+							<div class="image fit">
+								<a href="images/visuals/image15.jpg" data-lightbox="image-15"  data-title="Solitude. Shot moments before sunrise at the peak of Rattlesnake Ridge."><img class="fade3" src="images/visuals/pic15.jpg" alt="" /></a>
+							</div>
+							<div class="image fit">
+								<a href="images/visuals/image16.jpg" data-lightbox="image-16"  data-title="The City and the Stars. Shot across the lake from the city in a dark area to capture the light from both the stars and the city."><img class="fade1" src="images/visuals/pic16.jpg" alt="" /></a>
+							</div>
+                            <div class="image fit">
+                                <a href="images/visuals/image23.jpg" data-lightbox="image-23"  data-title="Festival. The area around the Osaka tower lit with yellow lighting."><img class="fade2" src="images/visuals/pic23.jpg" alt="" /></a>
+                            </div>
+                            <div class="image fit">
+                                <a href="images/visuals/image24.jpg" data-lightbox="image-24"  data-title="Brothers. Shot from underneath a popular bridge in Seoul, Korea."><img class="fade3" src="images/visuals/pic24.jpg" alt="" /></a>
+                            </div>
+						</div>
+					</div>
+				</div>
+            </div>
+
+            <!-- About Me -->
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill about-hero"><video autoplay muted playsinline id="aboutVideo">
+                    <source src="images/about.webm" type="video/webm">
+                    <source src="images/about.mp4" type="video/mp4"></video>
+                <h1 class="large-caption">When I was ten, I stopped listening to myself.</h1>
+                <div class="down-cta" onclick="scrollDown()">
+                        <p>More sad stuff.</p>
+                        <span class="down-line"></span>
+                </div>
+                </div>
+                <div id="aboutMe">
+                    <div id="aboutMe-block">
+            		<p>I fit myself in a mold. I learned to adapt, or rather conform. My hobbies of photography and film no longer were about what I wanted to show, but what I thought people wanted to see. Nothing was designed for me, instead I had to teach myself how to use it. Ironically, however, this all taught me how think from a user-centered perspective and showed me an important fact: </p>
+            		<br/>
+            		<p><strong>People want personal user experiences.</strong></p>
+            		<br/>
+            		<p>With the rapidly growing state of technology, experiences risk becoming more and more impersonal. I want to help alleviate this issue by designing technology that doesn't leave users behind. I want to create user experiences which are built for the isolated user. I want people to listen to themselves, and still be able to use a design and say:</p>
+                    <br/>
+                    <p><strong>"This was made for me".</strong></p>
+                    <br/>
+                    <p>My name is Joshua Yao, and I'm a UX designer who's excited about creating designs and user experiences that feel personal. I studied Human-Computer Interaction (HCI) at the University of Washington for my Bachelor's and also at the Georgia Institute of Technology for my Master's in HCI.</p>
+                    <p>I currently am located on the coast in a small little town called Seattle.</p>
+                    </div>
+                </div>
+                <img src="images/seattle-coast.jpg" alt="Seattle Coastline" class="about-image"/>
+                <div class="about-image"></div>
+            </div>
+        </div>
+    </header>
+    <div>
+        <div id="logo-menu" onclick="openMenu()">
+                <svg viewBox="0 0 508.92 722.98"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M211.89,635.37V628.6q0-289.73-.1-579.47c0-5,1.24-8.59,5-12.16,12.4-11.88,24.38-24.2,37.14-37V721.92L0,467.71l21.41-1.29a17.51,17.51,0,0,0,3,0c14.26-3.45,22.61,4.9,31.15,14.46,9.52,10.67,20.28,20.21,30.34,30.39,16.35,16.53,32.48,33.26,48.87,49.75,13.75,13.84,27.76,27.43,41.61,41.18,10.32,10.24,20.57,20.56,30.86,30.84,1,1,2.14,1.93,3.22,2.89Z"/><path d="M297.72,723V.09c3.75,3.56,6.81,6.31,9.7,9.24,9.71,9.84,19.52,19.58,28.9,29.72a14.12,14.12,0,0,1,3.29,8.75c.24,30.5.15,61,.15,91.51V339.66c1.82-1,3.27-1.4,4.2-2.34,8.79-8.91,17.46-17.95,26.23-26.89,5.36-5.47,10.87-10.79,16.26-16.23,6.2-6.26,12.31-12.61,18.5-18.88,8.57-8.68,17.19-17.32,25.76-26,6.18-6.28,12.29-12.63,18.48-18.9,5.46-5.55,10.91-11.11,16.54-16.47a8,8,0,0,1,4.85-2.11c12.15-.16,24.31-.07,36.46,0,.43,0,.86.34,1.88.77-3.07,3.34-5.86,6.52-8.8,9.55-10.29,10.59-20.55,21.2-31,31.65-9.07,9.09-18.46,17.87-27.52,27-9.91,9.95-19.53,20.19-29.42,30.17-9,9.13-18.36,18-27.4,27.12-9.41,9.51-18.6,19.22-27.93,28.81-4.5,4.63-8.92,9.36-13.7,13.69-2.76,2.5-3.47,5.23-3.47,8.78.07,93.17-.11,186.34.3,279.51.05,9.78-3.51,16.23-10.24,22.26-5.9,5.29-11.29,11.14-16.9,16.74Z"/></g></g></svg>    
+                </div>
+        <div class="dd-menu">
+            <div class="menu-block">
+                <div class="row text-center">
+                        <p>
+                            <span data-target="#myCarousel" data-slide-to="0" class="active underline" id="portfo">Work.<br/><span class="subtext">Projects and experiences.</span></span>
+                            <span data-target="#myCarousel" data-slide-to="1" id="visuals">Visuals.<br/><span class="subtext">For your eyes only.</span></span>
+                            <span data-target="#myCarousel" data-slide-to="2" id="about">About Me.<br/><span class="subtext">The one and (maybe) only.</span></span>
+                        </p>
+                    </div>
+                    <div class="menu-divider"></div>
+                    <div class="links">
+                            <a target="_blank" href="resume.pdf" class="btn btn-social-icon btn-lg btn-file-text-o"><span class="fa fa-file-text-o"></span></a>
+                            <a href="https://www.linkedin.com/in/joshuayao" class="btn btn-social-icon btn-lg btn-linkedin">
+                                <span class="fa fa-linkedin"></span>
+                            </a>
+                            <a href="https://www.instagram.com/joshuapyao/" class="btn btn-social-icon btn-lg btn-instagram">
+                                <span class="fa fa-instagram"></span>
+                            </a>
+                            <a href="https://github.com/joshuapyao" class="btn btn-social-icon btn-lg btn-github">
+                                <span class="fa fa-github"></span>
+                            </a>
+                    </div>
+                    <div class="reachout"><p>Reach out: joshuapyao@gmail.com</p></div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div id="myinfo">
+            <div id="mylogo">
+                <h1 id="myname">Joshua Yao &nbsp; | &nbsp; <span>Let's make something together.</span></h1>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+<script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+    <!-- Lightbox -->
+<script src="js/lightbox.min.js"></script>
+    <!-- main.js -->
+<script src="js/main.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+<script>
+    $('.carousel').carousel({
+        interval: false //changes the speed
+    })
+</script>
+
+</body>
+
+</html>

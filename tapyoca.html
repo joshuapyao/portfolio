@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="UX Designer Portfolio">
+    <meta name="author" content="Joshua Yao">
+
+    <title>Joshua Yao | Tapyoca</title>
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+	<link href="css/bootstrap-toc.min.css"rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107932342-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-107932342-1');
+	</script>
+</head>
+
+<body data-spy="scroll" data-target="#toc" class="tapyoca">
+<header>
+      <div class="article tapyoca" id="art1" data-color="#91CFCE" data-background="#381420">
+      	<a href="index.html#portfolio" class="sticky-top goback downloadbtn">&larr; Return</a>
+         <div class="header-image">
+         	<img src="images/tapyoca/tapyoca.png" alt='Tapyoca' class="banner">
+            <div class="scrollContainer down">
+			  <div class="chevron"></div>
+			  <div class="chevron"></div>
+			  <div class="chevron"></div>
+			  <span class="text">Scroll down</span>
+			</div>
+        </div>
+        <!-- Page Content -->
+        <div class="container">
+        	<div class="piece-nav">
+				<button class="tablink" onclick="openPage('Final', this)" id="defaultOpen">Final Design</button>
+        		<button class="tablink" onclick="openPage('Process', this)" id="process-btn">Design Process</button>
+        		<div id="tab-selector"></div>
+        		<hr class="tab-divider">
+        	</div>
+        	<h1 data-toc-text="Overview" id="overview"></h1>
+			<div id="Final" class="tabcontent">
+				<div class="feature-block">
+					<div class="col-sm-6"><h4>An app for the connoisseurs and bubbly, emphasizing <span class="highlight">rewards and simple satisfying transactions for bubble tea.</span></h4></div>
+					<div class="col-sm-6"><img src="images/tapyoca/tapyoca-home.jpg" alt="High-fidelity UX mockup"></div>
+				</div>
+				<div class="feature-block">
+					<div class="col-sm-6">
+						<video autoplay muted playsinline loop>
+							<source src="images/tapyoca/tap-order.webm" type="video/webm" />
+						  <source src="images/tapyoca/tap-order.mp4" type="video/mp4" />
+						  Your browser does not support the video tag.
+						</video>
+					</div>
+					<div class="col-sm-6"><h4><span class="highlight">Easy drink selection and building,</span> ideal for even the most fastidious customers.</h4></div>
+				</div>
+				<div class="feature-block">
+					<div class="col-sm-6"><h4>Order from your phone with a simple scan and <span class="highlight">with big orders comes big ways to easily split drink costs for group orders.</span></h4></div>
+					<div class="col-sm-6">
+						<video autoplay muted playsinline loop>
+							<source src="images/tapyoca/tap-split.webm" type="video/webm" />
+						  <source src="images/tapyoca/tap-split.mp4" type="video/mp4" />
+						  Your browser does not support the video tag.
+						</video>
+					</div>
+				</div>
+				<div class="feature-block">
+					<div class="col-sm-6">
+						<video autoplay muted playsinline loop>
+							<source src="images/tapyoca/tap-switch.webm" type="video/webm" />
+						  <source src="images/tapyoca/tap-switch.mp4" type="video/mp4" />
+						  Your browser does not support the video tag.
+						</video>
+					</div>
+					<div class="col-sm-6"><h4><span class="highlight">Switch between your favorite bubble tea stores,</span> with localized rewards for each one.</h4></div>
+				</div>
+				<div class="feature-block">
+					<div class="col-sm-6"><h4>Easily track reward progress, gain tiers, and <span class="highlight">redeem rewards knowing exactly what you're going to get.</span></h4></div>
+					<div class="col-sm-6">
+						<video autoplay muted playsinline loop>
+							<source src="images/tapyoca/tap-rewards.webm" type="video/webm" />
+						  <source src="images/tapyoca/tap-rewards.mp4" type="video/mp4" />
+						  Your browser does not support the video tag.
+						</video>
+					</div>
+				</div>
+				<div class="center-container"><a onclick="openProcess()" class="prototype">See the Design Process</a></div>
+				<hr class="featurette-divider">
+				<div class="scrollContainer up">
+				  <div class="chevron"></div>
+				  <div class="chevron"></div>
+				  <div class="chevron"></div>
+				</div>
+			</div>
+			<div id="Process" class="tabcontent">
+            <div class="row">
+		      <!-- sidebar, which will move to the top on a small screen -->
+		      <div class="col-sm-2">
+		        <nav id="toc" data-toggle="toc" class="sticky-top"></nav>
+		      </div>
+		      <div class="col-sm-9">
+          <!-- First Featurette -->
+            <div class="detailed">
+				<div class="overview">
+						<div class="overview-image">
+						  <a href="images/tapyoca/tapyoca-home.jpg"><img src="images/tapyoca/tapyoca-home.jpg" alt="High-Fidelity UX Mockup"></a>
+						</div>
+						<div class="goal">Simplifying and enhancing the bubble tea purchasing experience.</div>
+							<div class="details">
+							<div>
+						  <p><strong>The User.</strong></p>
+						  <div class="strong-underline"></div>
+						  <p>Bubble tea veterans and inexperienced drinkers.</p>
+						  </div>
+						  <div>
+						  <p><strong>The Span.</strong></p>
+						  <div class="strong-underline"></div>
+						  <p>15 weeks.</p>
+						  </div>
+						  <div>
+						  <p><strong>The Tools.</strong></p>
+						  <div class="strong-underline"></div>
+						  <p>Sketch and Adobe XD.</p>
+						  </div>
+						  <div>
+							<p><strong>The Bobas.</strong></p>
+							<div class="strong-underline"></div>
+							<p>Chia Hsieh, Gaurav Tamhan, and Peiran Tan.</p>
+						  </div>
+						</div>
+						</div>				
+					<hr class="featurette-divider">
+					  <h2 id="contributions">MY CONTRIBUTIONS</h2>
+					  <p>I completed this project as a freelance designer, where I independently conducted research, design, and even development. I also had access to the client's Google Analytics and other resources to help align my design process to best match all stakeholders.</p>
+					<hr class="featurette-divider">
+					<h2 id="intro">intro</h2>
+              <p>Bubble tea, boba, pearl milk tea… Each place in America has a different way of calling it, due to bubble tea quickly becoming one of the most popular foods in America, with different stores offering their own unique style on the drink. For many, <span class="highlight">the act of getting bubble tea is inherently social and rewarding.</span> However, with complex menus, a myriad of choices, and purchasing dilemmas, buying bubble tea can confound even the most practiced aficionados.</p>
+
+              <p>To resolve these user pain points, <span class="highlight">we created an app called Tapyoca to improve the purchasing experience by letting people earn rewards while helping facilitate social connections</span> so that even a novice bubble tea drinker can get the most out of his or her purchase, while still having the freedom to be loyal to the store they want.</p>
+
+			  <p>Our process for this project went through several stages:</p>
+			  <figure>
+				<img class="no-shadow" src="images/tapyoca/process.png" alt="The Design Process">
+			</figure>
+				<hr class="featurette-divider">
+				<div class="headliner">
+					<h1 id="exploration">EXPLORATION</h1>
+	            	<p class="subtitle">“Our investigation of the user’s context, pain points, and needs”</p>
+	        	</div>
+	        	<hr class="featurette-divider">
+	            <h2 id="litreview">LITERATURE REVIEW &amp; COMPETITIVE ANALYSIS</h2>
+	        	<p>Before we began, we wanted to understand our problem space a little more. We used <span class="highlight">literature review and competitive analysis</span> to examine what was commonly known in the field and what products have been made to address these issues.</p>
+
+				<figure>
+				 <img src="images/tapyoca/clover.jpg" alt="Clover App">
+				  <figcaption>The Clover App, a rewards-collection system for participating locations.</figcaption>
+				</figure>
+
+				<p>From these studies, we found products such as Clover, stamp cards, and more as competitors. We noted what they excelled in, what they lacked, and how the user experience process was. We also found numerous studies regarding reward systems which we were able to draw a number of <span class="highlight">high-level design recommendations.</span></p>
+
+				<figure>
+				  <a href="images/tapyoca/existing-processes.jpg"><img src="images/tapyoca/existing-processes.jpg" alt="Existing user flows"></a>
+				  <figcaption>Existing user flows for products that approached our goal.</figcaption>
+				</figure>
+
+
+				<h2 id="observationsinterviews">OBSERVATIONS &amp; INTERVIEWS</h2>
+	        	<p>After that, we engaged in <span class="highlight">ethnographic research</span> consisting of observation and interviews. The purpose of this was to locate pain points in the bubble tea ordering process and also discover what people valued in systems that augmented their purchases, such as stamp cards, and also discover who represents the main audience of bubble tea.</p>
+
+	        	<figure>
+				  <img src="images/tapyoca/sweet-hut-interior.jpg" alt="Bubble Tea Store Interior">
+				  <figcaption>An example of a bubble tea store where we conducted observations.</figcaption>
+				</figure>
+
+				<h2 id="surveys">SURVEYS</h2>
+	        	<p>Through the previous studies, we were able to get a pretty good idea of who our user was and what they wanted. However, <span class="highlight">we wanted to confirm what we knew,</span> to ensure our data wasn’t being skewed by a few individuals. To do that, we created a survey, which we distributed online with screening questions to ensure participants were bubble tea drinkers.</p>
+	        	
+				<h2 id="affinitydiagramming">AFFINITY DIAGRAMMING</h2>
+	        	<p>Using the data we gained, we did <span class="highlight">affinity diagramming</span> to organize our data and translate it into usable design information.We put up sticky notes of pain points, environmental context notes, user habits, and more. We then grouped them based on relevancy and brainstormed design recommendations for each group.</p>
+	        	
+	        	<figure>
+				  <img src="images/tapyoca/affinitydiagramming.jpg" alt="Affinity Diagramming">
+				  <figcaption>An affinity diagram of our research.</figcaption>
+				</figure>
+
+				<hr class="featurette-divider">
+				<div class="headliner">
+					<h1 id="ideation">IDEATION</h1>
+	            	<p class="subtitle">“Our transformation of research data into design information”</p>
+	        	</div>
+            	<hr class="featurette-divider">
+
+				<h2 id="implicationsandmeasurements">DESIGN IMPLICATIONS &amp; MEASUREMENTS OF SUCCESS</h2>
+	        	<p>From the our research, we were able to establish a strong set of <span class="highlight">design implications that would act for the basis of our design.</span> Our final design needed to hit all of those points. We also were careful to note our <span class"highlight">measurements of success,</span> which we would refer back to at every design iteration to ensure it meets our ultimate goal.</p>
+
+	        	<figure>
+				  <img src="images/tapyoca/design-implications.jpg" alt="Whiteboard of Design Implications">
+				  <figcaption>A whiteboard of a meeting where we defined design implications, measurements of success, research, and more.</figcaption>
+				</figure>	        	
+
+	        	<p>Below are some of the high-level design implications with the justifications sourced from our research:</p>
+
+	        	<ol>
+	        		<li>Let users see what drinks their friends like</li>
+	        			<ul><li>Many new bubble tea drinkers struggle with deciding a drink, and often turn to friend's recommendations for the final choice.</li></ul>
+	        		<li>Reward system should be easily accessible and trackable</li>
+	        			<ul><li>Reward systems are successful when users feel like they have a high-level of control in the system. By ensuring that things aren't hidden, we can increase user trust.</li></ul>
+	        		<li>Simplify the drink customization process</li>
+	        			<ul><li>The many customizations options daunted people new to bubble tea, while veteran drinkers sometimes forgot to customize their drink to their liking.</li></ul>
+	        		<li>Enable users to split costs of an order</li>
+	        			<ul><li>From our research, many people went in groups and ordered on a single order, splitting the costs through various apps manually later. Offering native order splitting would be a welcome feature for users.</li></ul>				
+	        	</ol>
+
+				<h2 id="personas">PERSONAS</h2>
+				<p>We also needed to create personas so that we could understand <span class="highlight">exactly who were designing for.</span> From our research, we were confident in creating a persona that represented a majority of the bubble tea drinking demographic.</p>
+
+				<figure>
+				  <a href="images/tapyoca/persona.png"><img src="images/tapyoca/persona.png" alt="Persona"></a>
+				  <figcaption>A persona of one of the major user groups that we found.</figcaption>
+				</figure>
+
+				<h2 id="storyboards">STORYBOARDS</h2>
+				<p>For that last part of our ideation stage, we created 3 <span class="highlight">storyboards, which would walk through the ideal user experience we were aiming to create.</span> For our next step of designing interfaces, we would match it with the storyboards to ensure the design offered the right experience.</p>
+
+				<figure>
+				  <a href="images/tapyoca/storyboard.jpg"><img src="images/tapyoca/storyboard.jpg" alt="Kiosk Storyboard"></a>
+				  <figcaption>The storyboard for one of our concepts, the Boba Terminal.</figcaption>
+				</figure>
+
+				<hr class="featurette-divider">
+				<div class="headliner">
+					<h1 id="creation">CREATION</h1>
+	            	<p class="subtitle">“The birth of a design in its true form (through multiple iterations)”</p>
+	        	</div>
+				<hr class="featurette-divider">
+
+				<h2 id="lowfidelity">LOW-FIDELITY PROTOTYPES</h2>
+				<p>Armed with our design specifications, we began considering what form would best serve our user base. <span class="highlight">We considered a physical kiosk, a digital card, and a phone app.</span> Based on our design requirements, we created a low-fidelity prototype of each to test and discover which form would be the best.</p>
+				
+				<figure>
+				  <img src="images/tapyoca/kioskconcept.jpg" alt="Kiosk Concept">
+				  <figcaption>Our first concept using a static kiosk.</figcaption>
+				</figure>
+				<p>The first concept was a kiosk that would exist in the stores that would allow users to login, collect rewards, and place orders. This was based on research that showed people didn’t like carrying around something extra or downloading more apps.</p>
+				<p><strong>Pros:</strong> In the environment, simple-to-use, no commitment</p>
+				<p><strong>Cons:</strong> No commitment, doesn’t encourage the user to go get bubble tea, expensive implementation</p>
+
+				<figure>
+				  <img src="images/tapyoca/cardconcept.jpg" alt="Card Concept">
+				  <figcaption>Our second concept approaching a futuristic idea with a physical card.</figcaption>
+				</figure>
+				<p>The second concept was a digital card, where our focus with it was to augment the normal checkout experience. Users could load favorites and balance on the card, so they could order, pay, and collect rewards all with a single swipe.</p>
+				<p><strong>Pros:</strong> Novel, cool, doesn’t change the normal user flow, builds on top of the current experience, easy to learn and use</p>
+				<p><strong>Cons:</strong> Physical, takes up space and can be forgotten, potentially expensive, daunting onboarding</p>
+
+				<figure>
+				  <img src="images/tapyoca/appconcept.jpg" alt="App Concept">
+				  <figcaption>Our final concept with an app holding various features.</figcaption>
+				</figure>
+				<p>The final concept was an app that people had on their phones. From it, people could place orders, pay, split order costs, and see what drinks friends get. We considered this concept because of its flexibility and ease of access to our user group.</p>
+				<p><strong>Pros:</strong> Flexible, easy to onboard, always accessible, uses advantages of current technology such as cross-app compatibility</p>
+				<p><strong>Cons:</strong> More ordinary, less eye-catching, requires download</p>
+
+				<p>Based on the feedback from these testing sessions, we moved forward with the app concept, though we pulled ideas from other concepts into it that people liked.</p>
+
+				<h2 id="informationarchitecture">INFORMATION ARCHITECTURE</h2>
+				<p>Deciding on building out an app, we needed to create an <span class="highlight">information architecture</span> for it before drawing out screens. This architecture would need to include all the necessary features decided upon earlier at the design requirements. To help inform this stage, we also broke down other competitor's apps into their information architecture, such as the Kung Fu Tea App.</p>
+
+				<figure>
+				  <img src="images/tapyoca/ia.jpg" alt="Information Architecture">
+				  <figcaption>The rough information architecture we would use to make our first prototype.</figcaption>
+				</figure>
+
+				<h2 id="wireframes">WIREFRAMES</h2>
+				<p><span class="highlight">Wireframes were next step,</span> where we could build out rough prototypes of user flows for some user testing. This allowed us to get quick iterative feedback on our design which we could quickly implement and test again.</p>
+
+				<figure>
+				  <img src="images/tapyoca/wireframe.jpg" alt="Wireframes">
+				  <figcaption>Wireframe prototype we could use to communicate our idea and test with users.</figcaption>
+				</figure>
+
+				<h2 id="highfidelity">HIGH-FIDELITY PROTOTYPE</h2>
+				<p>Based on our rounds of iterations, <span class="highlight">we built our high-fidelity prototype for the final iteration.</span> This would include adding in colors, graphics, text, and more to make it look and feel like an actual app. We conducted another round of testing after creating this to validate our design (while getting some extra notes for the future). <span class="highlight">From our testing, people really liked the new features that the app introduces and all consistent bubble tea drinkers we tested with said they would use the app if it existed on the market.</span></p>
+
+				<figure>
+				  <img src="images/tapyoca/tapyoca-home.jpg" alt="High Fidelity Prototype">
+				  <figcaption>Our final high fidelity prototype.</figcaption>
+				</figure>
+
+				<h1 data-toc-text="Moving Forwards" id="movingforwards">MOVING FORWARDS</h1>
+				<p><span class="highlight">Though we succeeded in terms of our earlier established measurements of success, there are still some improvements that could be made to our design.</span></p>
+				<p>From validation testing we discovered having a more upfront way to access rewards and better information on how to redeem them would help first time users catch on faster. In future iterations an onboarding tutorial could be implemented, or a greater emphasis on rewards in the information heirarchy. We would also want to do more research in other areas, since the target audience might have different characteristics in different areas.</p>
+                <div class="scrollContainer up">
+				  <div class="chevron"></div>
+				  <div class="chevron"></div>
+				  <div class="chevron"></div>
+				</div>
+            </div>
+            </div>
+            <div class="col-sm-1"></div>
+	      </div>
+	    </div>
+		</div>
+	  </div>
+</header>
+    <!-- jQuery -->
+<script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.js"></script>
+
+    <!-- main.js -->
+<script src="js/main.js"></script>
+    <!-- Script to Activate the Carousel -->
+<script>
+    $('.carousel').carousel({
+        interval: false //changes the speed
+    })
+</script>
+
+</body>
+
+</html>

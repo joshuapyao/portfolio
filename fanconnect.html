@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="UX Designer Portfolio">
+    <meta name="author" content="Joshua Yao">
+
+    <title>Joshua Yao | Fan Connect</title>
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+	<link href="css/bootstrap-social.css" rel="stylesheet">
+	<link href="css/aos.css" rel="stylesheet">
+  <link href="css/bootstrap-toc.min.css"rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107932342-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-107932342-1');
+	</script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" class="fanconnect">
+<header>
+      <div class="article fanconnect" id="art1" data-color="#C9C9C9" data-background="#222222">
+      <a href="index.html#portfolio" class="sticky-top goback downloadbtn">&larr; Return</a>
+         <div class="header-image">
+         	<img src="images/fanconnect/fanconnect.png" alt='Fan Connect' class="banner">
+            <div class="scrollContainer down">
+			  <div class="chevron"></div>
+			  <div class="chevron"></div>
+			  <div class="chevron"></div>
+			  <span class="text">Scroll down</span>
+			</div>
+        </div>
+        <!-- Page Content -->
+        <div class="container">
+        	<div class="piece-nav">
+				<button class="tablink" onclick="openPage('Final', this)" id="defaultOpen">Final Design</button>
+        		<button class="tablink" onclick="openPage('Process', this)" id="process-btn">Design Process</button>
+        		<div id="tab-selector"></div>
+        		<hr class="tab-divider">
+        	</div>
+        	<h1 data-toc-text="Overview" id="overview"></h1>
+			<div id="Final" class="tabcontent">
+				<div class="video-wrapper">
+					<video playsinline controls>
+            <source src="images/fanconnect/promo-vid.webm" type="video/webm" />
+					  <source src="images/fanconnect/promo-vid.mp4" type="video/mp4" />
+					  Your browser does not support the video tag.
+					</video>	
+				</div>
+				<div class="detailed shout-out">
+	        		<h4>Competitive sports are hype.</h4>
+	        		<hr>
+	        		<p>Basketball fans are one of the most loyal sport patrons. However, with no central hub for fans of teams, non-local fans can feel isolated and alone. <strong>Cheering a 3-pointer at home alone doesn't cut it compared to that feeling and atmosphere of unity at the stadium.</strong></p>
+	        		<p>By the fans, for the fans, Fan Connect bridges that gap by giving fans a central hub to stay up-to-date and connect with other fans, while also helping <strong>mirror an at-stadium experience.</strong></p>
+				</div>
+				<div class="feature-block">
+					<div class="col-sm-6" data-aos="fade-right"><h4>All of the team's news: past games, news, and upcoming; <span class="highlight">all in one place.</span></h4></div>
+					<div class="col-sm-6" data-aos="fade-left"><img src="images/fanconnect/homepage.png" alt="High-fidelity UX mockup"></div>
+				</div>
+				<div class="feature-block" data-aos="fade-up">
+					<div class="col-sm-6"><img src="images/fanconnect/livechat.png" alt="High-fidelity UX mockup"></div>
+					<div class="col-sm-6"><h4><span class="highlight">Live chat and live stats,</span> bringing that feeling of being at the stadium and chatting back home.</h4></div>
+				</div>
+				<div class="feature-block">
+					<div class="col-sm-6" data-aos="fade-right"><h4><span class="highlight">See who's on the court and their skill at the sport,</span> by analyzing how they match up with others in the league.</h4></div>
+					<div class="col-sm-6" data-aos="fade-left"><img src="images/fanconnect/playerstats.png" alt="High-fidelity UX mockup"></div>
+				</div>
+				<div class="center-container">
+					<a onclick="openProcess()" class="prototype">See the Design Process</a>
+				</div>
+				<hr class="featurette-divider">
+				<div class="scrollContainer up">
+				  <div class="chevron"></div>
+				  <div class="chevron"></div>
+				  <div class="chevron"></div>
+				</div>
+			</div>
+			<div id="Process" class="tabcontent">
+            <div class="row">
+		      <!-- sidebar, which will move to the top on a small screen -->
+		      <div class="col-sm-2">
+		        <nav id="toc" data-toggle="toc" class="sticky-top"></nav>
+		      </div>
+		      <div class="col-sm-9">
+          <!-- First Featurette -->
+			<div class="detailed">
+            <div class="overview">
+                <div class="overview-image">
+                  <a href="images/fanconnect/homepage.png"><img src="images/fanconnect/homepage.png" alt="High-Fidelity UX Design"></a>
+                </div>
+                <div class="goal">Designing and developing a system for sports team fans to connect.</div>
+                      <div class="details">
+                        <div>
+                    <p><strong>The User.</strong></p>
+                    <div class="strong-underline"></div>
+                    <p>Basketball Sports Fans.</p>
+                  </div>
+                  <div>
+                    <p><strong>The Span.</strong></p>
+                    <div class="strong-underline"></div>
+                    <p>10 weeks.</p>
+                  </div>
+                  <div>
+                    <p><strong>The Tools.</strong></p>
+                    <div class="strong-underline"></div>
+                    <p>Sketch, Invision, Zeplin, and Ionic.</p>
+                  </div>
+                  <div>
+                      <p><strong>The Squad.</strong></p>
+                      <div class="strong-underline"></div>
+                      <p>Sunpil Kim, Jordan Harvey-Morgan, Malik Hayes.</p>
+                    </div>
+                </div>
+              </div>
+              <hr class="featurette-divider">
+                <h2 id="contributions">MY CONTRIBUTIONS</h2>
+                <p>I was the only designer for this project and led design sprints with my team, conducted user research, made mocks, conducted testing, and communicated features or changes to engineers. I also acted as the project manager, organizing meetings, schedules, and goals for each sprint.</p>
+                <p>In addition, I did some frontend development and made the promotional video for this project.</p>    
+              <hr class="featurette-divider">
+              <h2 id="intro">intro</h2>
+              <p><span class="highlight">FanConnect was inspired by the lack of camaraderie fans feels when watching a game at home as opposed to at a stadium or court.</span> The surge of adrenaline after your team wins a seven game series is quickly soured when you realize your only nearby companions are a cat and an empty pizza box. These fans lack proper avenues for connecting with each other. For the purpose of this project, we chose to focus specifically on basketball fans to keep focused, but this design could be extended to other sports as well.</p>
+              <p>For this project, I was on a team of four, where I was responsible for UX design and front-end development. On this team, I had another front-end developer and two back-end developers. <span class="highlight">Working as the sole designer on this project had its pros and cons,</span> but I learned a lot in working with engineers while designing such as handoff, collaboration, feasibility, and estimations. We conducted this project in an agile structure with five sprints, each sprint lasting two weeks.</p>
+
+              <p>My design process for this could be broken down through these several stages:</p>
+              <figure>
+                  <img class="no-shadow" src="images/fanconnect/process.png" alt="The Design Process">
+                </figure>
+              
+              <hr class="featurette-divider">
+                <div class="headliner">
+                  <h1 id="exploration">EXPLORATION</h1>
+                    <p class="subtitle">“Our investigation of the user’s context, pain points, and needs”</p>
+                </div>
+              <hr class="featurette-divider">
+
+              <h2 id="initital-interviews">INITIAL INTERVIEWS</h2>
+                <p>In order to identify a direction and get a picture of our primary user, I conducted four preliminary interviews with self-declared basketball fans. In these interviews, I discovered some tidbits that helped in guiding the direction of my research.</p>
+                <p>One important note I found was that <span class="highlight">users often only had a single pro-basketball related app,</span> expecting a single stop for all their basketball fandom needs. Requiring users to download another app with one community and also use another with its separate community would likely lead to them dropping one in favor of whichever is more familiar.</p>
+                <p>Another was that <span class="highlight">fans mostly valued highlight plays from their favorite players.</span> Whether it is a veteran player, a mouthy wildcard, or a rising rookie, fans consistently voted up clips of their players playing in a dominating fashion. Underneath this, there likely lies a need for fans to feel like they always have a chance of winning a match if players “pop-off”. </p>
+                <figure>
+                  <img src="images/fanconnect/kawahi.jpg" alt="Kawahi Leonard">
+                  <figcaption>Lots of people were fans of Kawahi, him being the highlight of the Toronto Raptors 2018.</figcaption>
+                </figure>
+                <p>I also used these interviews to find out what apps fans used to follow their favorite teams. This would help in scoping my competitive analysis.</p>
+
+              <h2 id="competitive">COMPETITIVE ANALYSIS</h2>
+                <p>Currently, the few avenues that fans have to connect are mostly forum-based. <span class="highlight">Team-specific subreddits or reddit are the most popular options,</span> with the largest ones boasting a little over a hundred-thousand users. There they can post about opinions, articles, and vote up or down postings. However, their interactions are limited to only what is available on reddit, such as linking posts and commenting.</p>
+                <figure>
+                  <img src="images/fanconnect/reddit.jpg" alt="Golden State Warriors Subreddit">
+                  <figcaption>An example of a team subreddit. Great for news but painful for fast discussion.</figcaption>
+                </figure>
+
+                <p><span class="highlight">Another popular path are team news pages.</span> Most of the community building happens in the comment section, where discussions are often less than civil. Again, this has glaring weaknesses, as it does not allow fans to truly express themselves, tying the discussion to the article’s topic. </p>
+
+                <p>Finally, massive sports channel apps exist, <span class="highlight">which of them we examined the NBA, ESPN, CBS Sports, and Twitter app.</span> I observed each from the standpoint of a team fan and found that most catered instead to the general public, putting all the news and resources in one place. Furthermore, it emphasized ads and paywalls. However, they did display information pretty well, and most offered a way for the general fan public to communicate with each other, albeit in varying degrees of freedom. In conclusion, they succeed in building an area that gives users all the information about sports that they need, yet fail in building a personal team space where fans can have a sense of community and camaraderie. </p>
+
+                <figure>
+                  <img src="images/fanconnect/nba-app.jpg" alt="The NBA App">
+                  <figcaption>Great for information and checking out past games. Not great for community building.</figcaption>
+                </figure>
+
+               	<p>From this competitive analysis, we identified an area where <span class="highlight">our app could act as a disruptor and target a relatively unanswered need by focusing first on fans and their community.</span> However, these apps also have strengths in presenting news and other statistics that we can glean from.</p>
+
+              <h2 id="primary-user-research">PRIMARY USER RESEARCH</h2>
+                <p>After getting a decent background knowledge of the issue, we wanted to explore the problem from our main user’s point of view. <span class="highlight">I created an interview script focused on discovering how our primary users watch basketball, what they discuss, how they represent their team spirit, what features they thought were necessary, and general user demographic information.</span></p>
+                <p>I gave this script to my team and encouraged they to interview others. By the end of the week, we had interviewed ten users combined. This phase of getting the engineers taking part in the research was extremely helpful in getting everyone invested and motivated in the project.</p>
+
+                <p>We compiled our data together in a whiteboarding session and identified some key design implications and requirements.</p>
+
+                 <figure>
+                  <img src="images/fanconnect/whiteboarding.jpg" alt="Whiteboarding Sessions">
+                  <figcaption>The result of a session of whiteboarding.</figcaption>
+                </figure>
+
+               	<p>From this, I also defined a few key principles to adhere to as I moved forward in design:</p>
+               	<ol>
+               		<li>Efficiency</li>
+	               		<ul>
+	               			<li>Users often open a sport app for a second just to look up a stat. Information should be provided quickly and efficiently.</li>
+	               		</ul>
+               		<li>Cohesive</li>
+               			<ul>
+               				<li>Most use just a single app for their sports information needs. Our app needs to offer all the information that the majority of the user base needs.</li>
+               			</ul>
+               		<li>Up-To-Date</li>
+               			<ul>
+               				<li>Fans often want to ensure they’re up to date with the latest news regarding their team. We should provide that relevant information up front, so it’s easy to spot new information or news that they missed.</li>
+               			</ul>
+               		<li>Team-Targeted</li>
+               			<ul>
+               				<li>Fans generally follow specific teams, rather than the league as a whole. The app should tailor its experience to these fans.</li>
+               			</ul>
+               		<li>Experience-Driven</li>
+               			<ul>
+               				<li>With our goal to bring that stadium experience back home to the couch, we need to aim to bring aspects of that in, such as live information, conversations, and atmosphere.</li>
+               			</ul>
+               	</ol>
+
+                <hr class="featurette-divider">
+                <div class="headliner">
+                  <h1 id="ideation">IDEATION</h1>
+                    <p class="subtitle">“Our transformation of research data into design information”</p>
+                </div>
+              <hr class="featurette-divider">
+
+              <h2 id="personas">PERSONAS</h2>
+                <p>From our research findings <span class="highlight">I derived a primary persona which covered a majority of the users that were sports fans that used apps.</span> This allowed my team and I to understand and remember our users, while also providing a way for everyone on the team to have to same perception of who we’re building for.</p>
+
+                <figure>
+                  <img src="images/fanconnect/persona.png" alt="Persona of a home watcher">
+                  <figcaption>A persona that reflects the primary target user: the at-home game watcher</figcaption>
+                </figure>
+
+              <h2 id="usecasesandstoryboards">USE CASES & STORYBOARDS</h2>
+                <p>To guide our design’s functionality and also context, I identified primary use cases where someone would want to use our app, or where our app could improve the lifestyle of the fan. I built out three separate use cases, and wrote <span class="highlight">step-to-step walkthroughs of how users would ideally accomplish their goals.</span></p>
+
+                <p>For example, we identified how users would want to converse with others while watching a game at home. Normally, they would go onto a team-specific forum and then post a comment, while refreshing the webpage every so often. Then they would have to find their post, and see if anyone replied to them. <span class="highlight">Under our ideal use case, the user would login, see the live game of their team, and be able to chat in a live chat situation that mimics the atmosphere and environment of the stadium.</span></p>
+
+                <p>To assist with communication and to better visualize situations that our primary user would use our application, I created storyboards. Below is an example of a storyboard, where our primary user cannot personally attend or watch a game because they’re on the go.</p>
+                <figure>
+                  <img src="images/fanconnect/storyboard.png" alt="Storyboard">
+                  <figcaption>A storyboard going through how our design would help.</figcaption>
+                </figure>
+
+                <p>These exercises helped frame my design and consider what features were necessary in order to provide the user with this ideal experience. The biggest outcome of this was finding that often <span class="highlight">the best user experience mirrored the experience of actually being at the live game in person.</span></p>
+
+              <hr class="featurette-divider">
+                <div class="headliner">
+                  <h1 id="creation">CREATION</h1>
+                    <p class="subtitle">“The birth of a design in its true form (through multiple iterations)”</p>
+                </div>
+              <hr class="featurette-divider">
+
+              <h2 id="informationarchitecture">INFORMATION ARCHITECTURE</h2>
+                <p>To develop our design, I first started with the information architecture. This was important to show the overall structure of our system, ensured that it was understandable to users, and that it included all of the necessary functions. While designing the information architecture, <span class="highlight">I made sure to adhere to the principles, putting primary user needs as the top level of hierarchy: news, stats, and live chat.</span> Iterations over the architecture with the team resulted in a strong structure for the app, with all necessary functionality clearly marked down.</p>
+
+              <h2 id="wireframes">WIREFRAMES</h2>
+                <p>With the architecture down, I created some rough mockups that would serve the user flow and help them accomplish their goals while meeting needs, which I could then use to make an interactive prototype and test it with users. <span class="highlight">I created four screens: a feed, a live chat “connect”, a roster page, and a player information page.</span></p>
+                <figure>
+                  <img src="images/fanconnect/wireframes.png" alt="Wireframes">
+                  <figcaption>Wireframes for the three main hubs: News, Chat, and Stats.</figcaption>
+                </figure>
+
+                <p>Most of the pages, I had the information set flat and in a top down structure, where users could scroll down for more information. However, for the bottom navigation, I wanted to draw extra attention down to the “connect/live chat” feature, since it would be how users would experience a live game through the app. I gave it a large size with a slight hovering effect, making it more primary.</p>
+                <p>The wireframes were helpful in testing, where I asked what people expected to see in certain gray blobs. Below are more wireframes with some explanation for the design decisions:</p>
+                <figure>
+                  <img src="images/fanconnect/wire-feed.png" alt="Feed Wireframe">
+                  <figcaption>For the feed, I made space for features that people cared out most from feedback, prioritizing upcoming games, past games, and the current W-L record.</figcaption>
+                </figure>
+                <figure>
+                  <img src="images/fanconnect/wire-connect.png" alt="Connect Wireframe">
+                  <figcaption>For the live chat, I had space for current live feed, but giving more space to the chat conversation. I received a lot of helpful feedback from this regarding naming and how messages should appear.</figcaption>
+                </figure>                
+                <figure>
+                  <img src="images/fanconnect/wire-roster.png" alt="Roster Wireframe">
+                  <figcaption>For the roster, I focused on displaying the top five for categories, based on feedback that people like to explore the best on their roster. Testing was useful to see how this paradigm resonated with users.</figcaption>
+                </figure>
+                <figure>
+                  <img src="images/fanconnect/wire-stats.png" alt="Stats Wireframe">
+                  <figcaption>For the player stats, I had four main bodies of categories laid out from initial research, and used testing to see if the information available would fulfill a hardcore fan's needs.</figcaption>
+                </figure>                
+
+                <p><span class="highlight">I tested these with users, by first developing questions for each page that I wanted answered through testing.</span> For example, regarding the chat page, I had these higher level questions:</p>
+                <ul>
+                	<li>Do the current features in the chat (live chat, scores, play-by-play feed) fulfill the user needs? If not, what else?</li>
+                	<li>Would the user participate in this chat?</li>
+                	<li>Is there a need for chat subgroups?</li>
+                	<li>When watching a game on TV/internet/etc, when would the user look at the chat?</li>
+                	<li>How would the user like to communicate in this chat? (clips, text, emotes?)</li>
+                </ul>
+
+           		<h2 id="high-fidelity">HIGH-FIDELITY PROTOTYPE</h2>
+                	<p>Through the feedback and rounds of iterations, I eventually created a high-fidelity prototype that met our user needs. <span class="highlight">This design focused on creating a one-stop user experience for all of their team’s information, while also offering a way to connect with other fans while watching a live game.</span></p>
+                	<p>From the wireframes and other rounds of testing, some of the major changes were mostly regarding wording, usability, how stats were presented, and clarity. One example is having randomized different colors for users in the live chat, because users found it hard to quickly identify where their message was, and differentiate between different messages. Below are some high-fidelity screen and design decisions explanations:</p>
+
+               	<figure>
+                  <img src="images/fanconnect/flow.png" alt="Flow">
+                  <figcaption>A basic flow for the app. Most of the content is accessible upfront with a very shallow architecture. This is because users often pop open a sports app for a seconds just to look up something.</figcaption>
+                </figure>
+               	<figure>
+                  <img src="images/fanconnect/high-login.png" alt="Flow">
+                  <figcaption>Quick and easy registration so people can get in and chat faster.</figcaption>
+                </figure>
+               	<figure>
+                  <img src="images/fanconnect/high-feed.png" alt="Flow">
+                  <figcaption>Catch up on past games, see upcoming, and read the latest news. The feed page was designed to show a lot of relevant information up front, so users could easily find out if they missed something.</figcaption>
+                </figure>      
+               	<figure>
+                  <img src="images/fanconnect/high-chat.png" alt="Flow">
+                  <figcaption>Chat when a game isn't going on, and chat when it's happening. Live text feed because of copyright limitations. Different colors for each to help differentiate between blocks of text for easier scanning.</figcaption>
+                </figure>      
+               	<figure>
+                  <img src="images/fanconnect/high-roster.png" alt="Flow">
+                  <figcaption>Relevant status up front, with more refined sorting options. Allows for easy roster scanning, but capable of going in-depth for stat junkies.</figcaption>
+                </figure>
+
+                <p>The design was well-received with end-test users and received high praise in the Convergence Innovation Competition (CIC). I gave this to the engineers through Zeplin and worked on coding the front-end through Ionic.</p>
+                <p>Moving forwards on this app, one of the biggest weaknesses is the live chat is limited to just a text feed, but the experience would be far improved if it also offered a live stream. However, that would run into copyright issues with the NBA, which could be amended through some sort of business agreement if this was launched further into the future, perhaps through a partnership with the NBA league pass.</p>
+                <p>To showcase our product’s capabilities and target audience, I created this video: <a href="https://www.youtube.com/watch?v=HGAAXioaI94">https://www.youtube.com/watch?v=HGAAXioaI94</a></p>                                                                 
+              	<hr class="featurette-divider">
+				<div class="scrollContainer up">
+				  <div class="chevron"></div>
+				  <div class="chevron"></div>
+				  <div class="chevron"></div>
+				</div>
+            </div>
+            </div>
+            <div class="col-sm-1"></div>
+	      </div>
+	    </div>
+	</div>
+	  </div>
+</header>
+    <!-- jQuery -->
+<script src="js/jquery.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.js"></script>
+    <!-- main.js -->
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
