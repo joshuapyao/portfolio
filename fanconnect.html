@@ -18,6 +18,7 @@
 	<link href="css/bootstrap-social.css" rel="stylesheet">
 	<link href="css/aos.css" rel="stylesheet">
   <link href="css/bootstrap-toc.min.css"rel="stylesheet">
+  <link href="css/lightbox.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -38,29 +39,25 @@
 
 </head>
 
-<body data-spy="scroll" data-target="#toc" class="fanconnect">
+<body data-spy="scroll" class="fanconnect">
 <header>
       <div class="article fanconnect" id="art1" data-color="#C9C9C9" data-background="#222222">
       <a href="index.html#portfolio" class="sticky-top goback downloadbtn">&larr; Return</a>
          <div class="header-image">
          	<img src="images/fanconnect/fanconnect.png" alt='Fan Connect' class="banner">
-            <div class="scrollContainer down">
-			  <div class="chevron"></div>
-			  <div class="chevron"></div>
-			  <div class="chevron"></div>
-			  <span class="text">Scroll down</span>
-			</div>
         </div>
         <!-- Page Content -->
         <div class="container">
         	<div class="piece-nav">
-				<button class="tablink" onclick="openPage('Final', this)" id="defaultOpen">Final Design</button>
-        		<button class="tablink" onclick="openPage('Process', this)" id="process-btn">Design Process</button>
-        		<div id="tab-selector"></div>
-        		<hr class="tab-divider">
-        	</div>
-        	<h1 data-toc-text="Overview" id="overview"></h1>
-			<div id="Final" class="tabcontent">
+            <button class="tablink" onclick="openPage('Overview', this)" id="defaultOpen">Overview</button>
+            <button class="tablink" onclick="openPage('Process', this)" id="process-btn">Design Process</button>
+            <button class="tablink" onclick="openPage('Final', this)" id="final-btn">Final Design</button>
+            <div id="tab-selector">
+              <div id="tab-progress"></div>
+            </div>
+              <hr class="tab-divider">
+          </div>
+			<div id="Overview" class="tabcontent">
 				<div class="video-wrapper">
 					<video playsinline controls>
             <source src="images/fanconnect/promo-vid.webm" type="video/webm" />
@@ -90,19 +87,9 @@
 					<a onclick="openProcess()" class="prototype">See the Design Process</a>
 				</div>
 				<hr class="featurette-divider">
-				<div class="scrollContainer up">
-				  <div class="chevron"></div>
-				  <div class="chevron"></div>
-				  <div class="chevron"></div>
-				</div>
 			</div>
 			<div id="Process" class="tabcontent">
             <div class="row">
-		      <!-- sidebar, which will move to the top on a small screen -->
-		      <div class="col-sm-2">
-		        <nav id="toc" data-toggle="toc" class="sticky-top"></nav>
-		      </div>
-		      <div class="col-sm-9">
           <!-- First Featurette -->
 			<div class="detailed">
             <div class="overview">
@@ -319,16 +306,11 @@
                 <p>Moving forwards on this app, one of the biggest weaknesses is the live chat is limited to just a text feed, but the experience would be far improved if it also offered a live stream. However, that would run into copyright issues with the NBA, which could be amended through some sort of business agreement if this was launched further into the future, perhaps through a partnership with the NBA league pass.</p>
                 <p>To showcase our product’s capabilities and target audience, I created this video: <a href="https://www.youtube.com/watch?v=HGAAXioaI94">https://www.youtube.com/watch?v=HGAAXioaI94</a></p>                                                                 
               	<hr class="featurette-divider">
-				<div class="scrollContainer up">
-				  <div class="chevron"></div>
-				  <div class="chevron"></div>
-				  <div class="chevron"></div>
-				</div>
             </div>
-            </div>
-            <div class="col-sm-1"></div>
 	      </div>
-	    </div>
+      </div>
+      <div id="Final" class="tabcontent">
+      </div>
 	</div>
 	  </div>
 </header>
@@ -338,6 +320,8 @@
     <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
 <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.js"></script>
+    <!-- Lightbox -->
+    <script src="js/lightbox.min.js"></script>
     <!-- main.js -->
 <script src="js/main.js"></script>
 

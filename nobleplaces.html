@@ -17,6 +17,7 @@
     <!-- Custom CSS -->
     <link href="css/bootstrap-social.css" rel="stylesheet">
     <link href="css/bootstrap-toc.min.css"rel="stylesheet">
+    <link href="css/lightbox.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -37,39 +38,35 @@
 
 
 </head>
-<body data-spy="scroll" data-target="#toc" class="nobleplaces">
+<body data-spy="scroll" class="nobleplaces">
 <header>
       <div class="article nobleplaces" id="art2" data-color="#e8d794" data-background="#474BA1">
       	<a href="index.html#portfolio" class="sticky-top goback downloadbtn">&larr; Return</a>
          <div class="header-image">
           <img src="images/noble/nobleplaces.png" alt='Noble Places' class="banner">
-            <div class="scrollContainer down">
-			  <div class="chevron"></div>
-			  <div class="chevron"></div>
-			  <div class="chevron"></div>
-			  <span class="text">Scroll down</span>
-			</div>
         </div>
         <!-- Page Content -->
         <div class="container">
-	    	<div class="piece-nav">
-				<button class="tablink" onclick="openPage('Final', this)" id="defaultOpen">Final Design</button>
-	    		<button class="tablink" onclick="openPage('Process', this)" id="process-btn">Design Process</button>
-	    		<div id="tab-selector"></div>
-	    		<hr class="tab-divider">
-	    	</div>
-          <h1 data-toc-text="Overview" id="overview"></h1>
-            <div id="Final" class="tabcontent">
+        	<div class="piece-nav">
+            <button class="tablink" onclick="openPage('Overview', this)" id="defaultOpen">Overview</button>
+            <button class="tablink" onclick="openPage('Process', this)" id="process-btn">Design Process</button>
+            <button class="tablink" onclick="openPage('Final', this)" id="final-btn">Final Design</button>
+            <div id="tab-selector">
+              <div id="tab-progress"></div>
+            </div>
+            <hr class="tab-divider">
+          </div>
+            <div id="Overview" class="tabcontent">
               <div class="feature-block">
-                <div class="col-sm-6"><h4>An apartment complex website redesign targeting the primary customer <span class="highlight">college students.</span></h4></div>
+                <div class="col-sm-6"><h4>An apartment complex website redesign targeting <span class="highlight">college students.</span></h4></div>
                 <div class="col-sm-6"><img src="images/noble/home-view.jpg" alt="High-fidelity UX mockup"></div>
               </div>
               <div class="feature-block">
                 <div class="col-sm-6"><img src="images/noble/list-view.jpg" alt="List of Apartments"></div>
-                <div class="col-sm-6"><h4><span class="highlight">Location-based sorting</span>. with high-priority information clearly visible for easy browsing.</h4></div>
+                <div class="col-sm-6"><h4><span class="highlight">Location-based sorting</span>, with high-priority information clearly visible for easy browsing.</h4></div>
               </div>
               <div class="feature-block">
-                <div class="col-sm-6"><h4>Clear, clean, and user-centered information such as <span class="highlight">a Google StreetView, WalkScore, apply buttons, and more.</span></h4></div>
+                <div class="col-sm-6"><h4>Clear, clean, and user-centered information such as <span class="highlight">Google StreetView, WalkScore, apply buttons, and more.</span></h4></div>
                 <div class="col-sm-6"><img src="images/noble/apartment-view.jpg" alt="Apartment page"></div>
               </div>
               <div class="feature-block">
@@ -78,26 +75,16 @@
               </div>
               <div class="center-container"><a onclick="openProcess()" class="prototype">See the Design Process</a></div>
               <hr class="featurette-divider">
-              <div class="scrollContainer up">
-                <div class="chevron"></div>
-                <div class="chevron"></div>
-                <div class="chevron"></div>
             </div>
-            </div>
-            <div id="Process" class="tabcontent">          
+            <div id="Process" class="tabcontent"> 
             <div class="row">
-          <!-- sidebar, which will move to the top on a small screen -->
-          <div class="col-sm-2">         	
-            <nav id="toc" data-toggle="toc" class="sticky-top"></nav>
-          </div>
-          <div class="col-sm-9">
           <!-- First Featurette -->
             <div class="detailed">
               <div class="overview">
                   <div class="overview-image">
                     <a href="images/noble/nobleplaces-presentation.jpg"><img src="images/noble/nobleplaces-presentation.jpg" alt="Noble Places"></a>
                   </div>
-                  <div class="goal">Redesigning the website to provide a better user experience for a target demographic.</div>
+                  <div class="goal">Redesigning an apartment portal to provide a better user experience for college students.</div>
                       <div class="details">
                       <div>
                     <p><strong>The User.</strong></p>
@@ -123,8 +110,8 @@
                   </div>				
               <hr class="featurette-divider">
                 <h2 id="contributions">MY CONTRIBUTIONS</h2>
-                <p>I primarily acted as the design strategist for this project. I roadmapped our projected plan for this project, and led sessions to synthesis findings, pull design implications, and create high-level designs, such as information architectures.</p>
-                <p>In addition, I also created high-fidelity mockups and made prototypes for testing.</p>          
+                <p>I worked as an independent UX designer and full-stack developer for this project.</p> 
+                <p>I established and conducted my own research, drew implications from it, created a design, and developed it for delivery to the client.</p>          
                 <hr class="featurette-divider">
               <h2 id="intro">intro</h2>
               <p>The NoblePlaces is a collection of apartments based in Seattle owned by NobleGroup LLC. Previously, they had a website that existed purely for tenants to use as reference, and it offered little other functionality. Promising tenants would have to find the site, find an apartments that was relevant to them, and then contact the manager via phone call. <span class="highlight">I was contracted to bring their site up to modern standards, while also improving the user experience of the system.</span></p>
@@ -169,7 +156,7 @@
                   <figcaption>Following flows for when users dropped off, began their session, explored the site, and more.</figcaption>
                 </figure>
 
-                <p>Over a few weeks of observations, I gained a sample size of over a hundred unique users. Conducting data analysis for this was difficult, due to the large amounts of data, yet I was able to <span class="highlight">isolate drop-off users’ flow and discover problem area</span> causing them to leave. Furthermore, this also provided me with general <span class="highlight">demographic information about my audience.</span> For example, I discovered a majority of the users were from the University District area and between ages 18-24. This implied that most visitors were college students.</p>
+                <p>Over a few weeks of observations, I gained a sample size of over a hundred unique users. Conducting data analysis for this was difficult, due to the large amounts of data, yet I was able to <span class="highlight">isolate drop-off users’ flow and discover problem areas</span> causing them to leave. Furthermore, this also provided me with general <span class="highlight">demographic information about my audience.</span> For example, I discovered a majority of the users were from the University District area and between ages 18-24. This implied that most visitors were college students.</p>
 
               <h2 id="competitive">COMPETITIVE ANALYSIS</h2>
                 <p>In my competitive analysis, I compared sites of other apartments that existed around the area, finding the most direct competitors possible. Through this <span class="highlight">I found information about the basic flow of apartments sites, and what information was valued when advertising places</span>, such as floor plans. This information would be useful when designing my own information architecture. I also discovered that their main target audience was college students at the University of Washington, something that I learned from previous research. One site even had a page addressed to parents of college students, explaining why it was best for their kids to stay there.</p>
@@ -240,16 +227,12 @@
 
                 <p>For coding, I used Webflow, a new web design tool I wanted to test, to create the initial design of the site. I then exported the site, making changes and iterations with HTML, CSS, and JavaScript, based on responses from internal testing and live debut. <span class="highlight">Since the new site has been live, there has been a notable increase in applicants, a lower bounce rate, and a clearer user flow.</span></p>
               <hr class="featurette-divider">
-              <div class="scrollContainer up">
-                <div class="chevron"></div>
-                <div class="chevron"></div>
-                <div class="chevron"></div>
-              </div>
             </div>
-            </div>
-            <div class="col-sm-1"></div>
         </div>
-      </div>
+            </div>
+            <div id="Final" class="tabcontent">
+
+            </div>
     </div>
     </div>
 </header>
@@ -260,7 +243,8 @@
     <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
 <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.js"></script>
-
+    <!-- Lightbox -->
+    <script src="js/lightbox.min.js"></script>
     <!-- main.js -->
 <script src="js/main.js"></script>
     <!-- Script to Activate the Carousel -->

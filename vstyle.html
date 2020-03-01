@@ -17,6 +17,7 @@
     <!-- Custom CSS -->
     <link href="css/bootstrap-social.css" rel="stylesheet">
 	<link href="css/bootstrap-toc.min.css"rel="stylesheet">
+	<link href="css/lightbox.min.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -37,29 +38,25 @@
 
 </head>
 
-<body data-spy="scroll" data-target="#toc" class="vstyle">
+<body data-spy="scroll" class="vstyle">
 <header>
       <div class="article vstyle" id="art1" data-color="#d1d1d1" data-background='#C8D1E6'>
       	<a href="index.html#portfolio" class="sticky-top goback downloadbtn">&larr; Return</a>
          <div class="header-image">
          	<img src="images/vstyle/vstyle.png" alt='V-Style' class="banner">
-            <div class="scrollContainer down">
-			  <div class="chevron"></div>
-			  <div class="chevron"></div>
-			  <div class="chevron"></div>
-			  <span class="text">Scroll down</span>
-			</div>
         </div>
         <!-- Page Content -->
         <div class="container">
         	<div class="piece-nav">
-				<button class="tablink" onclick="openPage('Final', this)" id="defaultOpen">Final Design</button>
-        		<button class="tablink" onclick="openPage('Process', this)" id="process-btn">Design Process</button>
-        		<div id="tab-selector"></div>
-        		<hr class="tab-divider">
-        	</div>
-        	<h1 data-toc-text="Overview" id="overview"></h1>
-			<div id="Final" class="tabcontent">
+				<button class="tablink" onclick="openPage('Overview', this)" id="defaultOpen">Overview</button>
+				<button class="tablink" onclick="openPage('Process', this)" id="process-btn">Design Process</button>
+				<button class="tablink" onclick="openPage('Final', this)" id="final-btn">Final Design</button>
+				<div id="tab-selector">
+				  <div id="tab-progress"></div>
+				</div>
+				  <hr class="tab-divider">
+			</div>
+			<div id="Overview" class="tabcontent">
 				<div class="feature-block">
 					<div class="col-sm-6"><h4>An information visulization system <span class="highlight">built for the fashion-curious in the world.</span></h4></div>
 					<div class="col-sm-6"><img src="images/vstyle/vstyle-screen.jpg" alt="High-fidelity UX mockup"></div>
@@ -99,19 +96,9 @@
 					<a onclick="openProcess()" class="prototype">See the Design Process</a>
 				</div>
 				<hr class="featurette-divider">
-				<div class="scrollContainer up">
-				  <div class="chevron"></div>
-				  <div class="chevron"></div>
-				  <div class="chevron"></div>
-				</div>
 			</div>
 			<div id="Process" class="tabcontent">
             <div class="row">
-		      <!-- sidebar, which will move to the top on a small screen -->
-		      <div class="col-sm-2">
-		        <nav id="toc" data-toggle="toc" class="sticky-top"></nav>
-		      </div>
-		      <div class="col-sm-9">
           <!-- First Featurette -->
             <div class="detailed">
 				<div class="overview">
@@ -253,18 +240,13 @@
 				<p>This project was coded with HTML, CSS, JavaScript, and D3 and can be explored by clicking the button below.</p>
               	<a class="downloadbtn more" style="text-align:center;" target="_blank" href="https://vstyle-infoviz.github.io/">click to explore V-Style</a>
               	<hr class="featurette-divider">
-              	<div class="scrollContainer up">
-				  <div class="chevron"></div>
-				  <div class="chevron"></div>
-				  <div class="chevron"></div>
-				</div>
             </div>
-            </div>
-            <div class="col-sm-1"></div>
 	      </div>
-	    </div>
+			</div>
+			<div id="Final" class="tabcontent">
+			</div>
+		</div>
 	</div>
-	  </div>
 </header>
     <!-- jQuery -->
 <script src="js/jquery.js"></script>
@@ -272,15 +254,10 @@
     <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
 <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.js"></script>
-
+    <!-- Lightbox -->
+    <script src="js/lightbox.min.js"></script>
     <!-- main.js -->
 <script src="js/main.js"></script>
-    <!-- Script to Activate the Carousel -->
-<script>
-    $('.carousel').carousel({
-        interval: false //changes the speed
-    })
-</script>
 
 </body>
 
