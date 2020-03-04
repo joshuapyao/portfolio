@@ -511,7 +511,7 @@ body {
   letter-spacing: 0.02em;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 65%;
   color: #555555;
   margin-left:auto;
   margin-right:auto;
@@ -553,7 +553,7 @@ body {
 
 .detailed video {
   max-width: 100%;
-  max-height: 500px;
+  max-height: 600px;
 }
 
 .detailed p {
@@ -576,6 +576,8 @@ body {
 .feature-block img {
   max-height: 100%;
   max-width: 100%;
+  display: block;
+  margin: auto;
 }
 
 .feature-block iframe {
@@ -585,7 +587,7 @@ body {
 
 .feature-block video {
   max-width: 100%;
-  max-height: 500px;
+  max-height: 600px;
   border-radius: 8px;
 }
 
@@ -608,7 +610,7 @@ body {
 }
 
 .split-block {
-  max-height: 500px;
+  max-height: 600px;
   margin-top: 8em;
   margin-bottom: 8em;
   display: flex;
@@ -667,10 +669,12 @@ body {
 
 .final-hero img {
   width: 100%;
+  border-radius: 8px;
 }
 
 .final-hero video {
   width: 100%;
+  border-radius: 8px;
 }
 
 #Final .final-title {
@@ -785,6 +789,7 @@ body {
 .title-bar {
   height: 3px;
   width: 4em;
+  background-color: #555555;
 }
 
 .title-bar.long-bar {
@@ -814,7 +819,7 @@ body {
   overflow: hidden;
   padding-top: 56.25%;
   width: 100%;
-  max-height: 500px;
+  max-height: 600px;
 }
 
 .resp-iframe {
@@ -830,9 +835,24 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
-  max-height: 500px;
+  height: 600px;
+  max-height: 600px;
   height: 100vh;
+}
+
+.goback {
+  position: fixed;
+  z-index: 1020;
+  top: -500px;
+  margin-left: 1em;
+  border-width: 2px;
+  display: flex;
+  align-items: center;
+}
+
+.goback svg {
+  height: 20px;
+  padding-right: 10px;
 }
 
 .headliner {
@@ -889,6 +909,14 @@ body {
     display: none;
   }
 
+  .detailed {
+    width: 80%;
+  }
+
+  .tablink {
+    padding: 8px;
+  }
+
   .overview {
     display: inherit;
   }
@@ -907,9 +935,23 @@ body {
   }
 }
 
+@media only screen and (max-width: 1270px) {
+  .goback {
+    display: none;
+  }
+
+  .scrollContainer {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   .big-project {
     max-width: 100%;
+  }
+
+  .small-project {
+    max-width: 48%;
   }
 }
 .carousel-inner {
@@ -1288,7 +1330,7 @@ a img {
 .detailed img {
   max-width: 100%;
   border-radius: 4px;
-  max-height: 500px;
+  max-height: 600px;
   margin-top: 4em;
   margin-bottom: 8em;
 }
@@ -1461,6 +1503,7 @@ a img {
   .modal-dialog {
     width: 600px;
     margin: 30px auto;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -1468,6 +1511,7 @@ a img {
   .modal-dialog {
     width: 980px;
     margin: 30px auto;
+  }
 }
 
 
@@ -1526,27 +1570,6 @@ a {
   z-index: 1020;
 }
 
-.goback {
-  position: fixed;
-  z-index: 1020;
-  top: -500px;
-  margin-left: 1em;
-  border-width: 2px;
-  display: flex;
-  align-items: center;
-}
-
-.goback svg {
-  height: 20px;
-  padding-right: 10px;
-}
-
-@media only screen and (max-width: 1270px) {
-  .goback {
-    display: none;
-  }
-}
-
 .more {
   font-size: 0.8em;
   font-family: FuturaBook;
@@ -1566,40 +1589,47 @@ nav[data-toggle=toc] .nav .nav>.active>a {
   font-weight: 600;
 }
 
-/* small screens */
-@media (max-width: 768px) {
-  /* override stickyness so that the navigation does not follow scrolling */
-  nav[data-toggle='toc'] {
-    margin-bottom: 42px;
-    position: static;
-  }
-
-  .goback {
-    display: none;
-  }
-
-  /* don't expand nested items, which pushes down the rest of the page when navigating */
-  nav[data-toggle='toc'] .nav .active .nav {
-    display: none;
-  }
-
-  .scrollContainer {
-    display: none;
-  }
-}
-
 .highlight{
     background-size: 200% auto; 
-  background-image: linear-gradient(to right,#fff 50%,#ff0 50%);
+    background-image: linear-gradient(to right,#fff 50%,#ff0 50%);
     background-position: 0% 0;
     animation-duration: 2s;
     animation-delay: 0s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
+
+#tapyoca .highlight {
+  background-image: linear-gradient(to right,#fff 50%, #91CFCE 50%);  
+}
+
+#vstyle .highlight {
+  background-image: linear-gradient(to right,#fff 50%, #d1d1d1 50%);  
+}
+
+#lolsa .modal-content {
+  background-color: #09161C;
+}
+
+.img-link img{
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.img-link:hover img {
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+
 .highlight.active{
    animation-name: highlight;
 }
+
 
 @keyframes highlight {
     from {background-position: 0% 0;}
@@ -1663,6 +1693,13 @@ nav[data-toggle=toc] .nav .nav>.active>a {
   left: 3em;
   text-align: left;
   float: left;
+}
+
+.outer-link {
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 6em;
+  font-size: 2em;
 }
 
 .up {

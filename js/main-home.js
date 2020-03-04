@@ -4,7 +4,14 @@ $(window).bind("pageshow", function(event) {
     }
 });
 
+document.addEventListener("DOMContentLoaded", yall);
+
 jQuery(document).ready(function($){
+
+		// resize elements on window resize
+		$(window).resize(function() {
+			resizeHoverText();
+		});
 
 	// handles outside clicking for dropdown menu
 	$(document).click(function(event) {
@@ -51,6 +58,26 @@ jQuery(document).ready(function($){
 	slideUp();
 	AOS.init();
 	resizeHoverText();
+
+	$('.modal').on("scroll", function(){
+		highlight();
+	  });
+
+	//highlight for modal
+	  function highlight(){
+		var scroll = $(this).scrollTop();
+		var height = $(this).height();
+		console.log(scroll);
+		console.log(height);
+		$(".highlight").each(function(){
+		  var pos = $(this).offset().top;
+		  if (scroll+height >= pos) {
+			$(this).addClass("active");
+		  } else {
+			  $(this).removeClass('active');
+		  }
+		});
+	  } 
 
 	// smooth scroll for mobile
 	$('a[href*="#"]:not([href="#"])').click(function() {
@@ -180,6 +207,10 @@ function scrollDown() {
 	$('html, body').animate({
 		scrollTop: $('#landing-page').height()
   }, 400);
+}
+
+function loadContent() {
+	$(this).children("video").trigger('play');
 }
 
 function openPiece(link, piece) {
