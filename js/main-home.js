@@ -16,7 +16,8 @@ jQuery(document).ready(function($){
 	// handles outside clicking for dropdown menu
 	$(document).click(function(event) {
 		$target = $(event.target);
-		if(!$target.closest('.dd-menu').length && $('.dd-menu').height() > 399) {
+		if(!$target.closest('.dd-menu').length && $('.dd-menu').height() > 120) {
+			console.log('hit');
 			$('.dd-menu').css({'height':''});
 			$('.dd-menu div').fadeOut(100);
 		}  

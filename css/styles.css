@@ -61,6 +61,7 @@ html,body {
   font-size: 16px;
   font-family: futuraBook, sans-serif;
   color: #111111;
+  -webkit-font-smoothing: auto;
 }
 
 body {
@@ -1625,6 +1626,10 @@ nav[data-toggle=toc] .nav .nav>.active>a {
   transform: scale(0.9);
 }
 
+.footer-space {
+  width: 100%;
+  height: 12em;
+}
 
 .highlight.active{
    animation-name: highlight;
@@ -1667,7 +1672,6 @@ nav[data-toggle=toc] .nav .nav>.active>a {
 .new-piece {
   position: relative;
   margin-top: 5em;
-  padding-bottom: 5em;
 }
 
 .new-piece a{
