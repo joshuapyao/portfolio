@@ -207,11 +207,9 @@ function scrollDown() {
   }, 400);
 }
 
-function loadContent() {
-	var thisTarget = $(this).attr("data-target");
-	console.log(thisTarget);
-	$("#"+thisTarget).children("video").trigger('play');
-	console.log('hit');
+function loadContent(piece) {
+	var thisTarget = $(piece).attr("data-target");
+	$(thisTarget + " video").trigger('play');
 }
 
 function openPiece(link, piece) {
