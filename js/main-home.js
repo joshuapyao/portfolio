@@ -32,6 +32,7 @@ jQuery(document).ready(function($){
 			// scrolling on the hero image
 			var st = $(this).scrollTop();
 				if ($(document).scrollTop() < 10) {
+					console.log($(document).scrollTop());
 
 					if ($('#visuals-slide').has('.active')) {
 						$(".fade1").hide();
@@ -50,7 +51,9 @@ jQuery(document).ready(function($){
 						}
 					}
 				}
-			lastScrollTop = st;
+			if (st >= 0) {
+				lastScrollTop = st;
+			}
 		}
 	});
 
@@ -202,9 +205,10 @@ jQuery(document).ready(function($){
 });
 
 function scrollDown() {
+	console.log('hit');
 	$('html, body').animate({
 		scrollTop: $('#landing-page').height()
-  }, 400);
+  }, 300);
 }
 
 function loadContent(piece) {
