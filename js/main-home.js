@@ -61,11 +61,21 @@ jQuery(document).ready(function($){
 	AOS.init();
 	resizeHoverText();
 
+	// handles extra in-modal closing (slide up to dismiss and esc button)
+	$(document).on('keydown', function(event) { 
+		if (event.key == "Escape") {
+			if ($('.in').length > 0) {
+				$('.in .close').click();
+			}
+		} 
+	}); 
+
+
 	$('.modal').on("scroll", function(){
 		highlight();
 	  });
 
-	//highlight for modal
+	//highlight for modal and close on overscroll
 	  function highlight(){
 		var scroll = $(this).scrollTop();
 		var height = $(this).height();
