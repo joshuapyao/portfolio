@@ -17,7 +17,6 @@ jQuery(document).ready(function($){
 	$(document).click(function(event) {
 		$target = $(event.target);
 		if(!$target.closest('.dd-menu').length && $('.dd-menu').height() > 120) {
-			console.log('hit');
 			$('.dd-menu').css({'height':''});
 			$('.dd-menu div').fadeOut(100);
 		}  
@@ -68,8 +67,6 @@ jQuery(document).ready(function($){
 	  function highlight(){
 		var scroll = $(this).scrollTop();
 		var height = $(this).height();
-		console.log(scroll);
-		console.log(height);
 		$(".highlight").each(function(){
 		  var pos = $(this).offset().top;
 		  if (scroll+height >= pos) {
@@ -211,7 +208,10 @@ function scrollDown() {
 }
 
 function loadContent() {
-	$(this).children("video").trigger('play');
+	var thisTarget = $(this).attr("data-target");
+	console.log(thisTarget);
+	$("#"+thisTarget).children("video").trigger('play');
+	console.log('hit');
 }
 
 function openPiece(link, piece) {
