@@ -238,7 +238,16 @@ function setSizing() {
 	var height = width/2;
 	$('.header-image').css({"top": -height+"px"});
 	$('.header-image').animate({top: '0px' }, 600);
-	$('.goback').animate({top: '5%'}, 600);
+	if (width < 1000) {
+		$('.goback').css({
+			"border-width":"1px",
+			"position":"absolute",
+			"margin-left":$('.container').css("marginLeft")
+		});
+		$('.goback').animate({"top": $('.header-image').height() - 30 + 'px'}, 600);
+	} else {
+		$('.goback').animate({top: '5%'}, 600);
+	}
 	$('.article').css({'padding-bottom' : height + 100 + 'px'});
 	$('.container').animate({'top': height + 30 + 'px'}, 600);
 

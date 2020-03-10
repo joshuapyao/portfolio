@@ -124,7 +124,7 @@ jQuery(document).ready(function($){
 	var counter = 0;
 	var inst = setInterval(change, 1700);
 	function change() {
-		$("#moonlight").animate({'opacity': 0}, 300, function() {
+		$("#moonlight").animate({'opacity': 0}, 400, function() {
 			$(this).html(titles[counter] + ".").animate({'opacity': 1}, 300);
 		});
 		counter++;

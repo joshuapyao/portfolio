@@ -677,7 +677,6 @@ body {
 
 .final-hero img {
   width: 100%;
-  border-radius: 8px;
 }
 
 .final-hero video {
@@ -937,16 +936,9 @@ body {
   .row .col-sm-1 {
     display: none;
   }
-
-  .goback {
-    display: none;
-  }
 }
 
 @media only screen and (max-width: 1270px) {
-  .goback {
-    display: none;
-  }
 
   .scrollContainer {
     display: none;
@@ -1339,6 +1331,7 @@ a img {
   max-width: 100%;
   border-radius: 4px;
   max-height: 600px;
+  height: auto;
   margin-top: 4em;
   margin-bottom: 8em;
 }
