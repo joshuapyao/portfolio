@@ -98,6 +98,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   position: relative;
 }
 
@@ -979,6 +980,7 @@ body {
   color: #ffffff;
   padding-top: 6em;
   margin-left: 3em;
+  margin-right:3em;
 }
 #myname {
   font-family: futuraBook;
@@ -993,13 +995,20 @@ body {
   font-weight: 200;
 }
 
-#mylogo {
-  border-radius: 50%;
-  height: 50px;
-  margin: auto;
-  margin-left: 0;
-  margin-right: 0;
+#mycredits {
+  font-family: futuraBook, sans-serif;
+  margin: 0;
+  font-weight: 200;
+  font-size: 1em;
+  opacity: 0.6;
+  white-space: nowrap;
+  text-align: right;
 }
+
+#mycredits span{
+  font-size: 0.6em;
+}
+
 #myresume {
   font-family: futuraBook;
   font-size: 20px;
@@ -1052,6 +1061,13 @@ body {
     padding-top: 2em;
     flex-direction: column;
   }
+
+  #mycredits {
+    text-align: left;
+    padding-top:60px;
+    font-size: 0.8em;
+  }
+
   footer {
     height: 8em;
   }
