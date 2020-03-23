@@ -4,16 +4,7 @@ jQuery(document).ready(function($){
 	// resize elements on window resize
 	$(window).resize(function() {
 		if ($('.article')[0]) {
-			var width = $('.container').width();
-			if (width > 1400) {
-				width = 1400;
-			}
-			$('.header-image').css({'width': width + 'px'});
-			$('.header-image').css({'margin-left': -width/2 + 'px'});
-			var height = width/2;
-			$('.article').css({'padding-bottom' : height + 100 + 'px'});
-			$('.container').clearQueue();
-			$('.container').animate({'top': height + 30 + 'px'}, 600);
+			setSizing();
 		} else {
 			resizeHoverText();
 		}
@@ -21,7 +12,7 @@ jQuery(document).ready(function($){
 
 	// parallaxing effect and shadow on nav and container
 	$(window).scroll(function(){
-		var fromTop = $(window).scrollTop();
+		var fromTop = $(document).scrollTop();
 		var docHeight = $(document).height() - $(window).height();
 		var imageMax = 1400;
 		var pieceNav = $('.piece-nav').offset().top;
@@ -54,6 +45,7 @@ jQuery(document).ready(function($){
 		//handles tab progress
 		var scrolled = (fromTop / docHeight) * 100;
 		$('#tab-progress').css({'width': scrolled + "%"});
+
 	});
 
 	// slide up onload
@@ -238,7 +230,7 @@ function setSizing() {
 	var height = width/2;
 	$('.header-image').css({"top": -height+"px"});
 	$('.header-image').animate({top: '0px' }, 600);
-	if (width < 1000) {
+	if ($(window).width() < 1367) {
 		$('.goback').css({
 			"border-width":"1px",
 			"position":"absolute",
@@ -250,5 +242,6 @@ function setSizing() {
 	}
 	$('.article').css({'padding-bottom' : height + 100 + 'px'});
 	$('.container').animate({'top': height + 30 + 'px'}, 600);
+	$('.container').css({'margin-bottom' : $(window).height()/4});
 
 }
