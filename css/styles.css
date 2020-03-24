@@ -1504,6 +1504,10 @@ a img {
   }
 }
 @media(max-width:768px) {
+  #landing-page {
+    background-attachment: scroll;
+  }
+  
   .container {
     margin: 0 15px;
   }
