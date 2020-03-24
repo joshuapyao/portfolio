@@ -102,7 +102,7 @@
           <figure data-aos="fade-up">
 						<img class="no-shadow" src="images/lucid/process.png" alt="The Design Process">
           </figure>
-          <p>This process led to the first version of Lucidchart’s CloudInsights. It also led to two new components in Lucid’s design system, <span class="highlight">components primarily focused for complex data-diagrams and scaled into other integrations</span> such as Salesforce or bambooHR integrations.</p>
+          <p>This process led to the first version of Lucidchart’s CloudInsights, which now has seven teams dedicated to its success. It also led to two new components in Lucid’s design system, <span class="highlight">components primarily focused for complex data-diagrams and scaled into other integrations</span> such as Salesforce or bambooHR integrations.</p>
         </div>
         <img data-aos="fade-up" class="no-shadow final-hero" src="images/lucid/new-integration.png" alt="The New Components">
 
@@ -289,30 +289,39 @@
         <p>I created multiple versions in the import modal and concept tested them with both users, my scrum team, and the UX team. Each one ran into problems.</p>
         <div class="split-block" data-aos="fade-up">
 					<div class="col-sm-6">
-						<a href="images/lucid/discovery-1.png" data-lightbox="process-7"><img src="images/lucid/discovery-1.png" alt="Account First Iteration"></a>
+						<img src="images/lucid/iteration-1.png" alt="Exploration 1">
 					</div>
 					<div class="col-sm-6">
             <p>Uses dropdowns to add multiple accounts. It gets messy fast, and has poor support for one of the three possible import types, IAM role. Also, the density made it hard for new users to understand what to do.</p>
 					</div>
-        </div>
+		</div>
+	</div>
+	<a href="images/lucid/discovery-1.png" data-lightbox="process-7"><img data-aos="fade-up" class="final-hero" src="images/lucid/discovery-1.png" alt="Account First Iteration"></a>
+	<div class="detailed">	
+		<div class="split-block" data-aos="fade-up">
+			<div class="col-sm-6">
+            	<p>Has users import accounts one at a time. Straightforward but takes an extremely long time, especially with a user could be importing five or more accounts. Visibility on the ability to import multiple accounts is poor as well.</p>
+			</div>
+			<div class="col-sm-6">
+            	<img src="images/lucid/iteration-2.png" alt="Exploration 2">
+			</div>
+		</div>
+	</div>
+	<a href="images/lucid/discovery-2.png" data-lightbox="process-8"><img data-aos="fade-up" class="final-hero" src="images/lucid/discovery-2.png" alt="One At a Time Iteration"></a>
+	<div class="detailed">
         <div class="split-block" data-aos="fade-up">
-					<div class="col-sm-6">
-            <p>Has users import accounts one at a time. Straightforward but takes an extremely long time, especially with a user could be importing five or more accounts. Visibility on the ability to import multiple accounts is poor as well.</p>
-					</div>
-					<div class="col-sm-6">
-            <a href="images/lucid/discovery-2.png" data-lightbox="process-8"><img src="images/lucid/discovery-2.png" alt="One At a Time Iteration"></a>
-					</div>
-        </div>
-        <div class="split-block" data-aos="fade-up">
-					<div class="col-sm-6">
-						<a href="images/lucid/discovery-3.png" data-lightbox="process-9"><img src="images/lucid/discovery-3.png" alt="Cross Account Role Priority Iteration"></a>
-					</div>
-					<div class="col-sm-6">
-						<p>Focuses on cross-account roles, the most popular import type. Has lots of potential in a more fluid flow, but also is hard for the user to understand that they’re adding accounts to a queue due to poor visibility.</p>
-					</div>
-        </div>
-
-        <p>From this exercise, it was clear the biggest issue was the multiple account import. There were problems in needing to:</p>
+			<div class="col-sm-6">
+				<img src="images/lucid/iteration-3.png" alt="Exploration 3">
+			</div>
+			<div class="col-sm-6">
+				<p>Focuses on cross-account roles, the most popular import type. Has lots of potential in a more fluid flow, but also is hard for the user to understand that they’re adding accounts to a queue due to poor visibility.</p>
+			</div>
+		</div>
+	</div>
+	<a href="images/lucid/discovery-3.png" data-lightbox="process-9"><img data-aos="fade-up" class="final-hero" src="images/lucid/discovery-3.png" alt="Cross Account Role Priority Iteration"></a>
+	<div class="detailed">
+		<br/>
+		<p>From this exercise, it was clear the biggest issue was the multiple account import. There were problems in needing to:</p>
         <ul>
           <li>Add multiple accounts</li>
           <li>Offer enough supporting information</li>
@@ -325,7 +334,7 @@
 
         <div class="split-block" data-aos="fade-up">
 					<div class="col-sm-6">
-						<img src="images/lucid/aws-import-slidedown.gif" alt="AWS Import Slidedown Animation">
+						<img class="shadow" src="images/lucid/aws-import-slidedown.gif" alt="AWS Import Slidedown Animation">
 					</div>
 					<div class="col-sm-6">
             <p>Through lots of iterations, I created a version that <span class="highlight">leverages motion</span> to communicate states to the user. It performed better, but there still was confusion caused due to all the screen switching.</p>
@@ -383,23 +392,27 @@
 					</div>
 				</div>
         <p>Through this exploration, I created a new modal that was built on the current small import modal and the principles.</p>
-
+		<a href="images/lucid/new-modal-1.png" data-lightbox="process-10"><img data-aos="fade-up" src="images/lucid/new-modal-1.png" alt="New Modal Page 1"></a>
         <div class="split-block" data-aos="fade-up">
 			<div class="col-sm-6 no-mobile">
-				<a href="images/lucid/new-modal-1.png" data-lightbox="process-10"><img src="images/lucid/new-modal-1.png" alt="New Modal Page 1"></a>
+				<ul>
+					<li>Twice the width of the old import modal</li>
+					<li>Left half for primary interactions, second half for secondary flows or supporting information</li>
+				</ul>
 			</div>
 			<div class="col-sm-6">
 				<ul>
-				<li>Twice the width of the old import modal</li>
-				<li>Left half for primary interactions, second half for secondary flows or supporting information</li>
 				<li>Modal to ensure the canvas is still safe, but large enough to demand full attention</li>
 				<li>Left vertical progress bar that doubles as navigation</li>
 				</ul>
 			</div>
-        </div>
-        <p>Due to this extension of the old design, I was able to cleanly implement my previous import flow design into it. The performance in usability tests was far better.</p>
-        <a href="images/lucid/modal-pages.png" data-lightbox="process-11"><img src="images/lucid/modal-pages.png" alt="Modal Pages Laid Out"></a>
-        <p>Overall, the design of this import flow performed extremely well amongst users and also impacted the product by giving a place to <span class="highlight">offer more informative and cohesive complex experiences within Lucidchart.</span> This modal was added to the design system and extended to other parts of the product.</p>
+		</div>
+		<p>Due to this extension of the old design, I was able to cleanly implement my previous import flow design into it. The performance in usability tests was far better.</p>
+	</div>
+	<a href="images/lucid/modal-pages.png" data-lightbox="process-11"><img data-aos="fade-up" class='final-hero' src="images/lucid/modal-pages.png" alt="Modal Pages Laid Out"></a>
+	<div class='detailed'>
+		<br/>
+		<p>Overall, the design of this import flow performed extremely well amongst users and also impacted the product by giving a place to <span class="highlight">offer more informative and cohesive complex experiences within Lucidchart.</span> This modal was added to the design system and extended to other parts of the product.</p>
         
         <a href="images/lucid/modal-in-product.png" data-lightbox="process-12"><img class="shadow" src="images/lucid/modal-in-product.png" alt="Modal in Product"></a>
         <p>A deeper exploration of the final design of the import flow can be found in the final design tab.</p>
