@@ -636,7 +636,7 @@ body {
 .left-line {
   border-left: 2px solid orange;
   padding-left: 8px;
-  font-size: 1em;
+  font-size: 0.9em;
   line-height: 2em;
   margin-top: -1.5em;
   margin-bottom: 3em;

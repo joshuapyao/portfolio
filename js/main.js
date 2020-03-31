@@ -1,9 +1,8 @@
 
 jQuery(document).ready(function($){
 
-
 	setSizing();
-	
+
 	// resize elements on window resize
 	$(window).resize(function() {
 		if ($('.article')[0]) {
@@ -133,7 +132,7 @@ function openPage(pageName, elmnt) {
   setTimeout(
 	  function() {
 		  $("#" + pageName).fadeIn(300);
-		  AOS.refresh();
+		  setTimeout(function(){AOS.refresh();},300);
 	}, 100);
 
   // Add the specific color to the button used to open the tab content and pause all videos on the leaving page
@@ -210,7 +209,7 @@ function openFinal() {
 function setColors() {
 	var color = $(".article").data("color");
 	var background = $(".article").data("background");
-	$('.highlight').css({"background-image":"linear-gradient(to right,#fff 50%,"+color+"66 50%)"});
+	$('.highlight').css({"background-image":"linear-gradient(to right,#fff 50%,"+color+"44 50%)"});
 	$('.article strong').css({'color':color});
 	$('.strong-underline').css({'background-color':color});
 	$('.left-line').css({'border-color':color});

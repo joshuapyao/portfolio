@@ -102,7 +102,7 @@
           <figure data-aos="fade-up">
 						<img class="no-shadow" src="images/lucid/process.png" alt="The Design Process">
           </figure>
-          <p>This process led to the first version of Lucidchart’s CloudInsights, which now has seven teams dedicated to its success. It also led to two new components in Lucid’s design system, <span class="highlight">components primarily focused for complex data-diagrams and scaled into other integrations</span> such as Salesforce or bambooHR integrations.</p>
+          <p>This process led to the first version of Lucidchart’s CloudInsights, which now has an additional three teams dedicated to its success. It also led to two new components in Lucid’s design system, <span class="highlight">components primarily focused for complex data-diagrams and scaled into other integrations</span> such as Salesforce or bambooHR integrations.</p>
         </div>
         <img data-aos="fade-up" class="no-shadow final-hero" src="images/lucid/new-integration.png" alt="The New Components">
 
@@ -222,6 +222,7 @@
 						<a href="images/lucid/persona-3.png" data-lightbox="process-5"><img class="shadow" src="images/lucid/persona-3.png" alt="Persona - IT Director"></a>
 					</div>
 					<div class="col-sm-6">
+						<p><strong>The IT Director</strong></p>
 						<p>Ryan doesn’t directly interact with the cloud, but he knows the importance of it and what tools best help his company. He’s primarily responsible if his company picks up a new tool or not. If so, transitions need to be smooth and benefits need to far outweigh the costs.</p>
 					</div>
         </div>
@@ -235,13 +236,91 @@
 					<li>When and why does the user use it?</li>
 					<li>How should it treat the user?</li>
 					<li>How does it scale across the product?</li>
-        </ul>
-        <p>To structure the design into phases and following other complex imports in the product, I split the design into two phases: the import flow and the on-canvas experience.</p>
+		</ul>
+        
+        <p>From user feedback in interviews and past integrations, users had a number of requests:</p>
+        <div class="indented-block" data-aos="fade-up">
+					<div class="flex-inline">
+						<div>
+							<p><strong>Line Control</strong></p>
+							<p class="left-line">Drawing lines between instances is one of the most important parts for communicating architecture diagrams.</p>
+						</div>
+					</div>
+					<div class="flex-inline">
+						<div>
+							<p><strong>Spacing</strong></p>
+							<p class="left-line">Tweaking spacing between instances as a whole make reduce lots of tedious movement.</p>
+						</div>
+					</div>
+					<div class="flex-inline">
+						<div>
+							<p><strong>Sorting and Grouping</strong></p>
+							<p class="left-line">How instances are sorted and grouped together is extremely important in identifying what’s most relevant.</p>
+						</div>
+					</div>
+					<div class="flex-inline">
+						<div>
+							<p><strong>Labels</strong></p>
+							<p class="left-line">Removing labels from unnecessary object would reduce word clutter in presentations.</p>
+						</div>
+          </div>
+          <div class="flex-inline">
+						<div>
+							<p><strong>Overall Layout</strong></p>
+							<p class="left-line">Quickly switching the overall layout would simplify presentations to both directors and engineers immensely.</p>
+						</div>
+					</div>
+					<div class="flex-inline">
+						<div>
+							<p><strong>Data Refresh</strong></p>
+							<p class="left-line">Being able to refresh would make it useful to not need to constantly import a new architecture each time it was updated.</p>
+						</div>
+					</div>
+        </div>
+        
+        <p>These features were helpful, but it came from the perception of users looking to simply augment their current flow. <span class="highlight">We wanted to re-engineer their approach entirely.</span></p>
+        <p>I lead this conversation by focusing on the entire current user journey and looked deeper at other applications that our users used. My goal was to see how Lucidchart could become the single solution for their needs.</p>
+		<p>I worked with my PM and the team tech lead to design a solution: <span class="highlight">an end-to-end flow where users could build, monitor, and present all from Lucidchart.</span></p>
+        <img src="images/lucid/before.png" alt="The Before Flow">
+        <img src="images/lucid/after.png" alt="The After Flow">
+
+        <p>To make this possible, we included a number of features that would serve to support this goal.</p>
+        <div class="indented-block" data-aos="fade-up">
+			<div class="flex-inline">
+				<div>
+					<p><strong>Edit Data</strong></p>
+					<p class="left-line">Users could edit the data on instances and save it, enabling them to plan a new version of their architecture.</p>
+				</div>
+			</div>
+			<div class="flex-inline">
+				<div>
+					<p><strong>Monitoring</strong></p>
+					<p class="left-line">Users can specify rules on what instances they want to highlight, so they can easily identify problem areas.</p>
+				</div>
+			</div>
+			<div class="flex-inline">
+				<div>
+					<p><strong>Saving Views</strong></p>
+					<p class="left-line">Users can create and save layouts so they can quickly switch views from one that is aimed towards directors, one for engineers, or more.</p>
+				</div>
+			</div>
+			<div class="flex-inline">
+				<div>
+					<p><strong>Export Terraform</strong></p>
+					<p class="left-line">Users can export their created layout to upload onto their AWS server.</p>
+				</div>
+			</div>
+        </div>
+
+        <p>I created videos and interactive mocks of these news features, which my PM took on sales tests to see whether this cohesive experience appealed to users. <span class="highlight">The results were outstanding.</span></p>
+
+        <p>With the features specified, I then began designing the user experience within the product, I split the design into two phases: the import flow and the on-canvas experience.</p>
         <img data-aos="fade-up" src="images/lucid/two-experiences.png" alt="Two Experiences: Import and On-Canvas">
 
-        <p>Despite splitting them up, the primary goal was the same: <span class="highlight">to offer the most powerful, cohesive experience where users can consistently return to manage and communicate their architecture.</span></p>
         <p>From this point on, I worked on the import flow and the on-canvas experience in parallel. However, to keep things clear, I’ll discuss it in order of how it appears to the user: import flow then on-canvas experience.</p>
 
+		<br/>
+		<br/>
         <h2>THE IMPORT FLOW</h2>
         <p>The current import flow allowed for users to import their account through three different methods, choose a few options, and get it on the canvas.</p>
         <img data-aos="fade-up" src="images/lucid/old-flow.png" alt="Old Import Modal Flow">
@@ -415,109 +494,35 @@
 		<p>Overall, the design of this import flow performed extremely well amongst users and also impacted the product by giving a place to <span class="highlight">offer more informative and cohesive complex experiences within Lucidchart.</span> This modal was added to the design system and extended to other parts of the product.</p>
         
         <a href="images/lucid/modal-in-product.png" data-lightbox="process-12"><img class="shadow" src="images/lucid/modal-in-product.png" alt="Modal in Product"></a>
-        <p>A deeper exploration of the final design of the import flow can be found in the final design tab.</p>
-
+		<br/>
+		<br/>
         <h2>THE LEFT PANEL</h2>
         <p>Upon importing their architecture into Lucidchart, users previously would be greeted with the diagram on the canvas, with this left panel overlapping the default left panel to edit the architecture.</p>
         <a href="images/lucid/old-integration.png" data-lightbox="process-13"><img class="shadow" src="images/lucid/old-integration.png" alt="Old Left Panel Integration"></a>
         <p>In Lucidchart, the left panel is the primary interaction point where users can drag shapes onto their canvas. If they’re interacting with a complex data-linked shape, like an organization chart, the left panel transforms into a panel for manipulating the shape.</p>
         <p><span class="highlight">The new AWS architecture import needed its own left panel.</span> This left panel would be the point where users could control their diagram.</p>
-        
-        <p>I first began by listing all the requested features highly rated by users and listing them all down:</p>
-        <div class="indented-block" data-aos="fade-up">
-					<div class="flex-inline">
-						<div>
-							<p><strong>Line Control</strong></p>
-							<p class="left-line">Drawing lines between instances is one of the most important parts for communicating architecture diagrams.</p>
-						</div>
-					</div>
-					<div class="flex-inline">
-						<div>
-							<p><strong>Spacing</strong></p>
-							<p class="left-line">Tweaking spacing between instances as a whole make reduce lots of tedious movement.</p>
-						</div>
-					</div>
-					<div class="flex-inline">
-						<div>
-							<p><strong>Sorting and Grouping</strong></p>
-							<p class="left-line">How instances are sorted and grouped together is extremely important in identifying what’s most relevant.</p>
-						</div>
-					</div>
-					<div class="flex-inline">
-						<div>
-							<p><strong>Labels</strong></p>
-							<p class="left-line">Removing labels from unnecessary object would reduce word clutter in presentations.</p>
-						</div>
-          </div>
-          <div class="flex-inline">
-						<div>
-							<p><strong>Overall Layout</strong></p>
-							<p class="left-line">Quickly switching the overall layout would simplify presentations to both directors and engineers immensely.</p>
-						</div>
-					</div>
-					<div class="flex-inline">
-						<div>
-							<p><strong>Data Refresh</strong></p>
-							<p class="left-line">Being able to refresh would make it useful to not need to constantly import a new architecture each time it was updated.</p>
-						</div>
-					</div>
-        </div>
-        
-        <p>At this point, I realized I had lost sight of the major goal of restructuring the approach of users to cloud diagrams entirely. Though this data was valuable in understanding goals, it came from the perception of users that this would just augment their current flow. <span class="highlight">We wanted to re-engineer their approach entirely.</span></p>
-        <p>I lead this conversation by focusing on the entire current user journey, pain points with Lucidchart’s current solution, and looked deeper at other applications that our users used. I worked with my PM and the team tech lead to design a solution where users could use Lucidchart for all their needs: <span class="highlight">an end-to-end flow where users could build, monitor, and present all from Lucidchart.</span></p>
-        <p>Working with the PM and tech lead for this part was particularly helpful, as I could design while considering business perspectives, how things extend to other parts of the product, and the feasibility of features.</p>
-        <img src="images/lucid/before.png" alt="The Before Flow">
-        <img src="images/lucid/after.png" alt="The After Flow">
-
-        <p>To make this possible, we included a number of features that would serve to support this goal.</p>
-        <div class="indented-block" data-aos="fade-up">
-					<div class="flex-inline">
-						<div>
-							<p><strong>Edit Data</strong></p>
-							<p class="left-line">Users could edit the data on instances and save it, enabling them to plan a new version of their architecture.</p>
-						</div>
-					</div>
-					<div class="flex-inline">
-						<div>
-							<p><strong>Monitoring</strong></p>
-							<p class="left-line">Users can specify rules on what instances they want to highlight, so they can easily identify problem areas.</p>
-						</div>
-					</div>
-					<div class="flex-inline">
-						<div>
-							<p><strong>Saving Views</strong></p>
-							<p class="left-line">Users can create and save layouts so they can quickly switch views from one that is aimed towards directors, one for engineers, or more.</p>
-						</div>
-          </div>
-          <div class="flex-inline">
-						<div>
-							<p><strong>Export Terraform</strong></p>
-							<p class="left-line">Users can export their created layout to upload onto their AWS server.</p>
-						</div>
-					</div>
-        </div>
+  
         <div class="split-block" data-aos="fade-up">
-					<div class="col-sm-6">
-						<a href="images/lucid/old-left-panel.png" data-lightbox="process-14"><img class="shadow" src="images/lucid/old-left-panel.png" alt="First Left Panel Integration"></a>
-					</div>
-					<div class="col-sm-6">
-            <p>Following the structure of the left panel from other integrations, I quickly created a left panel that housed the features we needed.</p>
-					</div>
+			<div class="col-sm-6">
+				<a href="images/lucid/old-left-panel.png" data-lightbox="process-14"><img class="shadow" src="images/lucid/old-left-panel.png" alt="First Left Panel Integration"></a>
+			</div>
+			<div class="col-sm-6">
+				<p>Following the structure of the left panel from other integrations, I attempted to make a left panel that would serve the needs of CloudInsights.</p>
+			</div>
         </div>
 
-        <p>I created videos and interactive mocks with this left panel, which my PM took on sales tests to see whether this cohesive experience appealed to users. <span class="highlight">The results were heavily positive.</span></p>
-        <p>As I was building out the left panel, however, I noticed that the given menus became jumbled and messy. With multiple functionalities, <span class="highlight">menus became just drawers where features were stuffed in for convenience.</span></p>
+        <p>As I was building it out, however, I noticed that the given menus became jumbled and messy. With multiple functionalities, <span class="highlight">menus became just drawers where features were stuffed in for convenience.</span></p>
         <div class="split-block" data-aos="fade-up">
-					<div class="col-sm-6">
-						<img src="images/lucid/old-ia.png" alt="Old Information Architecture">
-					</div>
-					<div class="col-sm-6">
-            <p>A massive toolset that becomes confusing. On user testing, people found it extremely difficult to find the right tool to accomplish their goal.</p>
-					</div>
+			<div class="col-sm-6">
+				<img src="images/lucid/old-ia.png" alt="Old Information Architecture">
+			</div>
+			<div class="col-sm-6">
+				<p>A massive toolset that becomes confusing. On user testing, people found it extremely difficult to find the right tool to accomplish their goal.</p>
+			</div>
         </div>
         <p>I worked through this information architecture and <span class="highlight">conducted card sorting sessions with users.</span> From this exercise, it became apparent that there was a much better way for sorting the features.</p>
 
-        <p>Here, for our design, there was a major discovery. <span class="highlight">With features sorted by purposes, it became much clearer and offered a cleaner user flow based on their goals.</span> Although it seems obvious in hindsight, our expanded feature that allows for multiple flows and goals made more sense to be separated by just that.</p>
+        <p>Here, for our design, there was a major discovery. With features sorted by <span class="highlight">purposes or intents rather than function</span>, it became clearer and offered a cleaner user flow based on their goals. With the expanded set of features that allows for multiple flows and goals, it made sense for features to be sorted by that.</p>
         <div class="video-wrapper">
           <video autoplay muted playsinline loop>
             <source src="images/lucid/transform-ia.webm" type="video/webm" />
@@ -528,50 +533,43 @@
         <p>However, this separation could not exist in just menus. <span class="highlight">Detailed interactions and supporting different cognitive states were necessary and required a deeper experience than dropdown menus.</span></p>
         <p>Again, I established design principles for the left panel to ensure as I redesigned the left panel, I wasn’t breaking other cases.</p>
         <div class="indented-block" data-aos="fade-up">
-					<div class="flex-inline">
-						<img src="images/lucid/goal-oriented.svg" class="principle-icon">
-						<div>
-							<p><strong>Goal-Oriented</strong></p>
-							<p class="left-line">Since users come in to accomplish certain high-level goals, features should be organized by goals.</p>
-						</div>
-					</div>
-					<div class="flex-inline">
-						<img src="images/lucid/functionality.svg" class="principle-icon">
-						<div>
-							<p><strong>Functionality</strong></p>
-							<p class="left-line">The left panel should bring functionality and match 1:1 with what users see on the canvas.</p>
-						</div>
-					</div>
-					<div class="flex-inline">
-						<img src="images/lucid/structured.svg" class="principle-icon">
-						<div>
-							<p><strong>Structured</strong></p>
-							<p class="left-line">Actions relevant to a goal should live under it. Higher level tasks spanning multiple goals lie higher.</p>
-						</div>
-					</div>
-					<div class="flex-inline">
-						<img src="images/lucid/informative.svg" class="principle-icon">
-						<div>
-							<p><strong>Informative</strong></p>
-							<p class="left-line">The state of the panel should reflect where the user is, and aid in further navigation.</p>
-						</div>
-					</div>
-					<div class="flex-inline">
-						<img src="images/lucid/flexible.svg" class="principle-icon">
-						<div>
-							<p><strong>Flexible</strong></p>
-							<p class="left-line">Must be capable of meeting the demands of other parts of the product ecosystem.</p>
-						</div>
-					</div>
-        </div>
-        <div class="split-block" data-aos="fade-up">
-					<div class="col-sm-6">
-            <p>I worked with other UX designers on various teams, resulting in <span class="highlight">the birth of the tabbed left panel.</span></p>
-					</div>
-					<div class="col-sm-6">
-            <a href="images/lucid/new-panel-1.png" data-lightbox="process-15"><img class="shadow" src="images/lucid/new-panel-1.png" alt="Left Panel Explore"></a>
-					</div>
-        </div>
+			<div class="flex-inline">
+				<img src="images/lucid/goal-oriented.svg" class="principle-icon">
+				<div>
+					<p><strong>Goal-Oriented</strong></p>
+					<p class="left-line">Since users come in to accomplish certain high-level goals, features should be organized by goals.</p>
+				</div>
+			</div>
+			<div class="flex-inline">
+				<img src="images/lucid/functionality.svg" class="principle-icon">
+				<div>
+					<p><strong>Functionality</strong></p>
+					<p class="left-line">The left panel should bring functionality and match 1:1 with what users see on the canvas.</p>
+				</div>
+			</div>
+			<div class="flex-inline">
+				<img src="images/lucid/structured.svg" class="principle-icon">
+				<div>
+					<p><strong>Structured</strong></p>
+					<p class="left-line">Actions relevant to a goal should live under it. Higher level tasks spanning multiple goals lie higher.</p>
+				</div>
+			</div>
+			<div class="flex-inline">
+				<img src="images/lucid/informative.svg" class="principle-icon">
+				<div>
+					<p><strong>Informative</strong></p>
+					<p class="left-line">The state of the panel should reflect where the user is, and aid in further navigation.</p>
+				</div>
+			</div>
+			<div class="flex-inline">
+				<img src="images/lucid/flexible.svg" class="principle-icon">
+				<div>
+					<p><strong>Flexible</strong></p>
+					<p class="left-line">Must be capable of meeting the demands of other parts of the product ecosystem.</p>
+				</div>
+			</div>
+		</div>
+		<p>I began exploring and moved towards tabs as it closely matched the principles. This resulted in <span class="highlight">the birth of the tabbed left panel.</span></p>
         
         <p>This underwent lots of iterations while I worked with other designers at Lucid and also tested with users.</p>
         <div class="split-block" data-aos="fade-up">
@@ -579,68 +577,34 @@
 						<a href="images/lucid/left-panel-iteration1.png" data-lightbox="process-16"><img class="shadow" src="images/lucid/left-panel-iteration1.png" alt="Left Panel Iteration 1"></a>
 					</div>
 					<div class="col-sm-6">
-            <p>It began with two tabs, but users found the “Design” tab confusing and split in purposes. They also found it hard to accomplish higher level goals, such as refreshing their architecture.</p>
+            <p>It began with two tabs, but users found the “Design” tab confusing and split in purposes. They also found it hard to accomplish higher level goals, such as refreshing their architecture. However, the tab structure made what was presented much cleaner and easier to find tools related to their goals.</p>
 					</div>
         </div>
         <div class="split-block" data-aos="fade-up">
-					<div class="col-sm-6">
-            <p>With three tabs, users found it a little easier to grasp the goal of each tab, but still had difficulty in refreshing their architecture as well as navigating through pages of their diagram.</p>
-					</div>
-					<div class="col-sm-6">
-            <a href="images/lucid/left-panel-iteration2.png" data-lightbox="process-17"><img class="shadow" src="images/lucid/left-panel-iteration2.png" alt="Left Panel Iteration 2"></a>
-					</div>
-        </div>
-        <div class="split-block" data-aos="fade-up">
-					<div class="col-sm-6">
-						<a href="images/lucid/left-panel-iteration3.png" data-lightbox="process-18"><img class="shadow" src="images/lucid/left-panel-iteration3.png" alt="Left Panel Iteration 3"></a>
-					</div>
-					<div class="col-sm-6">
-						<p>Here, the refresh was a banner that offered more information. It also was able to switch through high-level containers, such as accounts, through the top title bar. This was particularly helpful for teams working with other parts of the product.</p>
-					</div>
-        </div>
-        <p>Finally, I created a final iteration that held up extremely well under testing, where all users were able to accomplish all of their goals.</p>
+			<div class="col-sm-6">
+            	<p>With three tabs, users found it a little easier to grasp the goal of each tab, but still had difficulty in using the left panel as navigation through pages of their diagram.</p>
+			</div>
+			<div class="col-sm-6">
+            	<a href="images/lucid/left-panel-iteration2.png" data-lightbox="process-17"><img class="shadow" src="images/lucid/left-panel-iteration2.png" alt="Left Panel Iteration 2"></a>
+			</div>
+		</div>
+		<div class="split-block" data-aos="fade-up">
+			<div class="col-sm-6">
+				<a href="images/lucid/new-panel-1.png" data-lightbox="process-15"><img class="shadow" src="images/lucid/new-panel-1.png" alt="Left Panel Explore"></a>
+			</div>
+			<div class="col-sm-6">
+				<p>In the final iteration the refresh was a banner that offered more information. It also was able to switch through high-level containers, such as accounts, through the top title bar. <span class="highlight">This was particularly helpful for teams working with other parts of the product.</span></p>
+			</div>
+		</div>
 
-        <div class="indented-block" data-aos="fade-up">
-					<div class="flex-inline">
-						<div>
-							<p><strong>Information Architecture</strong></p>
-							<p class="left-line">Tabs create a cleaner architecture, with functionality organized by user goals/intents.</p>
-						</div>
-					</div>
-					<div class="flex-inline">
-						<div>
-							<p><strong>Navigation</strong></p>
-							<p class="left-line">Clarity on what page of the generator the user is on, and also a cleaner way to navigate between pages.</p>
-						</div>
-					</div>
-					<div class="flex-inline">
-						<div>
-							<p><strong>Refresh</strong></p>
-							<p class="left-line">Brings clear awareness of the up-to-date status as well as acting as a refresh CTA.</p>
-						</div>
-          </div>
-          <div class="flex-inline">
-						<div>
-							<p><strong>Perspectives</strong></p>
-							<p class="left-line">Save and reuse design presets for easily switching between different perspectives.</p>
-						</div>
-          </div>
-          <div class="flex-inline">
-						<div>
-							<p><strong>Build</strong></p>
-							<p class="left-line">Add data-driven shapes that update their architecture, feeding back into their live architecture.</p>
-						</div>
-          </div>
-          <div class="flex-inline">
-						<div>
-							<p><strong>Clarity</strong></p>
-							<p class="left-line">Bringing out functionality from arbitrary “drawers” and putting them where they feel integrated.</p>
-						</div>
-					</div>
-        </div>
-        <p>The end result was a more powerful “task-oriented” panel that presents information through user discovery and allows for “Perspectives”. This left panel was added to the design system and extended to other parts of the product.</p>
-        <a href="images/lucid/aws-final.png" data-lightbox="process-19"><img src="images/lucid/aws-final.png" alt="AWS Final Integration"></a>
-        <p>A deeper exploration of the final design of the left panel can be found in the final design tab.</p>
+        <p>The final iteration was one that held up extremely well under testing, where all users were able to accomplish all of their goals.</p>
+		</div>
+		<a href="images/lucid/the-breakdown.png" data-lightbox="process-20"><img class="final-hero" src="images/lucid/the-breakdown.png" data-aos="fade-up" alt="The Breakdown Left Panels"></a>
+		<div class="detailed">
+		<p>The end result was a more powerful “task-oriented” panel that presents information through user discovery and allows for “Perspectives”. This left panel was added to the design system and extended to other parts of the product.</p>
+		</div>
+		<a href="images/lucid/aws-final.png" data-lightbox="process-19"><img class="final-hero" data-aos="fade-up" style="padding:5%" src="images/lucid/aws-final.png" alt="AWS Final Integration"></a>
+	   <div class="detailed">
 
         <h2>BRINGING IT ALL BACK</h2>
         <p><span class="highlight">With the design of the new import modal and left panel, I was able to work with my team to design the AWS import experience, as well as add value to the rest of the company.</span></p> 
