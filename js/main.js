@@ -1,6 +1,9 @@
 
 jQuery(document).ready(function($){
 
+
+	setSizing();
+	
 	// resize elements on window resize
 	$(window).resize(function() {
 		if ($('.article')[0]) {
@@ -50,7 +53,6 @@ jQuery(document).ready(function($){
 
 	// slide up onload
 	setColors();
-	setSizing();
 	AOS.init();
 
 	// smooth scroll for mobile
@@ -131,6 +133,7 @@ function openPage(pageName, elmnt) {
   setTimeout(
 	  function() {
 		  $("#" + pageName).fadeIn(300);
+		  AOS.refresh();
 	}, 100);
 
   // Add the specific color to the button used to open the tab content and pause all videos on the leaving page
@@ -230,15 +233,18 @@ function setSizing() {
 	var height = width/2;
 	$('.header-image').css({"top": -height+"px"});
 	$('.header-image').animate({top: '0px' }, 600);
-	if ($(window).width() < 1367) {
+	if ($(window).width() < 1380) {
 		$('.goback').css({
-			"border-width":"1px",
 			"position":"absolute",
 			"margin-left":$('.container').css("marginLeft")
 		});
 		$('.goback').animate({"top": $('.header-image').height() - 30 + 'px'}, 600);
 	} else {
 		$('.goback').animate({top: '5%'}, 600);
+		$('.goback').css({
+			"position":"fixed",
+			"margin-left": "1em"
+		});
 	}
 	$('.article').css({'padding-bottom' : height + 100 + 'px'});
 	$('.container').animate({'top': height + 30 + 'px'}, 600);

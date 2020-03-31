@@ -226,7 +226,7 @@ body {
 }
 
 .carousel-inner {
-  overflow-y: scroll;
+  overflow-y: hidden;
   /* for compatible browsers */
   -webkit-overflow-scrolling: touch;
 }
@@ -253,7 +253,7 @@ body {
 }
 
 .large-caption {
-  color: #B14B58; 
+  color: #D14D61; 
   font-size: 4em;
   font-weight: 700;
   text-shadow: none;
@@ -485,6 +485,7 @@ body {
   display: block;
   float: left;
   opacity: 1;
+  border: 1.6px solid #eeeeee;
 }
 
 .modal-content {
@@ -635,9 +636,9 @@ body {
 .left-line {
   border-left: 2px solid orange;
   padding-left: 8px;
-  font-size: 0.8em;
+  font-size: 1em;
   line-height: 2em;
-  margin-top: -2em;
+  margin-top: -1.5em;
   margin-bottom: 3em;
 }
 
@@ -668,7 +669,6 @@ body {
   width: 2em;
   margin: 0;
   margin-right: 1em;
-  margin-top: 0.5em;
 }
 
 .final-hero {
@@ -853,7 +853,7 @@ body {
   z-index: 1020;
   top: -500px;
   margin-left: 1em;
-  border-width: 2px;
+  border-width: 1px;
   display: flex;
   align-items: center;
 }
@@ -1054,9 +1054,10 @@ body {
 }
 
 @media only screen and (max-width: 900px) {
-body {
-	font-size: 12px;
-	}
+  /*body {
+	  font-size: 12px;
+  }*/
+  
   #myinfo {
     padding-top: 2em;
     flex-direction: column;
@@ -1151,7 +1152,7 @@ a img {
   padding: 1.5em;
   margin-left: auto;
   margin-right: auto;
-  max-width: 2000px;
+  max-width: 1500px;
 }
 .works a img {
   pointer-events: auto;
@@ -1856,7 +1857,7 @@ nav[data-toggle=toc] .nav .nav>.active>a {
 
 #tab-progress {
   height: 10px;
-  width: 10%;
+  width: 0%;
   position: relative;
   top: -2px;
   margin: 0;

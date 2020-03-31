@@ -11,6 +11,7 @@ jQuery(document).ready(function($){
 		// resize elements on window resize
 		$(window).resize(function() {
 			resizeHoverText();
+			AOS.refresh();
 		});
 
 	// handles outside clicking for dropdown menu
