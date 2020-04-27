@@ -58,7 +58,7 @@
 html,body {
   height: 100%;
   width: 100%;
-  font-size: 16px;
+  font-size: 18px;
   font-family: futuraBook, sans-serif;
   color: #111111;
   -webkit-font-smoothing: auto;
@@ -78,6 +78,15 @@ body {
 .vent { background-color:#469C77; } 
 .homedepot { background-color: #C0D6DF; }
 .lucid { background-color: #E38D3C; } 
+
+::selection {
+  background: #111111;
+  color: #fefefe; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #111111;
+  color: #fefefe; /* Gecko Browsers */
+}
 
 .carousel {
   -webkit-transition: height 0.3s;
@@ -199,6 +208,12 @@ body {
   cursor: pointer;
 }
 
+.down-line {
+  -webkit-transition: height 0.3s ease-out;
+  -ms-transition: height 0.3s ease-out;
+  transition: height 0.3s ease-out;
+}
+
 .down-cta p {
   font-weight: 200;
   font-size: 1.2em;
@@ -217,12 +232,12 @@ body {
   mix-blend-mode: exclusion;
 }
 
-.down-cta:hover p {
-  color: #B14B58;
+.down-cta:hover {
+  opacity: 0.7;
 }
 
 .down-cta:hover .down-line {
-  background-color: #B14B58;
+  height: 5em;
 }
 
 .carousel-inner {
@@ -253,7 +268,8 @@ body {
 }
 
 .large-caption {
-  color: #D14D61; 
+  color: #fefefe;
+  mix-blend-mode: exclusion;
   font-size: 4em;
   font-weight: 700;
   text-shadow: none;
@@ -412,14 +428,14 @@ body {
   font-weight: 700;
 }
 
-.row.text-center p span {
+.row.text-center p .nav-object {
   margin-left: 15%;
   margin-right: 15%;
   font-size: 2em;
   line-height: 1em;
 }
 
-.row.text-center p span .subtext {
+.row.text-center p .subtext {
   font-size: 0.5em;
   font-family: Halant;
   font-weight: 200;
@@ -427,17 +443,22 @@ body {
   pointer-events: none;
 }
 
-.row.text-center p span:hover {
+.row.text-center p .nav-object:hover {
   cursor: pointer;
 }
 
-.row.text-center p span:hover:not(.underline) {
+.row.text-center p .nav-object:hover:not(.underline) {
   opacity: 0.6;
 }
 
-.row.text-center p .underline {
-  color: #B14B58;
+.row.text-center p .underline .nav-text {
+  text-decoration: underline;
 }
+
+.underline.nav-text {
+  text-decoration: underline;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -918,7 +939,7 @@ body {
   }
 
   .detailed {
-    width: 80%;
+    width: 90%;
   }
 
   .tablink {
@@ -1133,7 +1154,7 @@ a img {
   padding-left: 0;
   padding-right: 0;
   position: relative;
-  background-color: white;
+  background-color: #fefefe;
   max-width: 1400px;
   top: 100vh;
 }
@@ -1828,7 +1849,7 @@ nav[data-toggle=toc] .nav .nav>.active>a {
   position: relative;
   overflow: hidden;
   color: #111111;
-  background-color: #ffffff;
+  background-color: #fefefe;
   border: none;
   outline: none;
   cursor: pointer;
@@ -1871,7 +1892,8 @@ nav[data-toggle=toc] .nav .nav>.active>a {
   position: sticky;
   top: 0;
   z-index: 999;
-  background-color: #fff;
+  background-color: #fefefe;
+  opacity: 0.9;
 }
 
 /* Style the tab content (and add height:100% for full page content) */

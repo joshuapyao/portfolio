@@ -105,7 +105,7 @@ jQuery(document).ready(function($){
 	});
 	
 	// handles underlines in navigation and also scrolls up, but only on index page, also resets down cta
-	$(".row p span").click(function(event) {
+	$(".row p .nav-object").click(function(event) {
 		$('.dd-menu').css({'height':''});
 		$('.dd-menu div').fadeOut(100);
 		if ($(this).is('#portfo')) {
@@ -113,17 +113,16 @@ jQuery(document).ready(function($){
 		} else {
 			$('html, body').animate({ scrollTop: "0" });
 		}
-		$(".row p span").removeClass("underline");
-		$(".row p span .subtext").removeClass("underline");
+		$(".row p .nav-object").removeClass("underline");
+		$(".row p .nav-object .nav-text").removeClass("underline");
 		$(event.target).addClass('underline');
-		$(event.target.querySelector('.subtext')).addClass('underline');
 	});
 
 	// handles the beginning words
 	var titles = ["a video editor", "a photographer", "TIME's Person of the Year 2006", "former Youngest Person in the World", "a bubble-tea addict", "a dog owner", "a gamer", "a Pan-Asia traveler", "a logo designer", "a programmer", "an extreme foodie"];
 	titles = shuffle(titles);
 	var counter = 0;
-	var inst = setInterval(change, 1700);
+	var inst = setInterval(change, 2000);
 	function change() {
 		$("#moonlight").animate({'opacity': 0}, 400, function() {
 			$(this).html(titles[counter] + ".").animate({'opacity': 1}, 300);
