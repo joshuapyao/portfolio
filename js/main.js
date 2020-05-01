@@ -27,20 +27,29 @@ jQuery(document).ready(function($){
 			$('.header-image').css({'opacity': "0"});
 		}
 
+		if (fromTop >= $('.container').offset().top - 50) {
+			$('body').css({'background-color':'#fefefe'});
+		} else {
+			var bg = $(".article").data("background");
+			$('body').css({'background-color': bg});
+		}
+
 		if (fromTop >= (pieceNav-25)) {
 			$('.piece-nav').css({'box-shadow':'0px 4px 6px -6px #888'});
-			$('.tablink').css({'font-size':'0.9em'});
+			$('.tablink').css({'font-size':'0.8em'});
 			$('#tab-selector').css({'height':'6px'});
 			$('#tab-progress').css({'height':'6px'});
+			$('.close-btn').css({'top': '10px'});
 		} else {
 			$('.piece-nav').css({'box-shadow':'none'});
-			$('.tablink').css({'font-size':'1em'});
+			$('.tablink').css({'font-size':'0.9em'});
 			$('#tab-selector').css({'height':'10px'});
 			$('#tab-progress').css({'height':'10px'});
+			$('.close-btn').css({'top':'5%'});
 		}
 
 		if (fromTop >= (pieceNav/2-pieceNav/3)) {
-			$('.container').css({'box-shadow':'0px 2px 100px rgba(0,0,0,0.35'});
+			$('.container').css({'box-shadow':'0px 2px 60px rgba(0,0,0,0.35'});
 		} else {
 			$('.container').css({'box-shadow':'0px 2px 6px rgba(0,0,0,0.25'});
 		}
@@ -136,10 +145,10 @@ function openPage(pageName, elmnt) {
 	}, 100);
 
   // Add the specific color to the button used to open the tab content and pause all videos on the leaving page
-	elmnt.style.fontWeight = '700';
-	elmnt.style.color = color;
+	elmnt.style.fontWeight = '600';
+	//elmnt.style.color = color;
 	if (pageName == 'Final') {
-		$('#tab-selector').animate({left: '66%'}, 200);
+		$('#tab-selector').animate({left: '65.2%'}, 200);
 		
 		// pause all on overview and process and play all on Final
 		$("#Final video").each(function() {
@@ -154,7 +163,7 @@ function openPage(pageName, elmnt) {
 			$(this).get(0).pause();
 		});
 	} else if (pageName == 'Process') {
-		$('#tab-selector').animate({left: '35%'}, 200);
+		$('#tab-selector').animate({left: '32.6%'}, 200);
 				
 		// pause all on Final and play all on Process
 		$("#Process video").each(function() {
@@ -169,7 +178,7 @@ function openPage(pageName, elmnt) {
 			$(this).get(0).pause();
 		});
 	} else {
-		$('#tab-selector').animate({left: '5%'}, 200);
+		$('#tab-selector').animate({left: '0%'}, 200);
 
 		$("#Overview video").each(function() {
 			if ($(this).get(0).autoplay == true) {
@@ -206,6 +215,24 @@ function openFinal() {
 	document.getElementById("final-btn").click();
 }
 
+function closeAnimate() {
+	var width = $('.container').width();
+	if (width > 1400) { width = 1400;}
+	var height = width / 2;
+	$('.header-image').animate({top: -height+'px', opacity: 0}, 300);
+	$('body').css({'background-color': '#fefefe'});
+	$('.container').animate({top: $('.container').height(), opacity: 0}, 300);
+	$('.close-btn').animate({top: height, opacity: 0}, 300);
+	$('.next-tab').animate({
+		top: height, 
+		opacity: 0
+	}, {duration:400, complete:function(){
+		setTimeout(function() {
+			window.location.href = 'index.html#portfolio';
+		}, 300);
+	}});
+}
+
 function setColors() {
 	var color = $(".article").data("color");
 	var background = $(".article").data("background");
@@ -218,8 +245,8 @@ function setColors() {
 	$('.bg-match').css({'background-color': background});
 	$('.headliner').css({'color':color});
 	$('.prototype').css({'background-color': background});
-	$('#tab-selector').css({'border-color': color});
-	$('#tab-progress').css({'background-color': color});
+	//$('#tab-selector').css({'border-color': color});
+	//$('#tab-progress').css({'background-color': color});
 }
 
 function setSizing() {
@@ -232,19 +259,7 @@ function setSizing() {
 	var height = width/2;
 	$('.header-image').css({"top": -height+"px"});
 	$('.header-image').animate({top: '0px' }, 600);
-	if ($(window).width() < 1380) {
-		$('.goback').css({
-			"position":"absolute",
-			"margin-left":$('.container').css("marginLeft")
-		});
-		$('.goback').animate({"top": $('.header-image').height() - 30 + 'px'}, 600);
-	} else {
-		$('.goback').animate({top: '5%'}, 600);
-		$('.goback').css({
-			"position":"fixed",
-			"margin-left": "1em"
-		});
-	}
+	$('.close-btn').css({"margin-right":$('.container').css("marginRight")});
 	$('.article').css({'padding-bottom' : height + 100 + 'px'});
 	$('.container').animate({'top': height + 30 + 'px'}, 600);
 	$('.container').css({'margin-bottom' : $(window).height()/4});

@@ -56,7 +56,6 @@
 }
 
 html,body {
-  height: 100%;
   width: 100%;
   font-size: 18px;
   font-family: futuraBook, sans-serif;
@@ -360,7 +359,7 @@ body {
 .downloadbtn:hover svg {
   fill: #555555;
 }
-
+/*
 .light {
   border-color: #fff;
   color: #fff;
@@ -369,7 +368,7 @@ body {
 .light svg {
   fill: #fff;
 }
-
+*/
 
 .prototype {
   padding-top: 30px;
@@ -541,8 +540,8 @@ body {
   letter-spacing: 0.02em;
   margin-left: auto;
   margin-right: auto;
-  width: 65%;
-  color: #555555;
+  width: 60%;
+  color: #222222;
   margin-left:auto;
   margin-right:auto;
 }
@@ -869,19 +868,17 @@ body {
   height: 100vh;
 }
 
-.goback {
+.close-btn {
   position: fixed;
-  z-index: 1020;
-  top: -500px;
-  margin-left: 1em;
-  border-width: 1px;
-  display: flex;
-  align-items: center;
+  right: 2%;
+  z-index: 999;
+  top: 10px;
+  color: #111111;
 }
 
-.goback svg {
-  height: 20px;
-  padding-right: 10px;
+.close-btn:hover {
+  opacity: 0.6;
+  color: #111111;
 }
 
 .headliner {
@@ -977,8 +974,8 @@ body {
   }
 }
 .carousel-inner {
-  -webkit-box-shadow: inset 0 -1px 14px -3px;
-  box-shadow: inset 0 -1px 14px -3px;
+  -webkit-box-shadow: inset 12px 0px 14px -15px, inset -12px 0px 14px -15px;
+  box-shadow: inset 12px 0px 14px -15px, inset -12px 0px 14px -15px;
   background-color: #fefefe;
 }
 
@@ -1049,7 +1046,7 @@ body {
   overflow: auto;
 }
 .statement h1{
-  font-size: 2.5em;
+  font-size: 2em;
   color: #555555;
   font-weight: 200;
 }
@@ -1124,7 +1121,7 @@ body {
   }
 }
 
-.article {
+.piece {
   -webkit-transition: background 1000ms linear;
   -ms-transition: background 1000ms linear;
   transition: background 1000ms linear;
@@ -1427,7 +1424,6 @@ a img {
 #main {
   padding: 2em;
   position: relative;
-  background-color: #fefefe;
 }
 #main .inner {
   max-width: 100%;
@@ -1528,10 +1524,6 @@ a img {
 @media(max-width:768px) {
   #landing-page {
     background-attachment: scroll;
-  }
-  
-  .container {
-    margin: 0 15px;
   }
   .featurette-divider {
     margin: 40px 0;
@@ -1699,6 +1691,7 @@ nav[data-toggle=toc] .nav .nav>.active>a {
 
 .next-tab {
   text-align: center;
+  position: relative;
   font-size: 0.8em;
   letter-spacing: 0.1em;
   font-family:  futuraBook, sans-serif;
@@ -1723,10 +1716,10 @@ nav[data-toggle=toc] .nav .nav>.active>a {
 .new-piece a{
   color: #888888;
 }
-
+/*
 .new-piece.light a{
   color: white;
-}
+} */
 
 .new-piece a:hover{
   color: #555555;
@@ -1853,17 +1846,22 @@ nav[data-toggle=toc] .nav .nav>.active>a {
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 14px 1em;
   font-size: 1em;
-  width: 30%;
+  width: 32%;
+  white-space: nowrap;
+}
+
+.tablink:hover {
+  opacity: 0.6;
 }
 
 #tab-selector {
   height: 10px;
-  width: 30%;
+  width: 32%;
   position: relative;
-  left: 20%;
   border: 2px solid;
+  border-color: #111111;
   border-bottom-width: 0px;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
@@ -1882,18 +1880,29 @@ nav[data-toggle=toc] .nav .nav>.active>a {
   position: relative;
   top: -2px;
   margin: 0;
+  background-color: #111111;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
 
+.piece {
+  -webkit-box-shadow: inset 12px 0px 14px -15px, inset -12px 0px 14px -15px;
+  box-shadow: inset 12px 0px 14px -15px, inset -12px 0px 14px -15px;
+  height: 100%;
+}
+
 .piece-nav {
-  text-align: center;
+  text-align: left;
   margin-top: 1.5em;
   position: sticky;
+  padding-left: 2%;
+  padding-right: calc(2% + 1em);
+  width: 100%;
   top: 0;
-  z-index: 999;
+  z-index: 888;
   background-color: #fefefe;
   opacity: 0.9;
+  border-bottom: 1px solid #ddd;
 }
 
 /* Style the tab content (and add height:100% for full page content) */
