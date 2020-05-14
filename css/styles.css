@@ -57,7 +57,7 @@
 
 html,body {
   width: 100%;
-  font-size: 18px;
+  font-size: 16px;
   font-family: futuraBook, sans-serif;
   color: #111111;
   -webkit-font-smoothing: auto;
@@ -142,7 +142,7 @@ body {
   position: fixed;
   background-color: #fefefe;
   left: 50%;
-  margin-left: -40px;
+  margin-left: -2.5em;
   top: 3em;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -324,6 +324,7 @@ body {
   height: 100vh;
   text-align: left;
   position: relative;
+  overflow-y: hidden;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -423,7 +424,7 @@ body {
 .row.text-center p {
   width: 50%;
   display: inline-flex;
-  justify-content: space-evenly;
+  justify-content: center;
   font-weight: 700;
 }
 
@@ -566,18 +567,26 @@ body {
 }
 
 .detailed h2 {
-  margin-top: 1.5em;
+  margin-top: 4em;
+  margin-bottom: 0.8em;
   font-family: futuraBook, Sans-Serif;
-  font-weight: 400;
+  font-weight: 600;
   color: #111111;
   padding-bottom: 0.2em;
   padding-top: 0.5em;
-  text-transform: lowercase;
+  font-size: 1.3em;
+  letter-spacing: 0.04em;
+  /* text-transform: lowercase; */
 }
 
 .detailed h1 {
   font-family: futuraBook, Sans-Serif;
   font-weight: 700;
+}
+
+#Process .detailed h1 {
+  font-size: 3em;
+  margin-bottom: 2em;
 }
 
 .detailed video {
@@ -587,6 +596,38 @@ body {
 
 .detailed p {
   margin-bottom: 1.5em;
+}
+
+.zoom {
+  width: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: sticky;
+  top: 100px;
+  background-color: #f4f4f4;
+}
+
+.zoom-spacer {
+  height: 4000px;
+  margin-bottom: 6em;
+}
+
+.zoom-subtitle {
+  font-size: 2em;
+  font-weight: 200;
+  opacity: 0;
+  width: 30%;
+  position: absolute;
+  background: #f4f4f4;
+  right: 2%;
+  top: 20%;
+}
+
+
+#aws-final {
+  background-image: url('../images/lucid/aws-final.png');
+  background-size: 120%;
+  background-position: 50% 80%;
 }
 
 .video-wrapper {
@@ -816,6 +857,7 @@ body {
 
 .title-bar {
   height: 3px;
+  margin-top: 3em;
   width: 4em;
   background-color: #555555;
 }
@@ -827,7 +869,7 @@ body {
 }
 
 #Overview .detailed {
-  padding-bottom: 8%;
+  padding-bottom: 2em;
   padding-top: 0;
 }
 
@@ -893,7 +935,10 @@ body {
 .overview {
   margin-bottom: 3em;
   font-family: futuraBook;
-  font-size: 0.8em;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 200;
 }
 
 .overview .goal {
@@ -906,6 +951,7 @@ body {
 .details {
   display: flex;
   justify-content: space-between;
+  font-size: 1em;
 }
 
 .details div{
@@ -924,7 +970,8 @@ body {
 }
 
 .details .strong-underline {
-  height: 4px;
+  height: 2px;
+  background-color: #111111;
   width: 80%;
   margin: 0.4em 0 1em 0;
 }
@@ -937,6 +984,14 @@ body {
 
   .detailed {
     width: 90%;
+  }
+
+  .overview {
+    width: 90%;
+  }
+
+  .zoom-spacer {
+    height: inherit;
   }
 
   .tablink {
@@ -1001,16 +1056,15 @@ body {
   margin-right:3em;
 }
 #myname {
-  font-family: futuraBook;
+  font-family: Halant, serif;
   margin: 0;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 1.2em;
   padding-top: 1px;
-  white-space: nowrap;
 }
-#myname span {
-  font-family: Halant;
-  font-weight: 200;
+
+#myname a {
+  color: #ffffff;
 }
 
 #mycredits {
@@ -1042,7 +1096,7 @@ body {
 }
 .statement {
   text-align: center;
-  margin: 13%;
+  margin: 10%;
   overflow: auto;
 }
 .statement h1{
@@ -1099,8 +1153,10 @@ body {
   #splash-text h2 {
     font-size: 1em;
   }
-  .row.text-center p span {
-    font-size: 1.2em;
+  .row.text-center p .nav-object {
+    font-size: 1em;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .links {
@@ -1142,6 +1198,7 @@ a img {
 .article img {
   display: block;
   margin: auto;
+  max-width: 100%;
 }
 
 .article .container {
@@ -1154,6 +1211,14 @@ a img {
   background-color: #fefefe;
   max-width: 1400px;
   top: 100vh;
+}
+
+.detailed li {
+  margin-bottom: 0.5em;
+}
+
+.detailed ul {
+  margin-bottom: 1.5em;
 }
 
 .entry {
@@ -1294,7 +1359,7 @@ a img {
 }
 
 .works a:hover span,.works a:active span,.works a:focus span {
-  opacity:0.92;
+  opacity:0.98;
 }
 .return a {
   color: #FFFFFF;
@@ -1368,7 +1433,7 @@ a img {
   max-height: 600px;
   height: auto;
   margin-top: 4em;
-  margin-bottom: 8em;
+  margin-bottom: 4em;
 }
 
 .detailed .col-sm-6 img {
@@ -1552,6 +1617,18 @@ a img {
   }
 }
 
+@media (max-width: 1200px) {
+  nav[data-toggle='toc'] {
+    display: none;
+  }
+}
+
+@media (min-width: 1500px) {
+  .container {
+    width: 1400px;
+  }
+}
+
 
 @media(max-width:668px) {
   .headline h1 {
@@ -1615,15 +1692,23 @@ a {
 }
 
 nav[data-toggle='toc'] {
-  top: 15%;
+  top: 100px;
+  float: left;
+  width: 18%;
+  transition: opacity 0.2s ease-in-out;
 }
 
-nav[data-toggle=toc] .nav .nav>li>a {
-  padding-bottom: 6px;
-  text-transform: lowercase;
+#toc:hover {
+  opacity: 1 !important;
 }
 
-nav[data-toggle=toc] .nav .nav>.active>a {
+nav[data-toggle=toc] .nav>li>a {
+  color: #929292;
+  font-weight: 200;
+  letter-spacing: 0.02em;
+}
+
+nav[data-toggle=toc] .nav>.active>a {
   font-weight: 600;
 }
 

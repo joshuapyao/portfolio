@@ -39,7 +39,7 @@
 
 </head>
 
-<body data-spy="scroll" class="infuseview piece">
+<body data-spy="scroll" data-target="#toc" class="infuseview piece">
 <header>
       <div class="article" id="art1" data-color="#76C3E1" data-background='#164A5E'>
 		<a onclick="closeAnimate(this)" class="close-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></a>
@@ -57,122 +57,110 @@
 				</div>
 			</div>
 			<div id="Overview" class="tabcontent">
+				<div class="overview">
+					<!--<div class="overview-image">
+					  <a href="images/hospital/high-fidelity.png" data-lightbox="overview-1"><img src="images/hospital/high-fidelity.png" alt="High-Fidelity UX Prototype"></a>
+					</div>-->
+					<div class="goal">Designing an interface to eliminate information confusion with the Alaris Infusion System.</div>
+						  <div class="details">
+							<div>
+						<p><strong>The User.</strong></p>
+						<div class="strong-underline"></div>
+						<p>Nurses, Doctors, and sometimes Patients.</p>
+					  </div>
+					  <div>
+						<p><strong>The Span.</strong></p>
+						<div class="strong-underline"></div>
+						<p>10 weeks.</p>
+					  </div>
+					  <div>
+						<p><strong>The Tools.</strong></p>
+						<div class="strong-underline"></div>
+						<p>Sketch and Invision.</p>
+					  </div>
+					  <div>
+						  <p><strong>The Team.</strong></p>
+						  <div class="strong-underline"></div>
+						  <p>Yuka Asanuma and Paulina Tsai.</p>
+						</div>
+					</div>
+				  </div>
 				<div class="detailed">
-					<div class="overview">
-						<div class="overview-image">
-						  <a href="images/hospital/high-fidelity.png" data-lightbox="overview-1"><img src="images/hospital/high-fidelity.png" alt="High-Fidelity UX Prototype"></a>
-						</div>
-						<div class="goal">Designing an interface to eliminate information confusion with the Alaris Infusion System.</div>
-							  <div class="details">
-								<div>
-							<p><strong>The User.</strong></p>
-							<div class="strong-underline"></div>
-							<p>Nurses, Doctors, and sometimes Patients.</p>
-						  </div>
-						  <div>
-							<p><strong>The Span.</strong></p>
-							<div class="strong-underline"></div>
-							<p>10 weeks.</p>
-						  </div>
-						  <div>
-							<p><strong>The Tools.</strong></p>
-							<div class="strong-underline"></div>
-							<p>Sketch and Invision.</p>
-						  </div>
-						  <div>
-							  <p><strong>The Team.</strong></p>
-							  <div class="strong-underline"></div>
-							  <p>Yuka Asanuma and Paulina Tsai.</p>
-							</div>
-						</div>
-					  </div>				
-				<hr class="featurette-divider">
-				<h2>the problem</h2>
-			  <p>Inside a patient’s room, an alarm sounded. Per routine, a nurse entered to respond, seeing a young boy sleeping peacefully in the bed and the alarm sounding from the stack of IV pumps next to him. The nurse went to check the pumps, a stack of over twelve machines, all hanging off a single rack. Unable to identify why the alarm was going off or exactly which pump was the problematic one, the nurse’s attention turned to the child’s comfort, silencing the alarm as to not disturb the boy. After all, like a baby at midnight, any sort of warning or change in the system could set off its wailing.</p> 
-			  <p><strong>Most of the time, the issue was trivial and could be ignored. Unfortunately, as it was later discovered, this was one that could not. <i>How can IV systems better communicate information to medical staff? </i>This was the question that fueled the project.</strong></p>
-			  <hr class="featurette-divider">
-              <p>My team was assigned the task by the Seattle Children’s Hospital to discover how an interface could display the Alaris IV infusion system’s information better. The result would reduce problems and potentially save lives. <span class="highlight">Through 10 weeks of vigorous research, ideation, prototyping, and testing my team developed an interface that visualized the IV data in a simple, accessible, one-stop experience.</span></p>
-			  <p>Our process for this project went through several stages:</p>
-			  <figure>
+				<h2 data-aos="fade-up" data-toc-skip>The Problem.</h2>
+			  <p data-aos="fade-up">Inside a patient’s room, an alarm sounded. Per routine, a nurse entered to respond, seeing a young boy sleeping peacefully in the bed and the alarm sounding from the stack of IV pumps next to him. The nurse went to check the pumps, a stack of over twelve machines, all hanging off a single rack. Unable to identify why the alarm was going off or exactly which pump was the problematic one, the nurse’s attention turned to the child’s comfort, silencing the alarm as to not disturb the boy. After all, like a baby at midnight, any sort of warning or change in the system could set off its wailing.</p> 
+			  <p data-aos="fade-up"><strong>Most of the time, the issue was trivial and could be ignored. Unfortunately, as it was later discovered, this was one that could not. <i>How can IV systems better communicate information to medical staff? </i>This was the question that fueled the project.</strong></p>
+			  <h2 data-aos="fade-up" data-toc-skip>The Solution.</h2>
+				</div>
+				<img src="images/hospital/high-fidelity.png" alt="High-Fidelity UX Prototype">
+				<div class="detailed">
+			<h2 data-aos="fade-up" data-toc-skip>The Plan</h2>
+              <p data-aos="fade-up">My team was assigned the task by the Seattle Children’s Hospital to discover how an interface could display the Alaris IV infusion system’s information better. The result would reduce problems and potentially save lives. <span class="highlight">Through 10 weeks of vigorous research, ideation, prototyping, and testing my team developed an interface that visualized the IV data in a simple, accessible, one-stop experience.</span></p>
+			  <p data-aos="fade-up">Our process for this project went through several stages:</p>
+			  <figure data-aos="fade-up">
 					<img class="no-shadow" src="images/hospital/process.png" alt="The Design Process">
 			  </figure>
-			  <p>Through this design process, we were able to identify key needs, pain points, and motivations to create an ideal experience:</p>
-			  <a href="images/hospital/high-fi.png" data-lightbox="overview-2"><img src="images/hospital/high-fi.png" alt="The New Flow"></a>
 			</div>
 			
 			<hr class="featurette-divider">
 			<div class="next-tab" ><a onclick="openProcess()">EXAMINE THE DESIGN PROCESS<br/>&bigtriangledown;</a></div>
 			</div>
 			<div id="Process" class="tabcontent">
-            <div class="row">
+			<nav id="toc" data-toggle="toc" class="sticky-top"></nav>
           <!-- First Featurette -->
             <div class="detailed">
-			  <figure>
-					<img class="no-shadow" src="images/hospital/process.png" alt="The Design Process">
-			  </figure>
-				<hr class="featurette-divider">
-				<div class="headliner">
-					<h1 id="exploration">EXPLORATION</h1>
-	            	<p class="subtitle">“Our investigation of the user’s context, pain points, and needs”</p>
-	        	</div>
-	        	<hr class="featurette-divider">
-	            <h2 id="clientinterview">CLIENT INTERVIEW</h2>
+				<div data-aos="fade-up" class="title-bar bg-match"></div>
+				<h1 data-aos="fade-up" id="exploration">Exploration.</h1>
+	            <h2 id="clientinterview">Client Interview.</h2>
 	        	<p>The first step was to meet with our client, Dr. Jeremy Geiduschek, the Director of the Department of Anesthesiology & Pain Medicine at Seattle Children’s Hospital. Our goals of the meeting were to understand the problem and to discover our client’s vision for the product. This would ultimately help us <span class="highlight">define our measurements of success.</span></p>
 				<p>At the end of the meeting, the issue was clear. The mass of pump modules and screens for a single patient wasted too much time and hid too much information for a busy doctor. This caused problems with patient care and on occasion had put lives at risk. <span class="highlight">Our design would be successful if it made looking at the Alaris machines themselves obsolete.</span></p>
 
-				<h2 id="secondary_research">SECONDARY RESEARCH</h2>
+				<h2 id="secondary_research">Secondary Research.</h2>
 	        	<p>After establishing our goals, we conducted secondary research to increase our understanding on the topic and search for information that could further inform our design. For our secondary research, we looked into <span class="highlight">scholarly articles surrounding the project space</span> first.</p>
-	        	<figure>
+	        	<figure data-aos="fade-up">
 				  <img src="images/hospital/secondary_research.png" alt="Secondary Research Results">
 				  <figcaption>Some design implication examples found through secondary research.</figcaption>
 				</figure>
 				<p>We also conducted <span class="highlight">competitive analysis</span>, looking particularly in three similar products that supported checking the IV pumps away from the location. We were able to procure some design implications but ultimately found that <span class="highlight">there were no products serving the same purpose as the interface we were designing.</span></p>
 
-				<h2 id="fieldstudies">FIELD STUDIES</h2>
+				<h2 id="fieldstudies">Field Studies.</h2>
 	        	<p>To begin our primary research, we first started off with <span class="highlight">field observations</span>. We conducted these by observing medical staff interacting with the Alaris IV infusion system in different contexts. <span class="highlight">Our goals was to see exactly how interactions occurred, how long uses took, what interactions were most common, and more.</span> Our field studies revolved around the Cardiac Operating Room (OR) and the Cardiac Intensive Care Unit (CICU). When the observation period was nearly over, we used <span class="highlight">contextual inquiry</span> to further develop our observations. With this we had a clear idea on how staff interacted with the Alaris machines, as well as knowledge on needs and pain points.</p>
-	        	<figure>
+	        	<figure data-aos="fade-up">
 					<a href="images/hospital/observation.jpg" data-lightbox="process-1"><img src="images/hospital/observation.jpg" alt="Ethnographic Obeservation"></a>
 				  <figcaption>An observation session seeing how doctors used the infusion machine during surgery.</figcaption>
 				</figure>
 				<p>After processing what we learned from field studies, my team and I wanted to augment and confirm that information with primary users through <span class="highlight">field interviews</span>. We approached common users, such as doctors and nurses, and asked them a number of questions both regarding what we already knew and also what we wanted to know more about. Our participants ranged from nurses to anesthesiology heads. We used these interviews to better <span class="highlight">understand our users’ viewpoints so to design from a user-centered state-of-mind</span>. We would also use these interviews to <span class="highlight">establish our design personas</span>. We also interviewed members of the hospital’s informatics team to understand our <span class="highlight">technical design limitations</span>.</p>
+				<br/>
+				<div data-aos="fade-up" class="title-bar bg-match"></div>
+				<h1 data-aos="fade-up" id="ideation">Ideation.</h1>
 
-				<hr class="featurette-divider">
-				<div class="headliner">
-					<h1 id="ideation">IDEATION</h1>
-	            	<p class="subtitle">“Our transformation of research data into design information”</p>
-	        	</div>
-            	<hr class="featurette-divider">
-
-				<h2 id="personas">PERSONAS</h2>
+				<h2 id="personas">Personas.</h2>
 	        	<p>The very first step of our ideation stage was to establish our <span class="highlight">personas</span>. Personas would serve as <span class="highlight">the base of our design, our target audience, and the deciding voice in all design choices</span>. We developed our personas based on user-research and our observations from our previous field studies. These personas would include <span class="highlight">goals, motivations, experience with technology, demographics, their user scenarios, and more.</span> Three personas were created to establish our audience: two primary and one secondary.</p>
-	        	<figure>
+	        	<figure data-aos="fade-up">
 					<a href="images/hospital/persona.png" data-lightbox="process-2"><img src="images/hospital/persona.png" alt="Persona"></a>
 				  <figcaption>A persona representing on of our primary users: nurses.</figcaption>
 				</figure>
 
-				<h2 id="affinitydiagramming">AFFINITY DIAGRAMMING</h2>
+				<h2 id="affinitydiagramming">Affinity Diagramming.</h2>
 				<p>Using all the information gathered in the research stage, we began affinity diagramming. This process was done through each team member writing <span class="highlight">a need, requirement, or issue</span> on a sticky note. We then would group similar notes together to effectively “brain-dump” what we knew and identify key issues or needs. Through this, we identified major problems in the current alarm setup, while also noting important needs to be aware of. After sorting, we began <span class="highlight">brainstorming design implications</span> to answer each category.</p>
-				<figure>
+				<figure data-aos="fade-up">
 					<a href="images/hospital/affinity.jpg" data-lightbox="process-3"><img src="images/hospital/affinity.jpg" alt="Affinity Diagrams"></a>
 				  <figcaption>A collaboration of our research thus far and its design relevance.</figcaption>
 				</figure>
 
-				<h2 id="informationranking">INFORMATION RANKING</h2>
+				<h2 id="informationranking">Information Ranking.</h2>
 				<p>At this point, after understanding the users and the context, we felt that there were some gaps in our knowledge regarding what information doctors looked for on the IV systems. We had to gather qualitative data quickly to continue our design process. Because of our inherently busy target audience, we had to develop a research method that was fast and easy to do, while giving us the information we wanted. To solve this, we developed and sent an annotated image asking to either confirm or correct the ranking, as shown on the right, allowing <span class="highlight">a quick and accurate way to collect qualitative data</span>.</p>
-				<figure>
+				<figure data-aos="fade-up">
 					<a href="images/hospital/ranking.png" data-lightbox="process-4"><img src="images/hospital/ranking.png" alt="Informaiton Ranking"></a>
 				  <figcaption>An example of what we sent to the hospital to survey their opinions.</figcaption>
 				</figure>
 
-				<h2 id="designrequirements">SUMMARIZE DESIGN REQUIREMENTS</h2>
+				<h2 id="designrequirements">Design Requirements.</h2>
 				<p>At this stage we compiled all of our information together to create a list of design requirements, each supported with our research evidence. <span class="highlight">These design requirements would serve as the basis of our design</span> and ranged from contextual limitations, such as avoid requiring touch interaction because doctors and nurses are often wearing gloves, to more specific points, such as prioritizing medicine name and dosage in the display.</p>
-				<hr class="featurette-divider">
-				<div class="headliner">
-					<h1 id="creation">CREATION</h1>
-	            	<p class="subtitle">“The birth of a design in its true form (through multiple iterations)”</p>
-	        	</div>
-				<hr class="featurette-divider">
-				<h2 id="designsketchs">DESIGN SKETCHES</h2>
+				<br/>
+				<div data-aos="fade-up" class="title-bar bg-match"></div>
+				<h1 data-aos="fade-up" id="creation">Creation.</h1>
+
+				<h2 id="designsketchs">Sketches.</h2>
 				<p>At this stage, we were required us to transfer all that we learned from our research and ideation into actual reality, while keeping the user in mind. From our research and ideation, we found that we needed three primary elements within our design: </p>
 				<ul>
 					<li>Each pump module's status view</li>
@@ -180,60 +168,59 @@
 					<li>History panel</li>
 				</ul>
 				<p>To encourage unique thinking and design, we each <span class="highlight">separately sketched numerous designs for each element and brought them together for peer review</span>. Each element had its own set of design requirements, and we decided on which direction to move towards <span class="highlight">based on how well it met those user needs</span>. For example, we chose our final pump module status view because of how easily readable it was in high-stress situations, how it prioritized most commonly accessed information, and how cleanly it presented the data. </p>
-				<figure>
+				<figure data-aos="fade-up"> 
 					<a href="images/hospital/sketches.png" data-lightbox="process-5"><img src="images/hospital/sketches.png" alt="Paper Design Sketches"></a>
 				  <figcaption>Rough sketches to rapidly put our design onto paper.</figcaption>
 				</figure>
 
-				<h2 id="paperprototype">PAPER PROTOTYPE</h2>
+				<h2 id="paperprototype">Paper Prototype.</h2>
 				<p>Confident with our final design sketches, we compiled them together into <span class="highlight">a prototype for testing and evaluation</span>. We added pieces of paper to mimic interaction, letting this interface more closely represent our design intention. We envisioned this to be on a portable touchscreen interface, as that would best match our user scenarios as well as being feasible for the hospital to mass-produce.</p>
-				<figure>
+				<figure data-aos="fade-up">
 					<a href="images/hospital/dashboard.png" data-lightbox="process-6"><img src="images/hospital/dashboard.png" alt="Paper Prototypes"></a>
 				  <figcaption>A paper prototype we could use to communicate our idea and test with users.</figcaption>
 				</figure>
 				<p>We tested this interface with doctors, so that we could ensure both medical accuracy and usefulness. We also tested it with pre-med students, to ensure it was accessible and intuitive to less experienced users. Gathering what we learned through testing, we were able to <span class="highlight">iterate to a more final, higher fidelity design.</span></p>
 
-				<h2 id="highfidelity">HIGH-FIDELITY PROTOTYPE</h2>
+				<h2 id="highfidelity">High-Fidelity Prototype.</h2>
 				<p>A higher fidelity prototype helped us show our client more accurately what our design is and if it matched their vision, while also helping us further test more detailed aspects of our design. In this process, we began <span class="highlight">a series of rapid prototypes and testing</span>. We would create a high-fidelity prototype, test it with some users, make changes to it based on feedback, test again, change again, etc. This process continued until we had a design meet and surpassed our client's needs.</p>
 
 				<p><span class="highlight">Below is one of our first high-fidelity iterations</span>. We kept features low, since we wanted to focus feedback on the layout of the design as well as the readability of the information in the pump module views.</p>
 
-				<figure>
+				<figure data-aos="fade-up">
 					<a href="images/hospital/mockup1.png" data-lightbox="process-7"><img src="images/hospital/mockup1.png" alt="Initial Mockup"></a>
 				  <figcaption>An initial prototype after the first few rounds of testing.</figcaption>
 				</figure>
 
 				<p><span class="highlight">Below is our prototype after the first initial rounds of testing</span>. It shows mostly change in the pump modules, and how we re-examined the visual priority of information, such as the lower priority of VTBI.</p>
 
-				<figure>
+				<figure data-aos="fade-up">
 					<a href="images/hospital/mockup2.png" data-lightbox="process-8"><img src="images/hospital/mockup2.png" alt="Mockup after a few rounds."></a>
 				  <figcaption>A cleaner design that met the demands of the context.</figcaption>
 				</figure>
 
 				<p><span class="highlight">Below represent our final high-fidelity prototype after rounds of iterations</span>. Muted green and blue colors with red accents for alerts were chosen due to our secondary research and user feedback. The module grouping by brain was another result of user feedback from the testing cycle.</p>
 
-				<figure>
+				<figure data-aos="fade-up">
 					<a href="images/hospital/mockup3.png" data-lightbox="process-9"><img src="images/hospital/mockup3.png" alt="High-Fidelity Mockup"></a>
 				  <figcaption>A design that surpasses the needs of the user and the context.</figcaption>
 				</figure>
 
-				<h2 id="interactiveprototype">FINAL INTERACTIVE PROTOTYPE</h2>
+				<h2 id="interactiveprototype">Final Design.</h2>
 				<p>For the final stage of our design, we created an <span class="highlight">interactive prototype using Sketch and Proto.io</span>. We used this format to represent the final design to our sponsors at the Seattle Children’s Hospital. Our design creates a centralized one-stop hub for the IV pump systems for a patient. <span class="highlight">A process that might take 20 minutes is reduced to less than a minute viewing on a single clear screen.</span></p>
 
-				<figure>
+				<figure data-aos="fade-up">
 					<a href="images/hospital/high-fidelity.jpg" data-lightbox="process-10"><img src="images/hospital/high-fidelity.jpg" alt="High-Fidelity UX Prototype"></a>
 				  <figcaption>A breakdown of main features of the final design.</figcaption>
 				</figure>
+				<br/>
+				<div data-aos="fade-up" class="title-bar bg-match"></div>
+				<h1>Moving Forwards.</h1>
 
-				<h1 data-toc-text="Moving Forwards" id="movingforwards">MOVING FORWARDS</h1>
 				<p>Looking back on the design and creation of our design, I can confidently recommend it as a strong interface to solve the problems with IV infusion machines that doctors face. However, there are a few limitations that could be addressed with further work. Currently, the interface can only be used with newer Alaris machines that have wireless communication. Otherwise, it can’t take live data from the pumps. In the future, I would hope to search for a way that the interface could be used widely with different IV machines, whether it was wireless capable or not, or even an Alaris pump or a different brand entirely.</p>
 
 				<p><span class="highlight">The full design was sent to the Seattle Children’s Hospital innovation team at their request.</span></p>
-              	<hr class="featurette-divider">
-              	<a class="downloadbtn more" style="text-align:center;" target="_blank" href="/images/hospital/process-book.pdf">click for a detailed outline of the process</a>
 				<hr class="featurette-divider">
 				<div class="next-tab"><a onclick="openFinal()">WITNESS THE FINAL DESIGN<br/>&bigtriangledown;</a></div>
-            </div>
             </div>
 		  </div>
 		<div id="Final" class="tabcontent">
@@ -244,27 +231,27 @@
 			<div class="detailed">
 				<div class="final-block">
 					<div class="title-bar bg-match"></div>
-					<h4>Concept</h4>
+					<h4 data-toc-skip>Concept.</h4>
 					<div class="concept-row"></div>
-					<h3>Layout</h3>
+					<h3 data-toc-skip>Layout.</h3>
 					<div class="concept-row" data-aos="fade-up">
 						<img src="images/hospital/layout.png" alt="View Layout">
 					</div>
-					<h3>Environment Color</h3>
+					<h3 data-toc-skip>Environment Color.</h3>
 					<div class="concept-row" data-aos="fade-up">
 						<img src="images/hospital/environment-color.png" alt="Environment Color">
 					</div>
-					<h3>Accent Color</h3>
+					<h3 data-toc-skip>Accent Color.</h3>
 					<div class="concept-row" data-aos="fade-up">
 						<img src="images/hospital/accent-color.png" alt="Accent Color">
 					</div>
-					<h3>Form</h3>
+					<h3 data-toc-skip>Form.</h3>
 					<div class="concept-row" data-aos="fade-up">
 						<img src="images/hospital/form.png" alt="Form">
 					</div>
 					<div class="concept-row"></div>
 					<div class="title-bar bg-match"></div>
-					<h4>Features</h4>
+					<h4 data-toc-skip>Features</h4>
 				</div>
 			</div>
 			<div class="final-hero" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
@@ -277,7 +264,7 @@
 					<div class="feature-block">
 						<div class="col-sm-6" data-aos="fade-right">
 							<div class="title-bar long-bar"></div>
-							<h3>A module-to-brain layout makes it easy to quickly locate which module has issues.</h3>
+							<h3 data-toc-skip>A module-to-brain layout makes it easy to quickly locate which module has issues.</h3>
 						</div>
 						<div class="col-sm-6" data-aos="fade-left">
 							<video autoplay muted playsinline loop>
@@ -297,13 +284,13 @@
 						</div>
 						<div class="col-sm-6" data-aos="fade-right">
 							<div class="title-bar long-bar"></div>
-							<h3>History panel easily shows patient data, without obscuring important information.</h3>
+							<h3 data-toc-skip>History panel easily shows patient data, without obscuring important information.</h3>
 						</div>
 					</div>
 					<div class="feature-block">
 						<div class="col-sm-6" data-aos="fade-right">
 							<div class="title-bar long-bar"></div>
-							<h3>Realtime pump information ensures that users are always fully informed.</h3>
+							<h3 data-toc-skip>Realtime pump information ensures that users are always fully informed.</h3>
 						</div>
 						<div class="col-sm-6" data-aos="fade-left">
 							<video autoplay muted playsinline loop>
@@ -323,7 +310,7 @@
 						</div>
 						<div class="col-sm-6" data-aos="fade-right">
 							<div class="title-bar long-bar"></div>
-							<h3>Color-coded alerts with icons for immedient attention control.</h3>
+							<h3 data-toc-skip>Color-coded alerts with icons for immedient attention control.</h3>
 						</div>
 					</div>
 				</div>
@@ -332,13 +319,14 @@
 				<div class="concept-row"></div>
 				<div class="final-block">
 					<div class="title-bar bg-match"></div>
-					<h4>Final Note</h4>
+					<h4 data-toc-skip>Final Note.</h4>
 					<p class="final-note">With our final design of InfuseView, we created an interface that reduces a doctor’s cognitive load and helps save lives.</p>
 					<p class="final-note">If I had to opportunity to do it again, I would spend more time collecting data from doctors and surgeons, be it through interviews or prototype testing. Though I am confident with the final design we have now, the design process could have been expidited or smoother with more input from those medical professionals, as well as exploring deeper motivations.</p>
-					<p class="final-note">This design was sent to the Seattle Children’s Hospital innovation team for development.</p>
+					<p class="final-note"><span class="highlight">This design was sent to the Seattle Children’s Hospital innovation team for development.</span></p>
 				</div>
-				<h4 class="thank-you">Thank you for scrolling!</h4>
+				<h4 data-toc-skip class="thank-you">Thank you for scrolling!</h4>
 			<hr class="featurette-divider">
+			<div class="next-tab"><a onclick="closeAnimate(this)">HEAD BACK HOME<br/><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></a></div>
 			</div>
 		</div>
 	    </div>
@@ -351,10 +339,10 @@
 </header>
     <!-- jQuery -->
 <script src="js/jquery.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="js/aos.js"></script>
     <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
-<script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.js"></script>
+<script src="js/bootstrap-toc.min.js"></script>
     <!-- Lightbox -->
     <script src="js/lightbox.min.js"></script>
     <!-- main.js -->

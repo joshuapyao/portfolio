@@ -39,7 +39,7 @@
 
 </head>
 
-<body data-spy="scroll" class="lucid piece">
+<body data-spy="scroll" data-target="#toc" class="lucid piece">
 <header>
     <div class="article" id="art1" data-color="#A0ABBE" data-background="#E38D3C">
 		<a onclick="closeAnimate(this)" class="close-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></a>
@@ -57,130 +57,95 @@
 				</div>
         	</div>
 			<div id="Overview" class="tabcontent">
-				<div class="detailed">
-					<div class="overview">
-						<div class="overview-image">
-							<img src="images/lucid/aws-final.png" alt="High-Fidelity UX Design">
+				<div class="overview">
+					<!--<div class="overview-image">
+						<img src="images/lucid/aws-final.png" alt="High-Fidelity UX Design">
+					</div> -->
+					<div class="goal">Designing Lucidchart’s CloudInsights feature, so users can see more, know more, and do more.</div>
+							<div class="details">
+							<div>
+						<p><strong>The User.</strong></p>
+						<div class="strong-underline"></div>
+						<p>Cloud Engineers, Solution Architects, IT Directors.</p>
 						</div>
-						<div class="goal">Designing Lucidchart’s CloudInsights feature, so users can see more, know more, and do more.</div>
-								<div class="details">
-								<div>
-							<p><strong>The User.</strong></p>
+						<div>
+						<p><strong>The Timeframe.</strong></p>
+						<div class="strong-underline"></div>
+						<p>15 weeks.</p>
+						</div>
+						<div>
+						<p><strong>The Tools.</strong></p>
+						<div class="strong-underline"></div>
+						<p>Figma.</p>
+						</div>
+						<div>
+							<p><strong>The Role.</strong></p>
 							<div class="strong-underline"></div>
-							<p>Cloud Engineers, Solution Architects, IT Directors.</p>
-							</div>
-							<div>
-							<p><strong>The Timeframe.</strong></p>
-							<div class="strong-underline"></div>
-							<p>15 weeks.</p>
-							</div>
-							<div>
-							<p><strong>The Tools.</strong></p>
-							<div class="strong-underline"></div>
-							<p>Figma.</p>
-							</div>
-							<div>
-								<p><strong>The Role.</strong></p>
-								<div class="strong-underline"></div>
-								<p>UX Designer.</p>
-							</div>
+							<p>UX Designer.</p>
 						</div>
 					</div>
+				</div>
+				<div class="detailed">
           <hr class="featurette-divider">
-          <p>For this project, I was responsible for designing the experience around the import of Amazon Web Services (AWS) cloud architectures into Lucidchart, ranging from how users import the architecture and how they can interact with the diagram on the canvas.</p>
-          <img data-aos="fade-up" src="images/lucid/two-experiences.png" alt="Two Experiences: Import and On-Canvas">
-          <p><span class="highlight">I was the sole designer on a scrum team working within a 2-week sprint cycle. My team consisted of myself, a product manager, five engineers, and a QA specialist.</span></p>
-          <h2>THE PROBLEM</h2>
-          <p>Cloud Engineers have to make enormously complex diagrams for numerous reasons, whether it’s communicating changes or for documentation purposes.</p>
-          <a href="images/lucid/example.png" data-lightbox="overview-1"><img data-aos="fade-up" src="images/lucid/example.png" alt="Example AWS Architecture"></a>
-          <p>Lucidchart had just a barebones feature for importing architectures, but it was rarely used because it was hard to import the data correctly and even harder to manipulate it the way engineering wanted. <span class="highlight">Often times, engineers would end up deleting the imported architecture and remake it from scratch. Making a cloud architecture diagram was a pain and a nuisance no one looked forward to doing.</span></p>
-          <a href="images/lucid/old-integration.png" data-lightbox="overview-2"><img data-aos="fade-up" src="images/lucid/old-integration.png" alt="The Old AWS Integration"></a>
-          <p><span class="highlight">We wanted to reshape the industry and change this perception entirely:</span></p>
-          <img data-aos="fade-up" src="images/lucid/paradigm-shift.png" alt="The Paradigm Shift">
-          <p>On starting this project, I took stock of what was already done and strategized my plan for designing this experience.</p>
-          <figure data-aos="fade-up">
-						<img class="no-shadow" src="images/lucid/process.png" alt="The Design Process">
-          </figure>
-          <p>This process led to the first version of Lucidchart’s CloudInsights, which now has an additional three teams dedicated to its success. It also led to two new components in Lucid’s design system, <span class="highlight">components primarily focused for complex data-diagrams and scaled into other integrations</span> such as Salesforce or bambooHR integrations.</p>
-        </div>
-        <img data-aos="fade-up" class="no-shadow final-hero" src="images/lucid/new-integration.png" alt="The New Components">
+          <h2 data-toc-skip>The Problem.</h2>
+          <p data-aos="fade-up">Cloud Engineers have to make enormously complex diagrams for numerous reasons, whether it’s communicating changes or for documentation purposes. Lucidchart had just a barebones feature for importing architectures, but it was rarely used because it was hard to import the data correctly and even harder to manipulate it. Often times, engineers would end up deleting the imported architecture and remake it from scratch. <span class="highlight"> Making a cloud architecture diagram is a pain and a nuisance no one looked forward to doing.</p>
+          <!--<img data-aos="fade-up" src="images/lucid/example.png" alt="Example AWS Architecture"> -->
+		  </div>
+		  <img data-aos="fade-up" src="images/lucid/whats-wrong.png" alt="What's Wrong with the Current Flow">
+		  <div class="detailed">
+		<h2 data-toc-skip>The Solution.</h2> 
+		  <img data-aos="fade-up" src="images/lucid/paradigm-shift.png" alt="The Paradigm Shift">
+		  <p data-aos="fade-up"><span class="highlight">We wanted to reshape the industry and change the current perception on cloud management entirely.</span> This effort led to Lucidchart's CloudInsights feature.</p>
+		  </div>
+		  <div class="zoom-spacer">
+			<div class="zoom" id="aws-final" data-width="2160" data-height="1234">
+				<h1 data-toc-skip class="zoom-subtitle">Visually manage clouds.</h1>
+				<!--<img src="images/lucid/aws-final.png" alt="High-Fidelity UX Design"> -->
+			  </div>
+		  </div>
+		 <div data-aos="fade-up" class="detailed">
+			 <p>In the process of designing this feature, I also created two new base components necessary for a better user experience that was added into Lucid's design system.</p>
+		 </div>
+		<img data-aos="fade-up" class="no-shadow final-hero" src="images/lucid/new-integration.png" alt="The New Components">
+		<div class="detailed">
+			<p><span class="highlight">More about the final design can be seen in the "Final Design" tab.</span></p>
 
-				<hr class="featurette-divider">
-				<div class="next-tab" ><a onclick="openProcess()">EXAMINE THE DESIGN PROCESS<br/>&bigtriangledown;</a></div>
+			 <h2 data-aos="fade-up" data-toc-skip>My Impact.</h2>
+			<p data-aos="fade-up"><span class="highlight">For this project, I was the sole designer on a scrum team working within a 2-week sprint cycle.</span> My team consisted of myself, a product manager, five engineers, and a QA specialist. I was responsible for designing the experience around the import of Amazon Web Services (AWS) cloud architectures into Lucidchart, ranging from how users import the architecture and how they can interact with the diagram on the canvas.</p>
+			<p data-aos="fade-up">The output of the project was the first version of Lucidchart’s CloudInsights, which now has <span class="highlight">an additional three teams dedicated to its success.</span> It also led to two new components primarily focused for complex data-diagrams and was <span class="highlight">scaled into other integrations</span> such as Salesforce or bambooHR.</p>
+		  
+			<h2 data-aos="fade-up" data-toc-skip>My Plan.</h2>
+			<p data-aos="fade-up">On starting this project, I took stock of what was already done and strategized my plan for designing this experience. Following the user flow for other integrations in the product, I split the design based on two factors to design for:</p>
+			<img data-aos="fade-up" src="images/lucid/two-experiences.png" alt="Two Experiences: Import and On-Canvas">
+			<p data-aos="fade-up">Though the process varied in some details throughout design, it ended up in the following stages:</p>
+          	<figure data-aos="fade-up">
+					<img class="no-shadow" src="images/lucid/process.png" alt="The Design Process">
+          	</figure>
+        </div>
+
+		<hr class="featurette-divider">
+		<div class="next-tab" ><a onclick="openProcess()">EXAMINE THE DESIGN PROCESS<br/>&bigtriangledown;</a></div>
       </div>
 			<div id="Process" class="tabcontent">
 		  <!-- First Featurette -->
 			<img class="final-hero" data-aos="fade-up" src="images/lucid/process-header.png" alt="Process Header Image">
 			<div class="concept-row"></div>
+			<nav id="toc" data-toggle="toc" class="sticky-top"></nav>
         <div class="detailed">
-				<h2>BREAKDOWN</h2>
-				<figure data-aos="fade-up">
-					<img class="no-shadow" src="images/lucid/process.png" alt="The Design Process">
-				</figure>
-				<hr class="featurette-divider">
-        <h2 id="clientinterview">IDENTIFYING THE PROBLEM</h2>
-				<p>I first wanted to understand the problems with our primary users, hoping to understand the higher-level problems and motivations, while identifying key pain points in a DevOps personas job. Through this stage I conducted three types of research:</p>
-        <img data-aos="fade-up" class="no-shadow final-hero" src="images/lucid/research.png" alt="Initial Research Methods">
-        <p>I collated all this information in a document and <span class="highlight">conducted affinity diagramming to identify key pain points, user motivations, goals, frustrations, responsibilities, and current processes.</span> From this I could develop personas and also locate problem points in a cloud architect’s job:</p>
-        
-        <div class="indented-block" data-aos="fade-up">
-					<div class="flex-inline">
-						<div>
-							<p><strong>Multiple Programs for Management</strong></p>
-							<p class="left-line">Users often use 3-4 programs to manage architecture. Some to document it, some to manage costs, some for simulating changes, some for current status.</p>
-						</div>
-					</div>
-					<div class="flex-inline">
-						<div>
-							<p><strong>"Hacky" Methods</strong></p>
-							<p class="left-line">When diagramming their architecture, Users using “hacky” methods, especially for multiple accounts. Often times they’ll create multiple different objects and overlap them to create the look of a single architecture.</p>
-						</div>
-					</div>
-					<div class="flex-inline">
-						<div>
-							<p><strong>Long and Tedious</strong></p>
-							<p class="left-line">Cloud Architecture can be huge, extending to thousands of objects. Creating one from scratch or manually correcting one can take hours.</p>
-						</div>
-					</div>
-					<div class="flex-inline">
-						<div>
-							<p><strong>Repetitive</strong></p>
-							<p class="left-line">Every time a change is made to the architecture, a diagram must be updated and new documentation must be generated.</p>
-						</div>
-					</div>
-					<div class="flex-inline">
-						<div>
-							<p><strong>Hard to Communicate Data-Heavy Information to a Specific Audience.</strong></p>
-							<p class="left-line">As well as creating a full picture of the architecture, architects must also create views to communicate changes to both engineers and directors, each with different goals.</p>
-						</div>
-					</div>
-					<div class="flex-inline">
-						<div>
-							<p><strong>Limited Functionality</strong></p>
-							<p class="left-line">The current implementation was barebones, having only the ability to put one account’s architecture on the canvas with little to none extra ability.</p>
-						</div>
-					</div>
-				</div>
-
-        <h2>ARCHITECTURE CRASH COURSE</h2>
-				<div class="split-block" data-aos="fade-up">
-					<div class="col-sm-6">				
-						<p>Hitting the ground, I had no idea how an AWS architecture worked. I was pretty lost in this extremely complicated world. <span class="highlight">So here's a short crash course as how I understood it.</span></p>
-					</div>
-					<div class="col-sm-6">
-            <div class="video-wrapper">
+			<div data-aos="fade-up" class="title-bar bg-match"></div>
+			<h1 data-aos="fade-up">Getting Started.</h1>		
+			<p>Hitting the ground, I had no idea how an AWS architecture worked. I was pretty lost in this extremely complicated world. <span class="highlight">So here's a short crash course as how I understood it.</span></p>
+            <div data-aos="fade-up" class="video-wrapper">
               <video autoplay muted playsinline loop>
                 <source src="images/lucid/you-know-nothing.webm" type="video/webm" />
                 <source src="images/lucid/you-know-nothing.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
-              </div>
-					</div>
-        </div>
+			</div>
         <p>To design for architecture diagrams, I had to first understand them. While conducting research, I also independently learned about AWS architectures and how they were structured.</p>
         <div class="split-block" data-aos="fade-up">
 					<div class="col-sm-6">
-						<a href="images/lucid/example.png" data-lightbox="process-1"><img src="images/lucid/example.png" alt="Example AWS Diagramming"></a>
+						<img src="images/lucid/example.png" alt="Example AWS Diagramming">
 					</div>
 					<div class="col-sm-6">
 						<p>In short, clouds provide multiple services ranging from computing servers, deployment services, traffic distribution, and more. An entire system, from the moment a user enters a website and finally completes their goal, can exist on the cloud.</p>
@@ -191,45 +156,93 @@
 						<p>Cloud architectures are structured in a certain way, with some elements only allowed to live in some objects. For example, an EC2 must exist in a subnet, which exists in an availability zone, which is in a VPC, which is in a region. However, there are hundreds of different types of instances and each has their own special rules. <span class="highlight">Don’t worry, I hate it too.</span></p>
 					</div>
 					<div class="col-sm-6">
-            <a href="images/lucid/heirarchy-ex.png" data-lightbox="process-2"><img src="images/lucid/heirarchy-ex.png" alt="AWS Diagram Heirarchy"></a>
+            			<img src="images/lucid/heirarchy-ex.png" alt="AWS Diagram Heirarchy">
 					</div>
-        </div>
+		</div>
+		<div data-aos="fade-up" class="title-bar bg-match"></div>
+		<h1 data-aos="fade-up">Research.</h1>
+		<p>I first wanted to understand the problems with our primary users, hoping to understand the higher-level problems and motivations, while identifying key pain points in a DevOps personas job. Through this stage I conducted three types of research:</p>
+        <img data-aos="fade-up" class="no-shadow" src="images/lucid/research.png" alt="Initial Research Methods">
+		<h2 id="clientinterview">Competitive Analysis.</h2>
+		<p>First off, I looked into the market to examine whether existing products efficiently help users visualize their architecture.</p>
+		<img data-aos="fade-up" src="images/lucid/competitors.png" alt="Competitors">
+		<p>I found that:</p>
+		<ul data-aos="fade-up">
+			<li>Services like Cloudcraft and CloudViz offered a way to import and visualize multiple accounts, <span class="highlight">but didn't have a way to see everything all together.</span></li>
+			<li>Some lacked some of Lucidchart's base functionality such as collaboration or preview modes.</li>
+			<li>Some allow users to customize how each element is displayed, but <span class="highlight">no way to quickly switch between customized options.</span></li>
+			<li><span class="highlight">Most services only offered the ability to make a diagram and export it as an image.</span></li>
+		</ul>
+		<p>With this information, I knew no other competitor had a holistic offering and also that our <span class="highlight">design should include the ability to import multiple accounts and customize views in order to surpass competitors.</span></p>
+		
+		<h2>Interviews & Affinity Diagramming.</h2>
+		<p>Through out the process of competitive analysis, I also conducted interviews with real users along side my PM. THe goals were to identify their "jobs to be done", needs, and pain points.</p>
+		<p><span class="highlight">With this I conducted affinity diagramming to summarize our research.</span></p>
+		<img data-aos="fade-up" src="images/lucid/affinity.jpg" alt="Affinity Diagramming">
+        <p>From this, some key problems surfaced:</p>
+        <div class="indented-block" data-aos="fade-up">
+			<div class="flex-inline">
+				<div>
+					<p><strong>Multiple Programs for Management.</strong></p>
+					<p class="left-line">Users often end up using 3-4 programs to manage architecture. Some to document, manage costs, simulating changes, or to see the current status.</p>
+				</div>
+			</div>
+			<div class="flex-inline">
+				<div>
+					<p><strong>"Hacky" Methods.</strong></p>
+					<p class="left-line">For more customization, some users would paste different account views on top of each other to get it all on one screen.</p>
+				</div>
+			</div>
+			<div class="flex-inline">
+				<div>
+					<p><strong>Long and Tedious.</strong></p>
+					<p class="left-line">Cloud Architecture can be huge, extending to thousands of objects. Creating or manually correcting one can take hours.</p>
+				</div>
+			</div>
+			<div class="flex-inline">
+				<div>
+					<p><strong>Repetitive.</strong></p>
+					<p class="left-line">Every time a change is made to the architecture, a diagram must be updated and new documentation must be generated.</p>
+				</div>
+			</div>
+			<div class="flex-inline">
+				<div>
+					<p><strong>Wide Audience.</strong></p>
+					<p class="left-line">As well as creating a full picture of the architecture, architects must also create views to communicate changes to both engineers and directors, each with different goals.</p>
+				</div>
+			</div>
+		</div>
+		<p>There also was valuable information regarding user workflows, motivations, and more that was helpful in building out our personas and fueling our design thinking.</p>
         
-        <h2>DEVOPS PERSONAS?</h2>
-        <p>Anyways, back to synthesizing research I generated three personas, two who were primary users and one who was secondary. These personas were posted up at every table in the scrum team to ensure we were focused on our user.</p>
+        <h2>Personas.</h2>
+        <p>From synthesizing the research I generated three personas, two who were primary users and one who was secondary. These personas were posted up at every table in the scrum team to ensure we were focused on our user.</p>
+		<br/>
+		<br/>
+		<p data-aos="fade-up"><strong>The Cloud Engineer</strong></p>
+		<p data-aos="fade-up">Directly responsible for his company’s cloud, Jordan governs and makes changes to his cloud while communicating changes to other engineers and executives clearly and efficiently. He wants to keep errors low and everything clearly documented.</p>
+		<a href="images/lucid/persona-1.png" data-lightbox="process-3"><img data-aos="fade-up" class="shadow" src="images/lucid/persona-1.png" alt="Persona - Cloud Engineer"></a>
+		<br/>
+		<p data-aos="fade-up"><strong>The Solution Architect</strong></p>
+		<p data-aos="fade-up">Yakshir works at a consulting firm for building and optimizing companies’ clouds. While exuding professionalism and quality, he wants to efficiently restructure a cloud with proper documentation so it can be handed off easily. He also wants to be able to identify and communicate changes quickly with a cost-benefit presentation.</p>
+		<a href="images/lucid/persona-2.png" data-lightbox="process-4"><img data-aos="fade-up" class="shadow" src="images/lucid/persona-2.png" alt="Persona - Solution Architect"></a>
+		<br/>
+		<p data-aos="fade-up"><strong>The IT Director</strong></p>
+		<p data-aos="fade-up">Ryan doesn’t directly interact with the cloud, but he knows the importance of it and what tools best help his company. He’s primarily responsible if his company picks up a new tool or not. If so, transitions need to be smooth and benefits need to far outweigh the costs.</p>
+		<a href="images/lucid/persona-3.png" data-lightbox="process-5"><img data-aos="fade-up" class="shadow" src="images/lucid/persona-3.png" alt="Persona - IT Director"></a>
+		<br/>
+		<br/>
 
-        <div class="split-block" data-aos="fade-up">
-					<div class="col-sm-6">
-						<a href="images/lucid/persona-1.png" data-lightbox="process-3"><img class="shadow" src="images/lucid/persona-1.png" alt="Persona - Cloud Engineer"></a>
-					</div>
-					<div class="col-sm-6">
-            <p><strong>The Cloud Engineer</strong></p>
-						<p>Directly responsible for his company’s cloud, Jordan governs and makes changes to his cloud while communicating changes to other engineers and executives clearly and efficiently. He wants to keep errors low and everything clearly documented.</p>
-					</div>
-        </div>
-        <div class="split-block" data-aos="fade-up">
-					<div class="col-sm-6">
-            <p><strong>The Solution Architect</strong></p>
-						<p>Yakshir works at a consulting firm for building and optimizing companies’ clouds. While exuding professionalism and quality, he wants to efficiently restructure a cloud with proper documentation so it can be handed off easily. He also wants to be able to identify and communicate changes quickly with a cost-benefit presentation.</p>
-					</div>
-					<div class="col-sm-6">
-            <a href="images/lucid/persona-2.png" data-lightbox="process-4"><img class="shadow" src="images/lucid/persona-2.png" alt="Persona - Solution Architect"></a>
-					</div>
-        </div>
-        <div class="split-block" data-aos="fade-up">
-					<div class="col-sm-6">
-						<a href="images/lucid/persona-3.png" data-lightbox="process-5"><img class="shadow" src="images/lucid/persona-3.png" alt="Persona - IT Director"></a>
-					</div>
-					<div class="col-sm-6">
-						<p><strong>The IT Director</strong></p>
-						<p>Ryan doesn’t directly interact with the cloud, but he knows the importance of it and what tools best help his company. He’s primarily responsible if his company picks up a new tool or not. If so, transitions need to be smooth and benefits need to far outweigh the costs.</p>
-					</div>
-        </div>
-
-        <h2>SPECIFYING THE FEATURES</h2>
-        <p>Based on the research, I worked with my PM and came up with a number of high-level features or capabilities. To further understand these features, I went through this flow in treating out how these features would behave and act:</p>
+		<div data-aos="fade-up" class="title-bar bg-match"></div>
+		<h1 data-aos="fade-up">Design.</h1>
+		<h2>Brainstorming.</h2>
+		<p>Building off the research I worked with my PM to imagine how we could <span class="highlight">re-engineer our user's approach entirely.</span></p>
+        <p>I lead this conversation by focusing on the entire current user journey and looking deeper at other applications that our users used. My goal was to see how Lucidchart could become the single solution for their needs.</p>
+		<p>This lead to our solution: <span class="highlight">an end-to-end flow where users could build, monitor, and present all from Lucidchart.</span></p>
+        <img data-aos="fade-up" src="images/lucid/before.png" alt="The Before Flow">
+        <img data-aos="fade-up" src="images/lucid/after.png" alt="The After Flow">
+        <p>Based on the flow, I worked with my PM and came up with a number of high-level features or capabilities. To further understand these features, I went through this flow in treating out how these features would behave and act:</p>
         <img data-aos="fade-up" src="images/lucid/feature-flow.png" alt="How Features Were Decided">
-        <p>Throughout this, regarding the features, I wanted to discover:</p>
+        <!--<p>Throughout this, regarding the features, I wanted to discover:</p>
         <ul>
 					<li>What should it accomplish?</li>
 					<li>When and why does the user use it?</li>
@@ -275,15 +288,13 @@
 							<p class="left-line">Being able to refresh would make it useful to not need to constantly import a new architecture each time it was updated.</p>
 						</div>
 					</div>
-        </div>
-        
-        <p>These features were helpful, but it came from the perception of users looking to simply augment their current flow. <span class="highlight">We wanted to re-engineer their approach entirely.</span></p>
-        <p>I lead this conversation by focusing on the entire current user journey and looked deeper at other applications that our users used. My goal was to see how Lucidchart could become the single solution for their needs.</p>
-		<p>I worked with my PM and the team tech lead to design a solution: <span class="highlight">an end-to-end flow where users could build, monitor, and present all from Lucidchart.</span></p>
-        <img src="images/lucid/before.png" alt="The Before Flow">
-        <img src="images/lucid/after.png" alt="The After Flow">
-
-        <p>To make this possible, we included a number of features that would serve to support this goal.</p>
+		</div>
+	-->
+	<p>Using this model and working with the PM and the team tech lead to see what was feasible, I built out the core functionality of this integration:</p>
+	</div>
+	<a href="images/lucid/mindmap.png" data-lightbox="process-1"><img data-aos="fade-up" class="final-hero" src="images/lucid/mindmap.png" alt="A mapping of efforts to features"></a>
+	<div class="detailed">
+        <!--<p>To make this possible, we included a number of features that would serve to support this goal.</p>
         <div class="indented-block" data-aos="fade-up">
 			<div class="flex-inline">
 				<div>
@@ -309,18 +320,27 @@
 					<p class="left-line">Users can export their created layout to upload onto their AWS server.</p>
 				</div>
 			</div>
-        </div>
-
-        <p>I created videos and interactive mocks of these news features, which my PM took on sales tests to see whether this cohesive experience appealed to users. <span class="highlight">The results were outstanding.</span></p>
-
-        <p>With the features specified, I then began designing the user experience within the product, I split the design into two phases: the import flow and the on-canvas experience.</p>
-        <img data-aos="fade-up" src="images/lucid/two-experiences.png" alt="Two Experiences: Import and On-Canvas">
-
-        <p>From this point on, I worked on the import flow and the on-canvas experience in parallel. However, to keep things clear, I’ll discuss it in order of how it appears to the user: import flow then on-canvas experience.</p>
-
+		</div>
+	-->
+		<h2>Prototype.</h2>
+        <p>Using Lucid's design system, I implemented the features in a prototype, which my PM took on sales tests to see whether this cohesive experience appealed to users. <span class="highlight">The results were outstanding.</span></p>
+		<div class="video-wrapper">
+			<video autoplay muted playsinline loop>
+			  <source src="images/lucid/sales-tests.webm" type="video/webm" />
+			  <source src="images/lucid/sales-tests.mp4" type="video/mp4" />
+			  Your browser does not support the video tag.
+			</video>
+		  </div>
+		<p>With all the features designed out, the project was complete. <strong>Or so I thought.</strong></p>
+		<p>In testing with actual users, problems arose, particularly around two areas: the import flow and the left panel.</p>
+		<p><span class="highlight">Users found the import flow dense and difficult to understand,</span> with it lacking information and also producing diagrams they didn't expect, leading users to redo the flow again and again. The left panel also had issues, with <span class="highlight">users having difficulty finding tools and not even exploring the menus to see the options available to them.</span></p>
+		<p><span class="highlight">To provide the best possible users experience, these components had to be redesigned, yet also work when extended across the product.</span></p>
 		<br/>
 		<br/>
-        <h2>THE IMPORT FLOW</h2>
+
+		<div data-aos="fade-up" class="title-bar bg-match"></div>
+		<h1 data-aos="fade-up">Challenge #1: The Import Flow.</h1>
+		<h2>The Problem.</h2>
         <p>The current import flow allowed for users to import their account through three different methods, choose a few options, and get it on the canvas.</p>
         <img data-aos="fade-up" src="images/lucid/old-flow.png" alt="Old Import Modal Flow">
         <p>However, in order to offer a more robust experience, the new import flow would have to manage this:</p>
@@ -353,18 +373,10 @@
 						</div>
 					</div>
 				</div>
-
-        <p>With the current component, this new flow had to exist in the current import modal. The problem is...</p>
-        <div class="split-block" data-aos="fade-up">
-					<div class="col-sm-6">
-						<a href="images/lucid/old-import-flow.png" data-lightbox="process-6"><img src="images/lucid/old-import-flow.png" alt="Old Import Modal"></a>
-					</div>
-					<div class="col-sm-6">
-						<p>...it's tiny.</p>
-					</div>
-        </div>
-
-        <p>I created multiple versions in the import modal and concept tested them with both users, my scrum team, and the UX team. Each one ran into problems.</p>
+        <p>With the pre-existing component and to maintain consistency across the product, this new flow had to exist in the current import modal.</p>
+		
+		<h2>Explorations.</h2>
+		<p>I created multiple versions in the import modal, each with a different approach, and tested them with both users, my scrum team, and the UX team. Each one ran into problems.</p>
         <div class="split-block" data-aos="fade-up">
 					<div class="col-sm-6">
 						<img src="images/lucid/iteration-1.png" alt="Exploration 1">
@@ -399,29 +411,30 @@
 	<a href="images/lucid/discovery-3.png" data-lightbox="process-9"><img data-aos="fade-up" class="final-hero" src="images/lucid/discovery-3.png" alt="Cross Account Role Priority Iteration"></a>
 	<div class="detailed">
 		<br/>
+		<p><span class="highlight">Building on the feedback from the testing, I combined strengths of each concept into one design.</span></p>
+		<div class="split-block" data-aos="fade-up">
+			<div class="col-sm-6">
+				<img class="shadow" src="images/lucid/aws-import-slidedown.gif" alt="AWS Import Slidedown Animation">
+			</div>
+			<div class="col-sm-6">
+				<p>In the next iteration, I created a version that <span class="highlight">leverages motion</span> to communicate states to the user. It performed better, but there still was confusion caused due to all the screen switching.</p>
+			</div>
+		</div>
 		<p>From this exercise, it was clear the biggest issue was the multiple account import. There were problems in needing to:</p>
-        <ul>
-          <li>Add multiple accounts</li>
-          <li>Offer enough supporting information</li>
-          <li>Sometimes filter data before import</li>
-          <li>Import from previously added accounts</li>
-          <li>Handle errors</li>
-          <li>Allow different import options</li>
-          <li>Be intuitive and easy</li>
+        <ul data-aos="fade-up">
+          <li>Add multiple accounts.</li>
+          <li>Offer enough supporting information.</li>
+          <li>Sometimes filter data before import.</li>
+          <li>Import from previously added accounts.</li>
+          <li>Handle errors.</li>
+          <li>Allow different import options.</li>
+          <li>Be intuitive and easy.</li>
         </ul>
 
-        <div class="split-block" data-aos="fade-up">
-					<div class="col-sm-6">
-						<img class="shadow" src="images/lucid/aws-import-slidedown.gif" alt="AWS Import Slidedown Animation">
-					</div>
-					<div class="col-sm-6">
-            <p>Through lots of iterations, I created a version that <span class="highlight">leverages motion</span> to communicate states to the user. It performed better, but there still was confusion caused due to all the screen switching.</p>
-					</div>
-        </div>
+        <p>I also noticed a number of issues with the modal itself, primarily in the small size not providing an immersive experience, no progress trackers, poor navigation for long flows, and lack of supporting information.</p>
 
-        <p>Through this exploration, I noticed a number of issues with the modal itself, primarily in the small size not providing an immersive experience, no progress trackers, poor navigation for long flows, and lack of supporting information.</p>
-
-        <p><span class="highlight">I had to rethink the import modal.</span> Moving back to scratch, I explored more on the purpose of modals, how they’re used across the product, and best practices:</p>
+		<h2>Rethinking the Modal.</h2>
+        <p><span class="highlight">Bring the issue up with leadership, I was asked to rethink the import modal.</span> Moving back to scratch, I explored more on the purpose of modals, how they’re used across the product, and best practices:</p>
         <img data-aos="fade-up" src="images/lucid/modal-research.png" alt="Modal Research">
         <p>From this, I developed a list of overarching modal principles that would guide me as I designed a new import modal to house the AWS import flow.</p>
 
@@ -470,58 +483,53 @@
 					</div>
 				</div>
         <p>Through this exploration, I created a new modal that was built on the current small import modal and the principles.</p>
-		<a href="images/lucid/new-modal-1.png" data-lightbox="process-10"><img data-aos="fade-up" src="images/lucid/new-modal-1.png" alt="New Modal Page 1"></a>
+		<a href="images/lucid/modal-in-product.png" data-lightbox="process-12"><img class="shadow" src="images/lucid/modal-in-product.png" alt="Modal in Product"></a>
         <div class="split-block" data-aos="fade-up">
 			<div class="col-sm-6 no-mobile">
 				<ul>
-					<li>Twice the width of the old import modal</li>
-					<li>Left half for primary interactions, second half for secondary flows or supporting information</li>
+					<li>Twice the width of the old import modal.</li>
+					<li>Left half for primary interactions, right half for secondary flows or supporting information.</li>
 				</ul>
 			</div>
 			<div class="col-sm-6">
 				<ul>
-				<li>Modal to ensure the canvas is still safe, but large enough to demand full attention</li>
-				<li>Left vertical progress bar that doubles as navigation</li>
+				<li>Modal to ensure the canvas is still safe, but large enough to demand full attention.</li>
+				<li>Left vertical progress bar that doubles as navigation.</li>
 				</ul>
 			</div>
 		</div>
-		<p>Due to this extension of the old design, I was able to cleanly implement my previous import flow design into it. The performance in usability tests was far better.</p>
+		<p>Due to this extension of the old design, I was able to cleanly implement my previous import flow design into it. <span class="highlight">I tested the flow in this new modal and it performed far better.</span></p>
 	</div>
 	<a href="images/lucid/modal-pages.png" data-lightbox="process-11"><img data-aos="fade-up" class='final-hero' src="images/lucid/modal-pages.png" alt="Modal Pages Laid Out"></a>
 	<div class='detailed'>
 		<br/>
 		<p>Overall, the design of this import flow performed extremely well amongst users and also impacted the product by giving a place to <span class="highlight">offer more informative and cohesive complex experiences within Lucidchart.</span> This modal was added to the design system and extended to other parts of the product.</p>
-        
-        <a href="images/lucid/modal-in-product.png" data-lightbox="process-12"><img class="shadow" src="images/lucid/modal-in-product.png" alt="Modal in Product"></a>
 		<br/>
 		<br/>
-        <h2>THE LEFT PANEL</h2>
-        <p>Upon importing their architecture into Lucidchart, users previously would be greeted with the diagram on the canvas, with this left panel overlapping the default left panel to edit the architecture.</p>
+
+		<div data-aos="fade-up" class="title-bar bg-match"></div>
+		<h1 data-aos="fade-up">Challenge #2: The Left Panel.</h1>
+        <p>Upon importing their architecture into Lucidchart, users previously would be greeted with the diagram on the canvas, with the default left panel being overlapped by this new left panel to edit the architecture.</p>
         <a href="images/lucid/old-integration.png" data-lightbox="process-13"><img class="shadow" src="images/lucid/old-integration.png" alt="Old Left Panel Integration"></a>
-        <p>In Lucidchart, the left panel is the primary interaction point where users can drag shapes onto their canvas. If they’re interacting with a complex data-linked shape, like an organization chart, the left panel transforms into a panel for manipulating the shape.</p>
-        <p><span class="highlight">The new AWS architecture import needed its own left panel.</span> This left panel would be the point where users could control their diagram.</p>
+        <p>In Lucidchart, the left panel is the primary interaction point where users can drag shapes onto their canvas. If they’re interacting with a complex data-linked shape, like an organization chart, the left panel transforms for manipulating the shape.</p>
+		<h2>The Problem.</h2>
+		<p><span class="highlight">The new AWS architecture import needed its own left panel.</span> This left panel would be the point where users could control their diagram.</p>
   
         <div class="split-block" data-aos="fade-up">
 			<div class="col-sm-6">
 				<a href="images/lucid/old-left-panel.png" data-lightbox="process-14"><img class="shadow" src="images/lucid/old-left-panel.png" alt="First Left Panel Integration"></a>
 			</div>
 			<div class="col-sm-6">
-				<p>Following the structure of the left panel from other integrations, I attempted to make a left panel that would serve the needs of CloudInsights.</p>
+				<p>Following the structure of the left panel from other integrations, I attempted to make one that would serve the needs of CloudInsights.</p>
 			</div>
         </div>
 
-        <p>As I was building it out, however, I noticed that the given menus became jumbled and messy. With multiple functionalities, <span class="highlight">menus became just drawers where features were stuffed in for convenience.</span></p>
-        <div class="split-block" data-aos="fade-up">
-			<div class="col-sm-6">
-				<img src="images/lucid/old-ia.png" alt="Old Information Architecture">
-			</div>
-			<div class="col-sm-6">
-				<p>A massive toolset that becomes confusing. On user testing, people found it extremely difficult to find the right tool to accomplish their goal.</p>
-			</div>
-        </div>
-        <p>I worked through this information architecture and <span class="highlight">conducted card sorting sessions with users.</span> From this exercise, it became apparent that there was a much better way for sorting the features.</p>
+        <p>As I was building it out, however, I noticed that the given menus became jumbled and messy. With multiple functionalities, <span class="highlight">menus became just drawers where features were stuffed in for convenience.</span> This is what the current information architecture of the left panel looked like.</p>
+		<img src="images/lucid/old-ia.png" alt="Old Information Architecture">
+		<h2>Exploration.</h2>
+		<p>I worked through this information architecture and <span class="highlight">conducted card sorting sessions with users.</span> From this exercise, it became apparent that there was a much better way for sorting the features.</p>
 
-        <p>Here, for our design, there was a major discovery. With features sorted by <span class="highlight">purposes or intents rather than function</span>, it became clearer and offered a cleaner user flow based on their goals. With the expanded set of features that allows for multiple flows and goals, it made sense for features to be sorted by that.</p>
+        <p>With features sorted by <span class="highlight">purposes or intents rather than function</span>, it became clearer and offered a cleaner user flow based on their goals. With the expanded set of features that allows for multiple flows and goals, it made sense for features to be sorted by that criteria.</p>
         <div class="video-wrapper">
           <video autoplay muted playsinline loop>
             <source src="images/lucid/transform-ia.webm" type="video/webm" />
@@ -530,7 +538,7 @@
           </video>
         </div>
         <p>However, this separation could not exist in just menus. <span class="highlight">Detailed interactions and supporting different cognitive states were necessary and required a deeper experience than dropdown menus.</span></p>
-        <p>Again, I established design principles for the left panel to ensure as I redesigned the left panel, I wasn’t breaking other cases.</p>
+        <p>Again, I established design principles for the left panel to ensure that as I redesigned the left panel, I wouldn't be breaking other cases.</p>
         <div class="indented-block" data-aos="fade-up">
 			<div class="flex-inline">
 				<img src="images/lucid/goal-oriented.svg" class="principle-icon">
@@ -568,7 +576,7 @@
 				</div>
 			</div>
 		</div>
-		<p>I began exploring and moved towards tabs as it closely matched the principles. This resulted in <span class="highlight">the birth of the tabbed left panel.</span></p>
+		<p>I began exploring and moved towards tabs as it closely matched the principles, resulting in <span class="highlight">the birth of the tabbed left panel.</span></p>
         
         <p>This underwent lots of iterations while I worked with other designers at Lucid and also tested with users.</p>
         <div class="split-block" data-aos="fade-up">
@@ -576,12 +584,12 @@
 						<a href="images/lucid/left-panel-iteration1.png" data-lightbox="process-16"><img class="shadow" src="images/lucid/left-panel-iteration1.png" alt="Left Panel Iteration 1"></a>
 					</div>
 					<div class="col-sm-6">
-            <p>It began with two tabs, but users found the “Design” tab confusing and split in purposes. They also found it hard to accomplish higher level goals, such as refreshing their architecture. However, the tab structure made what was presented much cleaner and easier to find tools related to their goals.</p>
+            <p>It began with two tabs, but users found the “Design” tab confusing and split in purposes. They also found it hard to accomplish higher level goals, such as refreshing their architecture. However, the tab structure made what was presented much cleaner and easier to find tools.</p>
 					</div>
         </div>
         <div class="split-block" data-aos="fade-up">
 			<div class="col-sm-6">
-            	<p>With three tabs, users found it a little easier to grasp the goal of each tab, but still had difficulty in using the left panel as navigation through pages of their diagram.</p>
+            	<p>With three tabs, users found it a little easier to grasp the goal of each tab, but still had difficulty in using the left panel as navigation through pages of their diagram, along with some icon ambiguity.</p>
 			</div>
 			<div class="col-sm-6">
             	<a href="images/lucid/left-panel-iteration2.png" data-lightbox="process-17"><img class="shadow" src="images/lucid/left-panel-iteration2.png" alt="Left Panel Iteration 2"></a>
@@ -592,11 +600,11 @@
 				<a href="images/lucid/new-panel-1.png" data-lightbox="process-15"><img class="shadow" src="images/lucid/new-panel-1.png" alt="Left Panel Explore"></a>
 			</div>
 			<div class="col-sm-6">
-				<p>In the final iteration the refresh was a banner that offered more information. It also was able to switch through high-level containers, such as accounts, through the top title bar. <span class="highlight">This was particularly helpful for teams working with other parts of the product.</span></p>
+				<p>In the final iteration, the refresh was a banner that offered more information. It also was able to switch through high-level containers, such as accounts, through the top title bar.</p>
 			</div>
 		</div>
-
-        <p>The final iteration was one that held up extremely well under testing, where all users were able to accomplish all of their goals.</p>
+		<h2>Final Iteration.</h2>
+        <p>The final iteration was one that held up extremely well under testing, where all users were able to accomplish all of their goals. <span class="highlight">Working with other teams across the product, it was also easy to apply it to their use cases.</span></p>
 		</div>
 		<a href="images/lucid/the-breakdown.png" data-lightbox="process-20"><img class="final-hero" src="images/lucid/the-breakdown.png" data-aos="fade-up" alt="The Breakdown Left Panels"></a>
 		<div class="detailed">
@@ -604,8 +612,8 @@
 		</div>
 		<a href="images/lucid/aws-final.png" data-lightbox="process-19"><img class="final-hero" data-aos="fade-up" style="padding:5%" src="images/lucid/aws-final.png" alt="AWS Final Integration"></a>
 	   <div class="detailed">
-
-        <h2>BRINGING IT ALL BACK</h2>
+		<div class="title-bar bg-match"></div>
+        <h1>Bringing it Back.</h1>
         <p><span class="highlight">With the design of the new import modal and left panel, I was able to work with my team to design the AWS import experience, as well as add value to the rest of the company.</span></p> 
         <p>I learned a lot during my time here in how to work in a fast-paced environment, and take initiative and ownership in design. I also learned to think more holistically regarding the company on how things can extend or remain consistent with the rest of the product.</p>
         <p>CloudInsights has since then been released on Lucidchart, and has expanded to include multiple teams to support it.</p>
@@ -624,8 +632,8 @@
 				</div>
 				<div class="detailed">
           <div class="final-block">
-						<div class="title-bar bg-match"></div>
-            <h4>Import Flow</h4>
+			<div class="title-bar bg-match"></div>
+            <h4 data-toc-skip>Import Flow.</h4>
 					</div>
         </div>
         <div class="final-hero" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
@@ -644,11 +652,11 @@
 
         <div class="detailed">
           <div class="final-block">
-            <h3>The Flow</h3>
+            <h3 data-toc-skip>The Flow.</h3>
             <div class="feature-block">
 							<div class="col-sm-6" data-aos="fade-right">
 								<div class="title-bar bg-match long-bar"></div>
-								<h3>Lots of ways to import, but each comes with different capabilities. Education for each option is invaluable.</h3>
+								<h3 data-toc-skip>Lots of ways to import, but each comes with different capabilities. Education for each option is invaluable.</h3>
 							</div>
 							<div class="col-sm-6" data-aos="fade-left">
 								<a href="images/lucid/new-modal-1.png" data-lightbox="final-2"><img src="images/lucid/new-modal-1.png" alt="Import Type"></a>
@@ -660,13 +668,13 @@
 							</div>
 							<div class="col-sm-6" data-aos="fade-right">
 								<div class="title-bar bg-match long-bar"></div>
-								<h3>An advanced step that allows for multiple account add, previous accounts, filters, and supporting information.</h3>
+								<h3 data-toc-skip>An advanced step that allows for multiple account add, previous accounts, filters, and supporting information.</h3>
 							</div>
 						</div>
 						<div class="feature-block">
 							<div class="col-sm-6" data-aos="fade-right">
 								<div class="title-bar bg-match long-bar"></div>
-								<h3>Choosing how the architecture is laid out with instant feedback gives users control and delight.</h3>
+								<h3 data-toc-skip>Choosing how the architecture is laid out with instant feedback gives users control and delight.</h3>
 							</div>
 							<div class="col-sm-6" data-aos="fade-left">
 								<a href="images/lucid/new-modal-3.png" data-lightbox="final-4"><img src="images/lucid/new-modal-3.png" alt="Page Layouts"></a>
@@ -678,19 +686,19 @@
 							</div>
 							<div class="col-sm-6" data-aos="fade-right">
 								<div class="title-bar bg-match long-bar"></div>
-								<h3>Helping users select their visual preference, while also letting them see exactly what that entails replaces frustration with delight and discovery.</h3>
+								<h3 data-toc-skip>Helping users select their visual preference, while also letting them see exactly what that entails replaces frustration with delight and discovery.</h3>
 							</div>
 						</div>
 						<div class="feature-block">
 							<div class="col-sm-6" data-aos="fade-right">
 								<div class="title-bar bg-match long-bar"></div>
-								<h3>A final summary page with an easy way to make minute corrections quickly.</h3>
+								<h3 data-toc-skip>A final summary page with an easy way to make minute corrections quickly.</h3>
 							</div>
 							<div class="col-sm-6" data-aos="fade-left">
                 <a href="images/lucid/new-modal-5.png" data-lightbox="final-6"><img src="images/lucid/new-modal-5.png" alt="Final Summary"></a>
 							</div>
             </div>
-            <h3>Motion Design</h3>
+            <h3 data-toc-skip>Motion Design.</h3>
           </div>
         </div>
         <div class="final-hero" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
@@ -708,7 +716,7 @@
           <div class="concept-row"></div>
           <div class="final-block detailed">
             <div class="title-bar"></div>
-            <h4>Left Panel</h4>
+            <h4 data-toc-skip>Left Panel.</h4>
           </div>
           <div class="final-hero" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
             <img src="images/lucid/left-panel-info.png" alt="Info regarding the left panel">
@@ -740,14 +748,15 @@
 					<div class="concept-row"></div>
 					<div class="final-block">
 						<div class="title-bar bg-match"></div>
-						<h4>Final Note</h4>
+						<h4 data-toc-skip>Final Note.</h4>
 						<p class="final-note">My experience in designing for Lucidchart was extremely fun and extremely demanding. While working on this product, I became aware of the importance of not designing in a bubble, but including other parts of the company as well, even if their features seem unrelated at first.</p>
             <p class="final-note">One of the most important lessons I learned was that taking the initiative and involving users and others earlier usually results in better results, something I will be sure to do in the future.</p>
             <p class="final-note"><span class="highlight">This design is now available to use on Lucidchart.</span></p>
           </div>
         </div>
-					<h4 class="thank-you">Thank you for scrolling!</h4>
+				<h4 data-toc-skip class="thank-you">Thank you for scrolling!</h4>
 				<hr class="featurette-divider">
+				<div class="next-tab"><a onclick="closeAnimate(this)">HEAD BACK HOME<br/><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></a></div>
 			</div>
     </div>
   </div>
@@ -756,10 +765,10 @@
 </header>
     <!-- jQuery -->
 <script src="js/jquery.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="js/aos.js"></script>
     <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
-<script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.js"></script>
+<script src="js/bootstrap-toc.min.js"></script>
     <!-- Lightbox -->
 	<script src="js/lightbox.min.js"></script>
     <!-- main.js -->

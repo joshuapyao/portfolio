@@ -39,7 +39,7 @@
 
 </head>
 
-<body data-spy="scroll" class="socialar piece">
+<body data-spy="scroll" data-target="#toc" class="socialar piece">
 <header>
       <div class="article" id="art1" data-color="#C4C4B5" data-background="#EAE9D7">
 		<a onclick="closeAnimate(this)" class="close-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></a>
@@ -56,47 +56,45 @@
 					<div id="tab-progress"></div>
 				</div>
         	</div>
-        	<h1 data-toc-text="Overview" id="overview"></h1>
 			<div id="Overview" class="tabcontent">
-				<div class="detailed">
-					<div class="overview">
-						<div class="overview-image">
-							<a href="images/socialar/testing-setup.jpg" data-lightbox="overview-1"><img src="images/socialar/testing-setup.jpg" alt="Testing Setup"></a>
+				<div class="overview">
+					<!--<div class="overview-image">
+						<a href="images/socialar/testing-setup.jpg" data-lightbox="overview-1"><img src="images/socialar/testing-setup.jpg" alt="Testing Setup"></a>
+					</div>-->
+					<div class="goal">Exploring how augmented-reality can help improve and augment social situations.</div>
+					<div class="details">
+						<div>
+							<p><strong>The User.</strong></p>
+							<div class="strong-underline"></div>
+							<p>People attending networking events.</p>
 						</div>
-						<div class="goal">Exploring how augmented-reality can help improve and augment social situations.</div>
-						<div class="details">
-							<div>
-								<p><strong>The User.</strong></p>
-								<div class="strong-underline"></div>
-								<p>People attending networking events.</p>
-							</div>
-							<div>
-								<p><strong>The Span.</strong></p>
-								<div class="strong-underline"></div>
-								<p>12 weeks.</p>
-							</div>
-							<div>
-								<p><strong>The Tools.</strong></p>
-								<div class="strong-underline"></div>
-								<p>Figma, Invision Studio, and Google Glass.</p>
-							</div>
-							<div>
-								<p><strong>The Crew.</strong></p>
-								<div class="strong-underline"></div>
-								<p>Xi Chen, Yanfeng Jin, and Suyash Thakare.</p>
-							</div>
+						<div>
+							<p><strong>The Span.</strong></p>
+							<div class="strong-underline"></div>
+							<p>12 weeks.</p>
+						</div>
+						<div>
+							<p><strong>The Tools.</strong></p>
+							<div class="strong-underline"></div>
+							<p>Figma, Invision Studio, and Google Glass.</p>
+						</div>
+						<div>
+							<p><strong>The Crew.</strong></p>
+							<div class="strong-underline"></div>
+							<p>Xi Chen, Yanfeng Jin, and Suyash Thakare.</p>
 						</div>
 					</div>
+				</div>
+				<div class="detailed">
 					<hr class="featurette-divider">
-					<h2>the problem</h2>
-					<p>The world of augmented reality (AR) is quickly expanding, and the applications of it are endless. With Google Glass, Microsoft Hololens, and North Focals, the future of AR has huge investment by major tech companies. By being situated in front of your eyes, they offer exciting ways of providing relevant information, however, doing so without being obtrusive is a challenging task.</p>
-					<p><span class="highlight">Our goal with this project was to apply ubiquitous computing principles to AR,</span> by designing AR for everyday situations, such as social conversation. This project focused more on exploring the capabilities and experience design of using AR in these situations, rather than just having a design. In a way, it is more of a research project, driven by design.</p>
-					<p><span class="highlight">For this project, we worked with Thad Starner, a pioneer in wearable computing and a technical lead for Google’s Project Glass.</span></p>
-					<p>Our process for this project was:</p>
-					<figure>
-						<img class="no-shadow" src="images/socialar/process.png" alt="The Design Process">
-					</figure>
-					<p>Through lots of iterations, exploration, and ideation, we designed a concept in how AR would ideally serve in social situations. To showcase this unique experience, I created a video prototype:</p>
+					<h2 data-aos="fade-up" data-toc-skip>The Problem.</h2>
+					<p data-aos="fade-up">The world of augmented reality (AR) is quickly expanding, and the applications of it are endless. With Google Glass, Microsoft Hololens, and North Focals, the future of AR has huge investment by major tech companies. By being situated in front of your eyes, they offer exciting ways of providing relevant information, however, doing so without being obtrusive is a challenging task.</p>
+					<p  data-aos="fade-up"><strong>My team and I were tasked to discover applications for AR, particularly in social situations.</strong></p>
+
+					<h2 data-aos="fade-up" data-toc-skip>The Solution.</h2>
+					<p data-aos="fade-up"><span class="highlight">Our goal with this project was to apply ubiquitous computing principles to AR,</span> by designing AR for everyday situations, such as social conversation. This project focused more on exploring the capabilities and experience design of using AR in these situations, rather than just having a design. In a way, it is more of a research project, driven by design.</p>
+					<p data-aos="fade-up"><span class="highlight">For this project, we worked with Thad Starner, a pioneer in wearable computing and a technical lead for Google’s Project Glass.</span></p>
+					<p data-aos="fade-up">To showcase this unique experience, I created a video prototype:</p>
 				</div>
 				<div class="final-hero" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
 					<video playsinline controls poster="images/socialar/video-poster.jpg">
@@ -105,27 +103,27 @@
 					  	Your browser does not support the video tag.
 					</video>
 				</div>
+				<div class="detailed">
+					<br/><br/>
+					<p data-aos="fade-up">Through iterations, exploration, and ideation, we designed a concept in how AR would ideally serve in social situations. Our process for this project was:</p>
+					<figure data-aos="fade-up">
+						<img class="no-shadow" src="images/socialar/process.png" alt="The Design Process">
+					</figure>
+				</div>
 				<hr class="featurette-divider">
 				<div class="next-tab" ><a onclick="openProcess()">VIEW THE DESIGN PROCESS<br/>&bigtriangledown;</a></div>
 			</div>
 			<div id="Process" class="tabcontent">
-            <div class="row">
+				<nav id="toc" data-toggle="toc" class="sticky-top"></nav>
           <!-- First Featurette -->
             <div class="detailed">
-			<figure>
-				<img class="no-shadow" src="images/socialar/process.png" alt="The Design Process">
-			</figure>
-			<p>This process would help us answer the major overarching question: <span class="highlight">how can AR augment social situations?</span></p>
-				<hr class="featurette-divider">
-				<div class="headliner">
-					<h1 id="exploration">EXPLORATION</h1>
-	            	<p class="subtitle">“Our investigation of the user’s context, pain points, and needs”</p>
-	        	</div>
-	        	<hr class="featurette-divider">
-	            <h2 id="clientinterview">BACKGROUND RESEARCH</h2>
+				<div data-aos="fade-up" class="title-bar bg-match"></div>
+				<h1 data-aos="fade-up" id="exploration">Exploration.</h1>
+
+	            <h2 id="clientinterview">Background Research.</h2>
 				<p>A majority of our research was supported by literature review, competitive analysis, and more. With the relatively new nature of AR, it was hard to approach general population about it, with a majority of people having little to no experience using AR. This phase lasted for a few weeks and helped us immensely in understanding the problem space, design principles in the area, and what has already been done.</p>
 				<p>A big outcome from the literature review was identifying how AR primarily functions within someone’s daily life. Due to the nature of the technology having more passive but contextual interactions, most uses were to advise and augment human capabilities. The four key use cases for AR in social settings were:</p>
-				<ol>
+				<ol data-aos="fade-up">
 					<li><strong>Augmenting Memory</strong> - checking your calendar, adding to a to-do list, etc.</li>
 					<li><strong>Finding Interests</strong> - seeing hotspots in the area, identifying similar interests</li>
 					<li><strong>Detecting Interruptions</strong> - getting notifications, remembering what you just did</li>
@@ -133,7 +131,7 @@
 				</ol>
 				<br/>
 				<p>We combined this research from others together to identify design implications for social situations, and <span class="highlight">narrowed it to three higher-level design implications:</span></p>
-				<ol>
+				<ol data-aos="fade-up">
 					<li>Ease of Access to Tools</li>
 					<li>Augmenting Memory</li>
 					<li>Showing Relevant Information Based on Context</li>
@@ -141,18 +139,18 @@
 				<br/>
 				<p>Another big outcome of the background research was understanding the technical design requirements for AR. <span class="highlight">Also, current AR has many technical limitations that affect design.</span> Low computing power, high heat output, possible hardware failure, and more are all aspects that limit design in AR. </p>
 				<p><span class="highlight">An interesting implication specific to headworn AR was reducing the distraction that AR causes.</span> Research showed AR centered in view or that took a larger portion of the vision cause major distractions and danger for the wearer. Also, if AR could affect the entire vision, it could potentially cause errors in the entire vision. For example, if you were driving and suddenly a block of pixels in your AR device broke, then you could be momentarily blind while driving down a highway. The design implication of this is to partition just a small portion of vision to AR, such as the top right corner.</p>
-				<figure>
+				<figure data-aos="fade-up">
 					<a href="images/socialar/ar-error.jpg" data-lightbox="process-1"><img src="images/socialar/ar-error.jpg" alt="Errors of AR"></a>
 				  <figcaption>Hardware failure in daily AR can be dangerous if unexpected.</figcaption>
 				</figure>
 
-				<h2 id="surveys">SURVEYS</h2>
+				<h2 id="surveys">Surveys.</h2>
 	        	<p>Armed with a better understanding of the problem space, we began our user research. Our first step in this regard was to identify our problem space context and user base. Due to our access, we focused primarily on college students, with the expectation that we could design for this user group and then expand it to others in the future.</p>
 
 				<p>We surveyed participants, asking general questions regarding contexts where people would use technology to assist conversations. The goal of this was to understand if technology had a place in in-person conversations and if so, how. <span class="highlight">From this, we identified a primary social context which people used technology to augment their social skills: networking events.</span></p>
 				<p>We also interviewed more <span class="highlight">UX designers on the corporate-side to understand limitations in design</span> from either corporate structure or anything else we were unaware of.</p>
 
-				<h2 id="interviews">INTERVIEWS</h2>
+				<h2 id="interviews">Interviews.</h2>
 				<p>With our user and context in mind, we prepared another round of interviews to shed insight on our newly developed research questions of <span class="highlight">what information users wanted to see in the context, when they wanted to see it, and how they wanted it displayed.</span> We scripted and planned a new interview, under the context of networking events, and then conducted interviews with a new set of 7 participants.</p>
 				<p>During this phase, we went to visit our mentor multiple times to help analyze our feedback and get recommendations for further literature to look at. We synthesised the results together in an affinity diagramming session to identify how it affected our design. <span class="highlight">The result of these interview sessions, companioned with our literature review, gave us a number of strong design implications:</span></p>
 				<ol>
@@ -163,14 +161,11 @@
 					<li>The primary info people wanted to see was LinkedIn profile, job, education, and time management</li>
 				</ol>
 				
-				<hr class="featurette-divider">
-				<div class="headliner">
-					<h1 id="ideation">IDEATION</h1>
-	            	<p class="subtitle">“Our transformation of research data into design information”</p>
-	        	</div>
-            	<hr class="featurette-divider">
+				<br/>
+				<div data-aos="fade-up" class="title-bar bg-match"></div>
+				<h1 data-aos="fade-up" id="ideation">Ideation.</h1>
 
-				<h2 id="use-case-scenario">USE CASES &amp; SCENARIOS</h2>
+				<h2 id="use-case-scenario">Use Cases.</h2>
 	        	<p>To kick off our design thinking, we identified multiple use cases within our context, by breaking down the user flow, and storyboarded the process.</p>
 				<p><span class="highlight">The first use case is onboarding,</span> we wanted to emphasize extra importance on this, especially with the current unfamiliarity of AR. The use case consisted of how a person would first get set up with using AR at a networking event. </p>
 				
@@ -180,38 +175,35 @@
 				
 				<p><span class="highlight">The final use case is supporting a conversation,</span> where AR could provide ways to encourage and build meaningful conversations.</p>
 				
-				<h2 id="design-principles">DESIGN PRINCIPLES</h2>
+				<h2 id="design-principles">Principles.</h2>
 				<p>Moving forwards onto the design of the structure, we wanted to first define design principles that would help establish what we’re trying to achieve while also ensuring we stay on track with our users while designing. Below are our four design principles:</p>
 				
-				<ol>
+				<ol data-aos="fade-up">
 					<li><strong>Contextual and Flexible</strong> - The system should provide different types of information under different contexts.</li>
 					<li><strong>Naturalness</strong> - The system should encourage natural conversation instead of limiting users during the conversation</li>
 					<li><strong>Helpfulness</strong> - The system should primarily focus on helping users find people and assist them with conversations.</li>
 					<li><strong>Privacy</strong> - The system should consider different levels of privacy, allowing people to opt-in and out.</li>
 				</ol>
 
-				<h2 id="information-architecture">INFORMATION ARCHITECTURE</h2>
+				<h2 id="information-architecture">Information Architecture.</h2>
 				<p>Before creating anything visual, <span class="highlight">it was necessary to ensure our information and navigation was laid out in an intuitive manner.</span> Because we had a Google Glass on hand to prototype on, we broke down the internal information architecture of the Google Glass UI and mirrored it with our own. We also followed the Google Glass design guidelines when structuring out our information architecture.</p>
 				<p>We built out the information architecture with the user scenarios in mind, so that information and features would be available to them only when they needed it, <span class="highlight">matching our design principles of contextual behavior.</span></p>
 				
-				<figure>
+				<figure data-aos="fade-up">
 					<a href="images/socialar/IA.png" data-lightbox="process-2"><img src="images/socialar/IA.png" alt="Information Architecture"></a>
 					<figcaption>The information architecture we designed for the system.</figcaption>
 				</figure>
 
 				<p><span class="highlight">Due to the technology available on hand, we designed the navigation considering that the user would navigate through the information the same way one would with Google Glass, with side-swipes to navigate between options at the same hierarchy, tap to select, and swipe-up to go up in the hierarchy.</span></p>
 				
-				<hr class="featurette-divider">
-				<div class="headliner">
-					<h1 id="creation">CREATION</h1>
-	            	<p class="subtitle">“The birth of a design in its true form (through multiple iterations)”</p>
-	        	</div>
-				<hr class="featurette-divider">
+				<br/>
+				<div data-aos="fade-up" class="title-bar bg-match"></div>
+				<h1 data-aos="fade-up" id="creation">Creation.</h1>
 
-				<h2 id="conceptdesign">CONCEPT DESIGN</h2>
+				<h2 id="conceptdesign">Concept Design.</h2>
 				<p>Based on that information architecture and Google Glass design principles we created screens for a concept design of the AR. We also made a few changes diverging from the base Google Glass design based on our user testing with Google Glass and our previous findings. Due to the difficult and non-rapid nature of prototyping on AR, <span class="highlight">we created a concept video/slideshow for user testing instead, which showed the AR concept through a “point-of-view” perspective.</span> This allowed us freedom to make changes quickly and communicate the concept effectively.</p>
 				
-				<figure>
+				<figure data-aos="fade-up">
 				<div class="video-wrapper">
 						<video autoplay muted playsinline loop>
 							<source src="images/socialar/concept-testing.webm" type="video/webm" />
@@ -229,29 +221,29 @@
 				<p>From the feedback, we realized we could take more advantage of AR projecting in our three-dimensional world, giving us the freedom to offer different forms of information more relevant to our perception.</p>
 				<p><span class="highlight">At this point, we also had to refine how we decided who was recommended for users to talk with.</span> Through interviews and surveys, we found that although some people were more interested in talking to those completely different from them, <span class="highlight">a majority started conversations with strangers by identifying common ground.</span> Thus, we had whoever had greater similarity with the user was more recommended.</p>
 				
-				<h2 id="secondary-devices">ADDING SECONDARY DEVICES</h2>
+				<h2 id="secondary-devices">Adding Secondary Devices.</h2>
 				<p>Evaluating our feedback from both users and mentors, we began to understand the need for secondary devices, <span class="highlight">one so that users could discreetly interact with AR while in a conversation and one so that users could complete more complex tasks on a larger screen.</span> We explored different variations of discrete interaction tools and moved forwards with a ring joystick due to its natural look and flexibility of input. We tested it, and found people didn't notice if others were using it during a conversation. <span class="highlight">Most of the attention was on the other person's face.</span></p>
 				
-				<figure>
+				<figure data-aos="fade-up">
 				  <img src="images/socialar/ring.jpg" alt="AR Ring Controller">
 				  <figcaption>An example ring for navigation, so users can discreetly navigate with swipes while in a conversation.</figcaption>
 				</figure>
 
 				<p>For completing more complicated task, such as filling out a form or declaring people a user wanted to meet, we used a smartphone, with an app that would connect with the AR device. <span class="highlight">This end ecosystem of devices consisted of three parts - Google glass, ring joystick, and mobile app.</span></p>
 
-				<figure>
+				<figure data-aos="fade-up">
 					<a href="images/socialar/phone-screens.png" data-lightbox="process-3"><img src="images/socialar/phone-screens.png" alt="Screens for the Phone App"></a>
 					<figcaption>Screens of the phone app, covering onboarding, selecting key people to talk to before an event, and checking someone's in-depth profile.</figcaption>
 				</figure>
 
-				<h2 id="final-design">FINAL DESIGN</h2>
+				<h2 id="final-design">Final Design.</h2>
 				<p>Based on our feedback from the concept testing, we made changes in the architecture and design. Furthermore, we changed the way a person would select a person to view information. Instead of seeing someone and then finding them and then finally selecting, <span class="highlight">we propose using facial recognition matching with the database of attendees in order to provide a more contextual and ubiquitous interaction.</span> This way a user would just need to center a person in their view to see their information.</p>
 
 				<p>Calling back to our design principles, we ensured that our final design was <span class="highlight">contextual/flexible, helpful, private, and promoted naturalness.</span> Our end design served as mostly a helpful assistance, that would give information based on the context. We wanted it to more assist in social situations, rather than "dictate it". We also get privacy in mind through equal levels of discovery/privacy. You can only see topics of information on others that you choose to make public as well. Finally, we promote naturalness by keeping the technology hidden during a social interaction, until the user summons it up.</p>
 				
 				<p>At the end of the entire project, we created final mocks going through the entire flow for our design, from initial onboarding to conversation at a networking event. This video below walks through the use cases we designed for:</p>
 				
-				<div class="video-wrapper">
+				<div data-aos="fade-up" class="video-wrapper">
 					<video playsinline controls>
 						<source src="images/socialar/promo-vid.webm" type="video/webm" />
 						<source src="images/socialar/promo-vid.mp4" type="video/mp4" />
@@ -262,49 +254,53 @@
 
 				<p>To breakdown the flow, the user would first sign up for the networking event on their phone, noting down their interests and who they wanted to talk to, which would feed into who we would recommend them to talk with.</p>
 
-				<figure>
+				<figure data-aos="fade-up">
 					<a href="images/socialar/onboarding.png" data-lightbox="process-4"><img src="images/socialar/onboarding.png" alt="Onboarding Screens"></a>
 					<figcaption>Through event onbording, a user can specify interests, people, and topics they like.</figcaption>
 				</figure>
 
 				<p>For finding an individual, the user would select them on the Glass using joystick control, and then be directed to them with the Glass view acting as a minimap. Matching our privacy principle, this would only be possible if the target opted-in to using this feature as well.</p>
 
-				<figure>
+				<figure data-aos="fade-up">
 					<img src="images/socialar/directions.jpg" alt="Directions">
 					<figcaption>By selecting an individual on a list, the user can get live directions, provided that the floor plan is given and the target is also a user.</figcaption>
 				</figure>
 
 				<p>For exploring people to talk to, the user would access that mode and see dots on people, with the size of the dot representing how recommended they are to talk to. Hovering the target over the dot would bring up information regarding the subject, so the user could decide whether or not to talk to them.</p>
 
-				<figure>
+				<figure data-aos="fade-up">
 					<img src="images/socialar/recommendations.jpg" alt="Recommendations for Conversation">
 					<figcaption>In explore mode, the user can identify prime candidates for conversation, with larger highlighting for people who are closer matches.</figcaption>
 				</figure>				
 				<p>Before approaching someone to begin a conversation, the user can select certain topics they want available to then during a conversation. If they don't, it will fall back to a default.</p>
 
-				<figure>
+				<figure data-aos="fade-up">
 					<img src="images/socialar/phone-prompt.jpg" alt="Phone Prompt">
 					<figcaption>When you're near the person, the phone will give a notification where you can view their profile and build out a talking outline prior to the conversation.</figcaption>
 				</figure>
 
 				<p>For within conversation, the Glass would by default show nothing or, if something was on the screen, fade out the display after about fifteen seconds of non-use in order to not distract the user from the conversation. The user could then summon the information and swipe through them whenever and discreetly through the use of the ring joystick.</p>
 
-				<figure>
+				<figure data-aos="fade-up">
 					<img src="images/socialar/conversation.jpg" alt="Within Conversation">
 					<figcaption>When the user wants assistance in a conversation, tapping the ring once will fade in a confirmation and tapping again will show the information. To preserve naturalness, this will fade out after a few moments of lack of interaction.</figcaption>
 				</figure>
+			
 
-				<h2 id="evaluation">EVALUATION</h2>
+				<br/>
+				<div data-aos="fade-up" class="title-bar bg-match"></div>
+				<h1 data-aos="fade-up" id="evaluation">Evaluation.</h1>
+
 				<p>To finalize our exploration of using AR in social settings, we evaluated the features of our final design with primary users. We provided participants with a Google Glass to wear, and lined up the Glass display with a TV screen to simulate elements appearing on the Glass for the user. <span class="highlight">We used Invision Studio connected to a joystick to implement an interactive prototype on Google Glass, mirroring the ideal interaction experience we designed.</span></p>
 			
-				<figure>
+				<figure data-aos="fade-up">
 					<img src="images/socialar/testing-setup.jpg" alt="Testing Setup">
 					<figcaption>Our testing setup, where we had participants wear the glass and have a TV in the background matching the screen.</figcaption>
 				</figure>	
 
 				<p>For the procedure of the usability testing, we began with a short training session followed to let users familiarize themselves with current gestures and flows in the Google Glass. The next part was to let users conduct six major tasks in our system while thinking out loud. I acted as another attendee of a networking event, and engaged the participant in conversation.</p>
 				
-				<figure>
+				<figure data-aos="fade-up">
 					<img src="images/socialar/controller.jpg" alt="Controller">
 					<figcaption>To mimic and test the swiping interactions at a cheaper low-fidelity method, we mapped the screen switching to a PC-controller joystick. This way the user could swipe by pushing the joystick.</figcaption>
 				</figure>	
@@ -333,7 +329,6 @@
 				  <hr class="featurette-divider">
 				  <div class="next-tab"><a onclick="openFinal()">SEE THE FINAL DESIGN<br/>&bigtriangledown;</a></div>
             </div>
-	      </div>
 			</div>
 			<div id="Final" class="tabcontent">
 				<div class="final-hero">
@@ -342,15 +337,15 @@
 				<div class="concept-row"></div>
 				<div class="detailed">
 					<div class="final-block" data-aos="fade-up">
-						<h4 class="strong-title">Ever have an awkward conversation?</h4>
+						<h4 data-toc-skip class="strong-title">Ever have an awkward conversation?</h4>
 						<div class="title-bar bg-match"></div>
-						<h3 class="final-title">Entering networking events are constantly top stressors for students and young professionals. Remembering topics, notes, and more while trying to maintain a natural conversation is constant pain point.
+						<h3 data-toc-skip class="final-title">Entering networking events are constantly top stressors for students and young professionals. Remembering topics, notes, and more while trying to maintain a natural conversation is constant pain point.
 						<br/><br/><strong>Enter AR.</strong> Through augmented reality, users can easily see who they want to talk to and get discreet reminders in conversations on command.</h3>
 					</div>
 					<div class="concept-row"></div>
 					<div class="final-block">
 						<div class="title-bar bg-match"></div>
-						<h4>The Glass</h4>
+						<h4 data-toc-skip>The Glass.</h4>
 						<div class="concept-row"></div>
 						<div class="concept-row" data-aos="fade-up">
 							<img src="images/socialar/glass.png" alt="Glass Overview">
@@ -360,22 +355,22 @@
 						</div>
 						<div class="concept-row"></div>
 						<div class="title-bar bg-match"></div>
-						<h4>The Foundation of Experience</h4>
+						<h4 data-toc-skip>The Foundation of Experience.</h4>
 						<div class="concept-row"></div>
-						<h3>Human-First</h3>
+						<h3 data-toc-skip>Human-First.</h3>
 						<div class="concept-row" data-aos="fade-up">
 							<img src="images/socialar/foundations.png" alt="Accent Color">
 						</div>
-						<h3>Subtle Interactions</h3>
+						<h3 data-toc-skip>Subtle Interactions.</h3>
 						<div class="concept-row" data-aos="fade-up">
 							<img src="images/socialar/subtle.png" alt="Subtle Interactions">
 						</div>
-						<h3>Phone for Detailed Interactions</h3>
+						<h3 data-toc-skip>Phone for Detailed Interactions.</h3>
 						<div class="concept-row" data-aos="fade-up">
 							<img src="images/socialar/phonexar.png" alt="Phone X AR">
 						</div>
 						<div class="title-bar bg-match"></div>
-						<h4>Experience</h4>
+						<h4 data-toc-skip>Experience.</h4>
 					</div>
 				</div>
 				<div class="final-hero" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
@@ -392,7 +387,7 @@
 						<div class="feature-block">
 							<div class="col-sm-6" data-aos="fade-right">
 								<div class="title-bar long-bar"></div>
-								<h3>From a list of people at the event, find who you want to talk to and what they're about.</h3>
+								<h3 data-toc-skip>From a list of people at the event, find who you want to talk to and what they're about.</h3>
 							</div>
 							<div class="col-sm-6" data-aos="fade-left">
 								<video autoplay muted playsinline loop>
@@ -412,13 +407,13 @@
 							</div>
 							<div class="col-sm-6" data-aos="fade-right">
 								<div class="title-bar long-bar"></div>
-								<h3>Get directions in a busy venue directly to a person, making it easy to find someone.</h3>
+								<h3 data-toc-skip>Get directions in a busy venue directly to a person, making it easy to find someone.</h3>
 							</div>
 						</div>
 						<div class="feature-block">
 							<div class="col-sm-6" data-aos="fade-right">
 								<div class="title-bar long-bar"></div>
-								<h3>Explore people around you, viewing profiles and seeing who's recommended for you.</h3>
+								<h3 data-toc-skip>Explore people around you, viewing profiles and seeing who's recommended for you.</h3>
 							</div>
 							<div class="col-sm-6" data-aos="fade-left">
 								<video autoplay muted playsinline loop>
@@ -438,7 +433,7 @@
 							</div>
 							<div class="col-sm-6" data-aos="fade-right">
 								<div class="title-bar long-bar"></div>
-								<h3>Invisible at first to maintain natural conversation, but summonable when you need a topic now.</h3>
+								<h3 data-toc-skip>Invisible at first to maintain natural conversation, but summonable when you need a topic now.</h3>
 							</div>
 						</div>
 					</div>
@@ -447,13 +442,14 @@
 					<div class="concept-row"></div>
 					<div class="final-block">
 						<div class="title-bar bg-match"></div>
-						<h4>Final Note</h4>
-						<p class="final-note">At the end, users really like the features and found it helpful in a conversation (on average rating 6 on a 1-7 point scale). However, some users thought it also greatly negatively impacted the naturalness of their conversation.</p>
+						<h4 data-toc-skip>Final Note.</h4>
+						<p class="final-note"><span class="highlight">At the end, users really like the features and found it helpful in a conversation (on average rating 6 on a 1-7 point scale).</span> However, some users thought it also greatly negatively impacted the naturalness of their conversation.</p>
 						<p class="final-note">From this I learned that AR definitely had promise in the social setting, but still caused naturalness of conversation problems. This could be caused by lack of familiar with AR, and with some adjustment, AR could be a powerful daily tool. However, with the flood of incoming information already in a conversation, further information load seemed to stress users. </p>
 						<p class="final-note">In the future, with technology heading on a path of ubiquity, I would like to explore how AR would affect and impact, negatively or positively, people’s lives.</p>
 					</div>
-					<h4 class="thank-you">Thanks for your 👀</h4>
+					<h4 data-toc-skip class="thank-you">Thanks for your 👀.</h4>
 				<hr class="featurette-divider">
+				<div class="next-tab"><a onclick="closeAnimate(this)">HEAD BACK HOME<br/><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></a></div>
 				</div>
 			</div>
 		</div>
@@ -465,10 +461,10 @@
 </header>
     <!-- jQuery -->
 <script src="js/jquery.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="js/aos.js"></script>
     <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
-<script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.js"></script>
+<script src="js/bootstrap-toc.min.js"></script>
     <!-- Lightbox -->
 	<script src="js/lightbox.min.js"></script>
     <!-- main.js -->

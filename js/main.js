@@ -1,3 +1,4 @@
+var is_mobile = false;
 
 jQuery(document).ready(function($){
 
@@ -57,6 +58,67 @@ jQuery(document).ready(function($){
 		var scrolled = (fromTop / docHeight) * 100;
 		$('#tab-progress').css({'width': scrolled + "%"});
 
+		// handles zoom
+		if (!is_mobile && $('.zoom').length) {
+
+			var startOffset = $('.zoom-spacer').offset().top - 100;
+			var track = $('.zoom-spacer').innerHeight();
+			if (fromTop >= startOffset && fromTop < startOffset + track - $('.zoom').height()) {
+
+				//scroll animations here
+				var scrollDist = (fromTop-startOffset) / (track - $('.zoom').height()) * 100;
+				if ($('#aws-final').length ) {
+					if (scrollDist <= 33) {
+						$('.zoom').css({
+							'background-size': 120 - (20 * scrollDist/33) + "%",
+							'background-position': 50 - (50*scrollDist/33) +"% " + 80 - (80*scrollDist/33) + "%"
+						});
+						$('.zoom-subtitle').css({'opacity':'0'});
+					} else if (scrollDist > 33 && scrollDist < 50) {
+						$('.zoom-subtitle').text('Visually manage clouds.');
+						$('.zoom-subtitle').css({
+							'right': '2%',
+							'left':'auto',
+							'top': '20%',
+							'opacity': (scrollDist - 33) / 7
+						});
+					} else if (scrollDist >= 50 && scrollDist <= 80) {
+						$('.zoom').css({
+							'background-size': 100 + (10 * (scrollDist-50)/30) + "%",
+							'background-position': (-400 * (scrollDist-50)/30) + "% " + (60 * (scrollDist-50)/30) + "%" 
+						});
+						$('.zoom-subtitle').text('Visually manage clouds.');
+						$('.zoom-subtitle').css({
+							'right': '2%',
+							'left':'auto',
+							'top': '20%',
+							'opacity': 1 - ((scrollDist-50)/10)
+						});
+					} else if (scrollDist > 80) {
+						$('.zoom-subtitle').text('Explore, design, and build your architecture all in one place.');
+						$('.zoom-subtitle').css({
+							'right': 'auto',
+							'left': '4%',
+							'opacity': (scrollDist-80)/8
+						});
+					}
+				}
+			} 
+		}
+
+		//handles hiding of toc on large images
+		if($('#toc').css('display') == 'block' && $('#Process:visible')) {
+			var tocOffset = $('#toc').offset().top + $('#toc').height();
+			$('#Process .final-hero').each(function(i, obj) {
+				if (tocOffset >= $(obj).offset().top && tocOffset <= $(obj).offset().top + $(obj).height()) {
+					$('#toc').css({'opacity': '0.1'});
+					return false;
+				} else {
+					$('#toc').css({'opacity':'1'});
+				}
+			});
+		}
+		
 	});
 
 	// slide up onload
@@ -237,11 +299,11 @@ function setColors() {
 	var color = $(".article").data("color");
 	var background = $(".article").data("background");
 	$('.highlight').css({"background-image":"linear-gradient(to right,#fff 50%,"+color+"44 50%)"});
-	$('.article strong').css({'color':color});
-	$('.strong-underline').css({'background-color':color});
+	//$('.article strong').css({'color':color});
+	//$('.strong-underline').css({'background-color':color});
 	$('.left-line').css({'border-color':color});
-	$('.detailed h2').css({'color':color});
-	$('.detailed h1').css({'color':color});
+	//$('.detailed h2').css({'color':color});
+	//$('.detailed h1').css({'color':color});
 	$('.bg-match').css({'background-color': background});
 	$('.headliner').css({'color':color});
 	$('.prototype').css({'background-color': background});
@@ -256,6 +318,8 @@ function setSizing() {
 	}
 	$('.header-image').css({'width': width + 'px'});
 	$('.header-image').css({'margin-left': -width/2 + 'px'});
+	var ratio = width * $('.zoom').data("height") / $('.zoom').data("width");
+	$('.zoom').css({'height': ratio});
 	var height = width/2;
 	$('.header-image').css({"top": -height+"px"});
 	$('.header-image').animate({top: '0px' }, 600);
@@ -264,4 +328,7 @@ function setSizing() {
 	$('.container').animate({'top': height + 30 + 'px'}, 600);
 	$('.container').css({'margin-bottom' : $(window).height()/4});
 
+	if( $('.detailed').css('width')=='90%') {
+        is_mobile = true;       
+    }
 }

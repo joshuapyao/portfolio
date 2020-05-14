@@ -39,9 +39,9 @@
 
 </head>
 
-<body data-spy="scroll" class="homedepot piece">
+<body data-spy="scroll" data-target="#toc" class="homedepot piece">
 <header>
-    <div class="article" id="art1" data-color="#FEB280" data-background="#ee7125">
+    <div class="article" id="art1" data-color="#FEB280" data-background="#C0D6DF">
 		<a onclick="closeAnimate(this)" class="close-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></a>
         <div class="header-image">
          	<img src="images/homedepot/homedepot.png" alt='Home Depot' class="banner">
@@ -57,58 +57,59 @@
 				</div>
         	</div>
 			<div id="Overview" class="tabcontent">
-				<div class="detailed">
-					<div class="overview">
-						<div class="overview-image">
-							<img src="images/homedepot/homeframed.jpg" alt="High-Fidelity UX Design">
+				<div class="overview">
+					<!--<div class="overview-image">
+						<img src="images/homedepot/homeframed.jpg" alt="High-Fidelity UX Design">
+					</div> -->
+					<div class="goal">Redesigning The Home Depot's enterprise FirstPhone system for accessibility and efficiency.</div>
+							<div class="details">
+							<div>
+						<p><strong>The User.</strong></p>
+						<div class="strong-underline"></div>
+						<p>Managers, Experienced employees, First-day employees.</p>
 						</div>
-						<div class="goal">Redesigning The Home Depot's enterprise FirstPhone system for accessibility and efficiency.</div>
-								<div class="details">
-								<div>
-							<p><strong>The User.</strong></p>
+						<div>
+						<p><strong>The Span.</strong></p>
+						<div class="strong-underline"></div>
+						<p>15 weeks.</p>
+						</div>
+						<div>
+						<p><strong>The Tools.</strong></p>
+						<div class="strong-underline"></div>
+						<p>Sketch and Invision.</p>
+						</div>
+						<div>
+							<p><strong>The Squad.</strong></p>
 							<div class="strong-underline"></div>
-							<p>Managers, Experienced employees, First-day employees.</p>
-							</div>
-							<div>
-							<p><strong>The Span.</strong></p>
-							<div class="strong-underline"></div>
-							<p>15 weeks.</p>
-							</div>
-							<div>
-							<p><strong>The Tools.</strong></p>
-							<div class="strong-underline"></div>
-							<p>Sketch and Invision.</p>
-							</div>
-							<div>
-								<p><strong>The Squad.</strong></p>
-								<div class="strong-underline"></div>
-								<p>Chia Hsieh, Gaurav Tamhan, and Peiran Tan.</p>
-							</div>
+							<p>Chia Hsieh, Gaurav Tamhan, and Peiran Tan.</p>
 						</div>
 					</div>
+				</div>
+				<div class="detailed">
 					<hr class="featurette-divider">
-					<h2>THE PROBLEM</h2>
-	        		<p>The FirstPhone is an enterprise device used in The Home Depot locations to accomplish various tasks, such as removing products from inventory.
-							However, the amount of apps on the device has accumulated immensely. <span class="highlight">This has resulted in slowing down employees and making it harder for new employees to learn, resulting in massive time wasted and money lost for The Home Depot.</span>
-					</p>
+					<h2 data-aos="fade-up" data-toc-skip>The Problem.</h2>
+	        		<p data-aos="fade-up">The FirstPhone is an enterprise device used in The Home Depot locations to accomplish various tasks, such as removing products from inventory.
+							However, the amount of apps on the device has accumulated immensely. <span class="highlight">This has resulted in slowing down employees and making it harder for new employees to learn, resulting in massive time wasted and money lost for The Home Depot.</span></p>
 				</div>
 				<div class="feature-block detailed" data-aos="fade-up">
 					<img class="single" src="images/homedepot/problem-breakdown.png" alt="The Home Depot Problem Breakdown">
 				</div>
 				<div class="detailed">
-					<h2 id="intro">intro</h2>
-				  <p>This project’s goal was to aid our primary users – Home Depot associates – by creating a system that is <span class="highlight">easy for first-time users to learn and pick up, while also expediting the workflow of experienced users.</span></p>
-								<p>When approaching this problem, I first wanted to strategize a plan. Though it might change later on in the project, it would be a good way to get everyone on-board and focused.</p>
-								<p>Based on the problem and user space, my outlined process for this project would go through several stages:</p>
-					<figure data-aos="fade-up">
-						<img class="no-shadow" src="images/homedepot/process.png" alt="The Design Process">
-					</figure>
-					<p>This led to a final experience for our users, where AR was the strongest candidate. Below is an example of a simplified flow.</p>
+					<h2 data-aos="fade-up" data-toc-skip id="intro">The Solution.</h2>
+					<p data-aos="fade-up">This led to a final experience for our users, where AR was the strongest candidate. Below is an example of a simplified flow.</p>
 				</div>
 				<div class="final-hero" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
 					<a href="images/homedepot/experience-block.png" data-lightbox="overview-1"><img src="images/homedepot/experience-block.png" alt="The New Flow"></a>
 				</div>
-
+				<div class="detailed">
+					<h2 data-aos="fade-up" data-toc-skip>The Plan.</h2>
+					<p data-aos="fade-up">This project’s goal was to aid our primary users – Home Depot associates – by creating a system that is <span class="highlight">easy for first-time users to learn and pick up, while also expediting the workflow of experienced users.</span></p>
+					<p data-aos="fade-up">When approaching this problem, I first strategized a plan. Though it might change later on in the project, it would be a good way to get everyone on-board and focused.</p>
+					<p data-aos="fade-up">Based on the problem and user space, the process for this project went through several stages:</p>
+					<figure data-aos="fade-up">
+						<img class="no-shadow" src="images/homedepot/process.png" alt="The Design Process">
+					</figure>
+				</div>
 				<hr class="featurette-divider">
 				<div class="next-tab" ><a onclick="openProcess()">EXAMINE THE DESIGN PROCESS<br/>&bigtriangledown;</a></div>
 			</div>
@@ -116,13 +117,10 @@
 		  <!-- First Featurette -->
 			<img class="final-hero" src="images/homedepot/process-header.png" alt="Process Header Image">
 			<div class="concept-row"></div>
+			<nav id="toc" data-toggle="toc" class="sticky-top"></nav>
             <div class="detailed">
-				<h2>BREAKDOWN</h2>
-				<figure>
-					<img class="no-shadow" src="images/homedepot/process.png" alt="The Design Process">
-				</figure>
-				<hr class="featurette-divider">
-	            <h2 id="clientinterview">DISSECTING THE PROBLEM</h2>
+				<div data-aos="fade-up" class="title-bar bg-match"></div>
+				<h1 data-aos="fade-up">Research.</h1>
 				<p>The project was initially presented to our team by designers from The Home Depot with their big problem statement:</p>
 				<img class="final-hero" src="images/homedepot/too-many-apps-call-out.png" alt="Too Many Apps">
 				<p>Associates working at The Home Depot stores were responsible for a number of various tasks ranging from helping customers to voiding items from inventory, and they used their FirstPhone device to handle. When the FirstPhone was initially designed, a multiple apps structure may have made sense. Each app could handle a different task, and an app page was fairly recognizable to users, leveraging on their previous smartphone experience. This design was easy to develop, and also easy to expand. Unfortunately, as the roles of associates evolved, so did the FirstPhone. </p>
@@ -130,8 +128,9 @@
 					<div class="col-sm-6">
 						<p>Eventually two pages blossomed into five pages of apps. It made it tedious for users to remember the purpose of all the apps, how to access them, and more. Hours and hours of training was necessary for an employee to simply learn how to use the FirstPhone. <span class="highlight">It was a case of conventional design trends backfiring.</span></p>
 						<p>The FirstPhone had up to nearly forty apps to scroll through, each with a specific purpose. However, many of these apps would never be touched by most employees.</p></div>
-						<div class="col-sm-6"><a href="images/homedepot/first-phone.jpg" data-lightbox="process-1"><img class="shadow" src="images/homedepot/firstphone-current.jpg" alt="FirstPhone"></a></div>
+					<div class="col-sm-6"><a href="images/homedepot/first-phone.jpg" data-lightbox="process-1"><img class="shadow" src="images/homedepot/firstphone-current.jpg" alt="FirstPhone"></a></div>
 				</div>
+				<h2>Background Research.</h2>
 				<p>To get a picture of the problem area, <span class="highlight">we started out with doing some background research.</span> I interviewed The Home Depot UX designers and looked up FirstPhone materials online. We also obtained a list of current apps on the FirstPhone, which helped clarify the main problem of having too many apps on the device.</p>
 				<div class="split-block" data-aos="fade-up">
 					<div class="col-sm-6">				
@@ -143,7 +142,7 @@
 				</div>
 				<p><span class="highlight">Here we found an interesting fact: many apps accomplished the same goals, but just in different ways. Boiled down, the functionality of the FirstPhone could be reduced down from 40 to around 10 purposes.</span></p>
 				<p>This research was really helpful in giving us a scope of the problem, and set us up in thinking of what we wanted to learn from our primary users.  </p>
-				<h2 id="interviews">FIGURING OUT THE CURRENT FLOW</h2>
+				<h2 id="interviews">Interviews.</h2>
 	        	<p>I reached out and set up a number of interviews with our primary users at The Home Depot locations.<span class="highlight">Interviews allowed us to confirm existing information</span> from the industry contact and secondary research, and to catapult us into thinking in context of the store employee’s day-to-day work life.</p>
 				<p><span class="highlight">For this, our primary goals were to:</span></p>
 				<ul>
@@ -167,7 +166,7 @@
 				<img data-aos="fade-up" src="images/homedepot/current-process.png" alt="Current Process">
 				<p>However, <span class="highlight">many usages of the FirstPhone often deviated from their intended usage,</span> being “hacked” to work the right way. For example, an employee needed to print labels and knew of four different apps that had the ability to print them. However, the one he used was meant for a different role, but he chose it because it could print labels through fewer steps. <span class="highlight">Associates often had their own workaround methods to accomplish a task,</span> purely learned from either experience or co-workers.</p>
 				
-				<h2>SMALL DATA TO BIG DATA</h2>
+				<h2>Surveys.</h2>
 				<p>Having completed our background research and spoken with a few in-store associates, we had a pretty good idea on current problems and behaviors related to the FirstPhone. To solidify our data, I pushed for us to confirm our findings with a larger audience, <span class="highlight">and the best way to reach a large audience with our resources was through an online survey.</span> Fortunately, we had access to over 200 Home Depot employees through an online reddit page.</p>
 				<p><span class="highlight">Surveys provided us with metrics that allowed us to reaffirm our research, and provided us with definitive backing as part of our evidence-based design process.</span></p>
 				<p>In our survey we wanted to see:</p>
@@ -194,12 +193,12 @@
 					</div>
 				</div>
 
-				<h2>PERSONA-FYING OUR USER</h2>
+				<h2>Personas.</h2>
 	        	<p>From our research findings <span class="highlight">we derived three personas and their respective working scenarios.</span> This allowed us to understand and remember each one of our users, while also using scenarios to note how they completed their goals at Home Depot and what they valued from systems helping them. Our design would need to improve their working process from the scenario, without drastically changing it and forcing people to relearn a new complex system.</p>
 
 				<div class="split-block" data-aos="fade-up">
 					<div class="col-sm-6">
-						<p><strong>The Day-One</strong></p>
+						<p><strong>The Day-One.</strong></p>
 						<p>One primary persona. The Home Depot employees are generally split between veterans and day-one employeees, who are usually younger but have a lot to learn fast.</p>
 					</div>
 					<div class="col-sm-6">
@@ -212,14 +211,14 @@
 						<a href="images/homedepot/persona2.jpg" data-lightbox="process-5"><img class="shadow" src="images/homedepot/persona2.jpg" alt="Persona 2: The Veteran"></a>
 					</div>
 					<div class="col-sm-6">
-						<p><strong>The Veteran</strong></p>
+						<p><strong>The Veteran.</strong></p>
 						<p>Lots of accessibility problems, but efficient and knowledgable. They can use the FirstPhone well primarily off of hacks or muscle memory.</p>
 					</div>
 				</div>
 
 				<div class="split-block" data-aos="fade-up">
 					<div class="col-sm-6">
-						<p><strong>The Manager</strong></p>
+						<p><strong>The Manager.</strong></p>
 						<p>Ocassionally uses the FirstPhone for management, but focuses most of her attention on making sure everything is running smoothly in her department.</p>
 					</div>
 					<div class="col-sm-6">
@@ -227,7 +226,7 @@
 					</div>
 				</div>
 
-				<h2>CONVERTING DATA TO INFORMATION</h2>
+				<h2>Affinity Diagramming & Principles.</h2>
 				<p>To analyze all the information we gathered thus far, we each wrote down snippets of data onto sticky notes. We then conducted <span class="highlight">an affinity diagramming session where we organized data points into similar categories,</span> and then wrote category titles for each group. This was extremely useful for us for aligning all our thoughts and getting a comprehensive view of our research into a single view.</p>
 				<div class="split-block" data-aos="fade-up">
 					<div class="col-sm-6">
@@ -287,14 +286,17 @@
 
 				<p><span class="highlight">At this stage, we realized to provide the best user experience moving forwards, we needed to rethink the way approached tasks with the FirstPhone entirely.</span></p>
 
-				<h2>CONCEPTING</h2>
+				<div data-aos="fade-up" class="title-bar bg-match"></div>
+				<h1>Design.</h1>
+
+				<h2>Concepts.</h2>
 				<p>Using all our information gathered, we sketched various concepts that <span class="highlight">rethought the approach on how someone would complete tasks with the FirstPhone, while meeting our principles.</span> We narrowed it down to three designs, which of we made low-fidelity wireframes. We brought these into <span class="highlight">focus group meetings</span> with The Home Depot associates for testing.</p>
 				
 				<p><span class="highlight">Our three concepts were a task-based design, a process-based design, and an AR item-based design.</span></p>
 
 				<div class="split-block" data-aos="fade-up">
 					<div class="col-sm-6">
-						<p><strong>Task-Based Design</strong></p>
+						<p><strong>Task-Based Design.</strong></p>
 						<p>The task-based design focused on the user flow of users starting from a task, and seeing associated apps that they could use to complete the task. This concept’s goal was to change the thinking from “which app do I use to fix this problem” to a simple “which task do I complete”.</p>
 					</div>
 					<div class="col-sm-6">
@@ -307,14 +309,14 @@
 						<a href="images/homedepot/processbased.jpg" data-lightbox="process-10"><img class="shadow" src="images/homedepot/processbased.jpg" alt="Process-Based Concept"></a>
 					</div>
 					<div class="col-sm-6">
-						<p><strong>Process-Based Design</strong></p>
+						<p><strong>Process-Based Design.</strong></p>
 						<p>The process-based design was inspired by the fact that many employees had their own process of doing things. It removed the concept of apps and simply had “functions”, such as scan an item. Users could chain functions together to create their own processes.</p>
 					</div>
 				</div>
 
 				<div class="split-block" data-aos="fade-up">
 					<div class="col-sm-6">
-						<p><strong>The AR Item-Based Design</strong></p>
+						<p><strong>The AR Item-Based Design.</strong></p>
 						<p>The AR item-based design came from a more “scan-to-start” idea, where the user would start with the item first, instead of thinking how to find an app to pair with an item. Users would simply point their camera at a product, and a list of relevant tasks to be done with the item would appear. This concept emphasized simplicity and context-aware actions.</p>
 					</div>
 					<div class="col-sm-6">
@@ -325,7 +327,7 @@
 				<p>From our testing, associates liked the AR-based design the most with the item-based approach and the quick interaction, with the focused tasking and communication part of the task-based design. <span class="highlight">We combined winning ideas from each concept into our final design.</span></p>
 				<img data-aos="fade-up" src="images/homedepot/combination.png" alt="Combination of Concepts">
 
-				<h2>INFORMATION ARCHITECTURE AND PROTOTYPING</h2>
+				<h2>IA & Prototyping.</h2>
 				<p>To convert the concept to a design, I led my team in iterating an <span class="highlight">information architecture.</span> This was important to show the overall structure of our system, ensured that it was understandable to users, and that it included all our necessary functions.</p>
 				<div class="split-block" data-aos="fade-up">
 					<div class="col-sm-6">
@@ -352,11 +354,12 @@
 				</div>
 
 				<figure data-aos="fade-up">
-					<a href="images/homedepot/iteration-growth.png" data-lightbox="process-13"><img src="images/homedepot/iteration-growth.png" alt="Iteration Growth: Contrast"></a>
+					<img src="images/homedepot/iteration-growth.png" alt="Iteration Growth: Contrast">
 					<figcaption>An example of iteration growth, as more senior users noted that they couldn’t quite see the white on orange (contrast ratio of 3.21:1), which we resolved by changing it to black on orange (contrast ratio of 5.21:1)</figcaption>
 				</figure>
 
-				<h2>FINAL DESIGN AND EVALUATION</h2>
+				<div data-aos="fade-up" class="title-bar bg-match"></div>
+				<h1>Evaluation.</h1>
 				<p><span class="highlight">The final iteration of our prototype encompasses everything we learned from our user testing with Home Depot store associates, supervisors, and assistant store managers.</span></p>
 
 				<p>Our design addresses the main problem by retooling how associates would approach a problem. Currently, associates would have to identify an issue, choose the correct app from memory recall, and follow the steps within apps that are inconsistent and unique from others. Through this, work experience becomes the key to a successful associates, after braving a field of trials and errors. Our design instead approaches issues from an item-based standpoint. Associates would first scan a product and then identify a task they want to accomplish through the design. This would make it easier for day-one associates to learn the process, and experienced associates to accomplish tasks faster.</p>
@@ -416,25 +419,25 @@
 
 					<div class="final-block">
 						<div class="title-bar bg-match"></div>
-						<h4>Concept</h4>
+						<h4 data-toc-skip>Concept.</h4>
 						<div class="concept-row">
 							<div data-aos="fade-right">
-								<h3>Color</h3>
+								<h3 data-toc-skip>Color.</h3>
 								<img src="images/homedepot/colors.png" alt="Colors">
 							</div>
 							<div class="flex-space"></div>
 							<div data-aos="fade-left">
-								<h3>Typography</h3>
+								<h3 data-toc-skip>Typography.</h3>
 								<img src="images/homedepot/typography.png" alt="Typography">
 							</div>
 						</div>
-						<h3>Material</h3>
+						<h data-toc-skip3>Material.</h3>
 						<div class="concept-row">
 							<img src="images/homedepot/material.png" alt="Material Veneers and Cards">
 						</div>
 						<div class="concept-row"></div>
 						<div class="title-bar bg-match"></div>
-						<h4>Experience</h4>
+						<h4 data-toc-skip>Experience.</h4>
 					</div>
 				</div>
 				<div class="final-hero" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
@@ -455,11 +458,11 @@
 					<div class="concept-row"></div>
 					<div class="final-block">
 						<div class="title-bar bg-match"></div>
-						<h4>Other Features</h4>
+						<h4 data-toc-skip>Other Features.</h4>
 						<div class="feature-block">
 							<div class="col-sm-6" data-aos="fade-right">
 								<div class="title-bar bg-match long-bar"></div>
-								<h3>Login with <span class="highlight">a single badge tap,</span> reducing frustrations with FirstPhone handoffs.</h3>
+								<h3 data-toc-skip>Login with <span class="highlight">a single badge tap,</span> reducing frustrations with FirstPhone handoffs.</h3>
 							</div>
 							<div class="col-sm-6" data-aos="fade-left">
 								<video autoplay muted playsinline loop>
@@ -479,13 +482,13 @@
 							</div>
 							<div class="col-sm-6" data-aos="fade-right">
 								<div class="title-bar bg-match long-bar"></div>
-								<h3><span class="highlight">Search simply,</span> with results that help customers and associates.</h2>
+								<h3 data-toc-skip><span class="highlight">Search simply,</span> with results that help customers and associates.</h2>
 							</div>
 						</div>
 						<div class="feature-block">
 							<div class="col-sm-6" data-aos="fade-right">
 								<div class="title-bar bg-match long-bar"></div>
-								<h3>Easy employee tasking with feedback and permission control, <span class="highlight">improving efficiency and communication.</span></h3>
+								<h3 data-toc-skip>Easy employee tasking with feedback and permission control, <span class="highlight">improving efficiency and communication.</span></h3>
 							</div>
 							<div class="col-sm-6" data-aos="fade-left">
 								<video autoplay muted playsinline loop>
@@ -499,12 +502,13 @@
 					<div class="concept-row"></div>
 					<div class="final-block">
 						<div class="title-bar bg-match"></div>
-						<h4>Final Note</h4>
+						<h4 data-toc-skip>Final Note.</h4>
 						<p class="final-note">This project was extremely interesting to dive into a specific enterprise tool for such a vast user base. The study of a role with such extreme flexibility and how the result of following conventional design trends ballooned into something nearly unsuable really expanded my line of thinking. </p>
 						<p class="final-note">Moving in the future, it would be insightful to see how well the design could extend as the responsibilities of a The Home Depot associate evolves, as well as its fidelity when instant object recognition improves.</p>
 					</div>
-					<h4 class="thank-you">Thank you for scrolling!</h4>
+					<h4 data-toc-skip class="thank-you">Thank you for scrolling!</h4>
 				<hr class="featurette-divider">
+				<div class="next-tab"><a onclick="closeAnimate(this)">HEAD BACK HOME<br/><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></a></div>
 			</div>
 		</div>
 	</div>
@@ -517,10 +521,10 @@
 </header>
     <!-- jQuery -->
 <script src="js/jquery.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="js/aos.js"></script>
     <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
-<script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.js"></script>
+<script src="js/bootstrap-toc.min.js"></script>
     <!-- Lightbox -->
 	<script src="js/lightbox.min.js"></script>
     <!-- main.js -->

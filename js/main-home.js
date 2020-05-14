@@ -119,7 +119,7 @@ jQuery(document).ready(function($){
 	});
 
 	// handles the beginning words
-	var titles = ["a video editor", "a photographer", "TIME's Person of the Year 2006", "former Youngest Person in the World", "a bubble-tea addict", "a dog owner", "a gamer", "a Pan-Asia traveler", "a logo designer", "a programmer", "an extreme foodie"];
+	var titles = ["a video editor", "a photographer", "TIME's Person of the Year 2006", "former Youngest Person in the World", "a bubble-tea addict", "a dog owner", "a programmer", "a Pan-Asia traveler", "a logo designer", "a prototyper", "an extreme foodie", "a film director"];
 	titles = shuffle(titles);
 	var counter = 0;
 	var inst = setInterval(change, 2000);
@@ -280,4 +280,16 @@ function resizeHoverText() {
 function openMenu() {
 	$('.dd-menu').height('28em');
 	$('.dd-menu div').fadeIn(300);
+}
+
+function openWork() {
+	$("#portfo").click();
+}
+
+function openVisuals() {
+	$('#visuals').click();
+}
+
+function openAbout() {
+	$('#about').click();
 }
