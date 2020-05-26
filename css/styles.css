@@ -77,6 +77,8 @@ body {
 .vent { background-color:#469C77; } 
 .homedepot { background-color: #C0D6DF; }
 .lucid { background-color: #E38D3C; } 
+.swype { background-color: #87C5FF; }
+
 
 ::selection {
   background: #111111;
@@ -143,7 +145,7 @@ body {
   background-color: #fefefe;
   left: 50%;
   margin-left: -2.5em;
-  top: 3em;
+  top: -5em;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -608,8 +610,15 @@ body {
 }
 
 .zoom-spacer {
-  height: 4000px;
   margin-bottom: 6em;
+}
+
+.lucid .zoom-spacer{
+  height: 4000px;
+}
+
+.swype #Overview .zoom-spacer {
+  height: 2500px;
 }
 
 .zoom-subtitle {
@@ -628,6 +637,12 @@ body {
   background-image: url('../images/lucid/aws-final.png');
   background-size: 120%;
   background-position: 50% 80%;
+}
+
+#swype-final {
+  background-image: url('../images/swype/cc-mockup.jpg');
+  background-size: 150%;
+  background-position: 50% 50%;
 }
 
 .video-wrapper {
@@ -672,7 +687,7 @@ body {
 
 .feature-block {
   margin-bottom: 5em;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .feature-block .single {
@@ -1436,7 +1451,7 @@ a img {
   margin-bottom: 4em;
 }
 
-.detailed .col-sm-6 img {
+.detailed .split-block img {
   max-width: 80%;
   margin-top: 0;
   margin-bottom: 0;

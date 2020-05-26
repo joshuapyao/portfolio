@@ -58,50 +58,85 @@ jQuery(document).ready(function($){
 		var scrolled = (fromTop / docHeight) * 100;
 		$('#tab-progress').css({'width': scrolled + "%"});
 
-		// handles zoom
-		if (!is_mobile && $('.zoom').length) {
+		// triggers autoplay video (works for only 1 for now)
+		if ($('.autoplay').is(":visible")) {
+			var vidFromTop = $('.autoplay').offset().top;
+			var vidHeight = $('.autoplay').height();
+			if(fromTop >= vidFromTop - 300 && fromTop < vidFromTop + vidHeight + 50) {
+				if($('.autoplay').get(0).currentTime < 8) {
+					$('.autoplay').get(0).play();
+				}
+			} else {
+				$('.autoplay').get(0).pause();
+				$('.autoplay').get(0).currentTime = 0;
+			}
+		}
 
-			var startOffset = $('.zoom-spacer').offset().top - 100;
-			var track = $('.zoom-spacer').innerHeight();
-			if (fromTop >= startOffset && fromTop < startOffset + track - $('.zoom').height()) {
+		// handles zoom
+		if (!is_mobile && $('.zoom').is(":visible")) {
+			var zoomBox = $(".zoom:visible")[0];
+			var zoomBoxSpacer = $(zoomBox).parent()[0];
+			var zoomBoxText = $(zoomBox).find('.zoom-subtitle')[0];
+			var startOffset = $(zoomBoxSpacer).offset().top - 100;
+			var track = $(zoomBoxSpacer).innerHeight();
+			if (fromTop >= startOffset && fromTop < startOffset + track - $(zoomBox).height()) {
 
 				//scroll animations here
-				var scrollDist = (fromTop-startOffset) / (track - $('.zoom').height()) * 100;
-				if ($('#aws-final').length ) {
+				var scrollDist = (fromTop-startOffset) / (track - $(zoomBox).height()) * 100;
+				if ($('#aws-final').is(":visible")) {
 					if (scrollDist <= 33) {
-						$('.zoom').css({
+						$(zoomBox).css({
 							'background-size': 120 - (20 * scrollDist/33) + "%",
 							'background-position': 50 - (50*scrollDist/33) +"% " + 80 - (80*scrollDist/33) + "%"
 						});
-						$('.zoom-subtitle').css({'opacity':'0'});
+						$(zoomBoxText).css({'opacity':'0'});
 					} else if (scrollDist > 33 && scrollDist < 50) {
-						$('.zoom-subtitle').text('Visually manage clouds.');
-						$('.zoom-subtitle').css({
+						$(zoomBoxText).text('Visually manage clouds.');
+						$(zoomBoxText).css({
 							'right': '2%',
 							'left':'auto',
 							'top': '20%',
 							'opacity': (scrollDist - 33) / 7
 						});
 					} else if (scrollDist >= 50 && scrollDist <= 80) {
-						$('.zoom').css({
+						$(zoomBox).css({
 							'background-size': 100 + (10 * (scrollDist-50)/30) + "%",
 							'background-position': (-400 * (scrollDist-50)/30) + "% " + (60 * (scrollDist-50)/30) + "%" 
 						});
-						$('.zoom-subtitle').text('Visually manage clouds.');
-						$('.zoom-subtitle').css({
+						$(zoomBoxText).text('Visually manage clouds.');
+						$(zoomBoxText).css({
 							'right': '2%',
 							'left':'auto',
 							'top': '20%',
 							'opacity': 1 - ((scrollDist-50)/10)
 						});
 					} else if (scrollDist > 80) {
-						$('.zoom-subtitle').text('Explore, design, and build your architecture all in one place.');
-						$('.zoom-subtitle').css({
+						$(zoomBoxText).text('Explore, design, and build your architecture all in one place.');
+						$(zoomBoxText).css({
 							'right': 'auto',
 							'left': '4%',
 							'opacity': (scrollDist-80)/8
 						});
 					}
+				}
+				if ($('#swype-final').is(":visible")) {
+					if (scrollDist <= 30) {
+						$(zoomBoxText).css({
+							'opacity': 1
+						});
+					} else if (scrollDist > 30) {
+						$(zoomBox).css({
+							'background-size': 150 - (50 * (scrollDist-30)/70) + "%"
+						});
+						$(zoomBoxText).css({
+							'opacity': 1 - (scrollDist - 30) / 20
+						});
+					}
+				}
+				if ($('#swype-process').is(":visible")) {
+					// video is 9 seconds long at 30 fps, each scroll advances by 1/30 seconds. Convert scroll tracker to 240.
+					//var frameNumber = (scrollDist * (9/100));
+					//document.getElementById('v0').currentTime = frameNumber;
 				}
 			} 
 		}
@@ -169,24 +204,7 @@ jQuery(document).ready(function($){
 	  });
 	}  
 
-	function shuffle(array) {
-	  var currentIndex = array.length, temporaryValue, randomIndex;
 
-	  // While there remain elements to shuffle...
-	  while (0 !== currentIndex) {
-
-	    // Pick a remaining element...
-	    randomIndex = Math.floor(Math.random() * currentIndex);
-	    currentIndex -= 1;
-
-	    // And swap it with the current element.
-	    temporaryValue = array[currentIndex];
-	    array[currentIndex] = array[randomIndex];
-	    array[randomIndex] = temporaryValue;
-	  }
-
-	  return array;
-	}
 });
 
 function openPage(pageName, elmnt) {

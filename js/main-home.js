@@ -190,7 +190,8 @@ jQuery(document).ready(function($){
 	function slideUp() {
 		$("#splash-text").hide();
 		$("#splash-text").fadeIn(1400);
-		$('#landing-page .down-cta').animate({bottom: 0}, 600);
+		$('#landing-page .down-cta').animate({bottom: 0}, 1200);
+		$('#logo-menu').animate({top: '3em'}, 300);
 	}
 
 	function shuffle(array) {
