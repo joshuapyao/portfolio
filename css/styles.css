@@ -164,9 +164,32 @@ body {
 }
 
 #logo-menu svg {
-  fill: #111111;
+  mix-blend-mode: exclusion;
+  fill: #eeeeee;
   height: 3em;
+  animation: spin 12s ease-in-out infinite;
 }
+
+@keyframes spin {
+  0%{}
+  23% { transform: rotate(0deg); }
+  25% { transform: rotate(-20deg); }
+  32% { transform: rotate(96deg); }
+  35% { transform: rotate(90deg) ; }
+  38% { transform: rotate(90deg) scale(1.2, 1); }
+  52% { transform: rotate(90deg) scale(1.2, 1); }
+  56% { transform: rotate(380deg) scale(1, 1); }
+  60% { transform: rotate(360deg); }
+  100% { transform: rotate(360deg);}
+}
+
+.paused{
+  -webkit-animation-play-state:paused;
+  -moz-animation-play-state:paused;
+  -o-animation-play-state:paused; 
+  animation-play-state:paused;
+}
+
 .modal {
   -webkit-overflow-scrolling: auto !important;
   padding-bottom: 10vh;
@@ -618,7 +641,7 @@ body {
 }
 
 .swype #Overview .zoom-spacer {
-  height: 2500px;
+  height: 2800px;
 }
 
 .zoom-subtitle {
@@ -1787,6 +1810,14 @@ nav[data-toggle=toc] .nav>.active>a {
   margin-right: auto;
   top: -150px;
   cursor: pointer;
+}
+
+.scroll-more {
+  position: absolute;
+  width: 100%;
+  font-size: 2em;
+  color: #dddddd;
+  text-align: center;
 }
 
 .next-tab {

@@ -217,7 +217,7 @@ jQuery(document).ready(function($){
 function scrollDown() {
 	$('html, body').animate({
 		scrollTop: $('#landing-page').height()
-  }, 300);
+  }, 500);
 }
 
 function loadContent(piece) {

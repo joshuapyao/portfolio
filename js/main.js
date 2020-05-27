@@ -1,4 +1,6 @@
 var is_mobile = false;
+var currentPage = "loading";
+
 
 jQuery(document).ready(function($){
 
@@ -13,7 +15,25 @@ jQuery(document).ready(function($){
 		}
 	});
 
-	// parallaxing effect and shadow on nav and container
+	// handles scroll to next page on bottom of page
+	window.addEventListener('wheel', function(event) {
+		if ($('.scroll-more').css('opacity') == '1') {
+			if (currentPage != 'loading') {
+				// detect if it is a scroll down
+				if (event.deltaY > 0) {
+					console.log(currentPage);
+					if (currentPage == 'Overview') {
+						document.getElementById("process-btn").click();
+						currentPage = 'loading';
+					} else if (currentPage == 'Process') {
+						document.getElementById("final-btn").click();
+					}
+				}
+			}
+		}
+	});
+
+	// parallaxing effect and shadow on nav and container (also all scroll listeners)
 	$(window).scroll(function(){
 		var fromTop = $(document).scrollTop();
 		var docHeight = $(document).height() - $(window).height();
@@ -121,22 +141,23 @@ jQuery(document).ready(function($){
 				}
 				if ($('#swype-final').is(":visible")) {
 					if (scrollDist <= 30) {
+						$(zoomBoxText).text('A card that surpasses the wallet.');
 						$(zoomBoxText).css({
 							'opacity': 1
 						});
-					} else if (scrollDist > 30) {
+					} else if (scrollDist > 30 && scrollDist <= 80) {
 						$(zoomBox).css({
-							'background-size': 150 - (50 * (scrollDist-30)/70) + "%"
+							'background-size': 150 - (50 * (scrollDist-30)/50) + "%"
 						});
 						$(zoomBoxText).css({
 							'opacity': 1 - (scrollDist - 30) / 20
 						});
+					} else if (scrollDist > 80) {
+						$(zoomBoxText).text('...and integrates in daily flows.');
+						$(zoomBoxText).css({
+							'opacity': (scrollDist - 80) / 20
+						});
 					}
-				}
-				if ($('#swype-process').is(":visible")) {
-					// video is 9 seconds long at 30 fps, each scroll advances by 1/30 seconds. Convert scroll tracker to 240.
-					//var frameNumber = (scrollDist * (9/100));
-					//document.getElementById('v0').currentTime = frameNumber;
 				}
 			} 
 		}
@@ -211,6 +232,7 @@ function openPage(pageName, elmnt) {
   // Hide all elements with class="tabcontent" by default */
   var i, tabcontent, tablinks;
   $('.tabcontent').fadeOut(100);
+  currentPage = 'loading';
 
   // Remove the background color of all tablinks/buttons
   var color = $(".article").data("color");
@@ -221,7 +243,7 @@ function openPage(pageName, elmnt) {
   setTimeout(
 	  function() {
 		  $("#" + pageName).fadeIn(300);
-		  setTimeout(function(){AOS.refresh();},300);
+		  setTimeout(function(){ AOS.refresh(); },300);
 	}, 100);
 
   // Add the specific color to the button used to open the tab content and pause all videos on the leaving page
@@ -229,7 +251,8 @@ function openPage(pageName, elmnt) {
 	//elmnt.style.color = color;
 	if (pageName == 'Final') {
 		$('#tab-selector').animate({left: '65.2%'}, 200);
-		
+		$('.scroll-more').css({'display':'none'});
+
 		// pause all on overview and process and play all on Final
 		$("#Final video").each(function() {
 			if ($(this).get(0).autoplay == true) {
@@ -244,7 +267,8 @@ function openPage(pageName, elmnt) {
 		});
 	} else if (pageName == 'Process') {
 		$('#tab-selector').animate({left: '32.6%'}, 200);
-				
+		$('.scroll-more').css({'display':'inherit'});
+
 		// pause all on Final and play all on Process
 		$("#Process video").each(function() {
 			if ($(this).get(0).autoplay == true) {
@@ -259,6 +283,7 @@ function openPage(pageName, elmnt) {
 		});
 	} else {
 		$('#tab-selector').animate({left: '0%'}, 200);
+		$('.scroll-more').css({'display':'inherit'});
 
 		$("#Overview video").each(function() {
 			if ($(this).get(0).autoplay == true) {
@@ -273,12 +298,14 @@ function openPage(pageName, elmnt) {
 			$(this).get(0).pause();
 		});
 	}
-
+	setTimeout(function(){
+		currentPage = pageName;
+	},2000);
 	// scroll to near top if not already there
-	if ($(window).scrollTop() > $('.header-image').outerHeight()) {
+	if ($(document).scrollTop() > $('.header-image').outerHeight()) {
 		$('html,body').animate({
 			scrollTop: $('.container').offset().top - 40},
-			'slow');
+		'slow');
 	}
 }
 
