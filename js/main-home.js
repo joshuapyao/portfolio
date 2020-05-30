@@ -18,8 +18,7 @@ jQuery(document).ready(function($){
 	$(document).click(function(event) {
 		$target = $(event.target);
 		if(!$target.closest('.dd-menu').length && $('.dd-menu').height() > 120) {
-			$('.dd-menu').css({'height':''});
-			$('.dd-menu div').fadeOut(100);
+			closeMenu();
 		}  
 	});
 
@@ -106,8 +105,7 @@ jQuery(document).ready(function($){
 	
 	// handles underlines in navigation and also scrolls up, but only on index page, also resets down cta
 	$(".row p .nav-object").click(function(event) {
-		$('.dd-menu').css({'height':''});
-		$('.dd-menu div').fadeOut(100);
+		closeMenu();
 		if ($(this).is('#portfo')) {
 			$('html, body').animate({ scrollTop: $("#landing-page").outerHeight(true) });
 		} else {
@@ -281,6 +279,19 @@ function resizeHoverText() {
 function openMenu() {
 	$('.dd-menu').height('28em');
 	$('.dd-menu div').fadeIn(300);
+	var button = $('#logo-menu svg');
+	if (button.hasClass('unspin')) {
+		button.removeClass('unspin').addClass('spin');
+	} else {
+		button.addClass('spin');
+	}
+}
+
+function closeMenu() {
+	$('.dd-menu').css({'height':''});
+	$('.dd-menu div').fadeOut(100);
+	var button = $('#logo-menu svg');
+	button.removeClass('spin').addClass('unspin');
 }
 
 function openWork() {
