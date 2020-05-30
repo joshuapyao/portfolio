@@ -163,7 +163,7 @@ body {
   z-index: -1;
   background: linear-gradient(-45deg, #fefefe 40%, #111111 40%, #111111 50%, #fefefe 50%, #fefefe 65%, #111111 65%, #111111 70%, #fefefe 70%);
   background-size: 600% 600%;
-  animation: flicker 12s ease-out infinite;
+  animation: flicker 14s ease-out infinite;
 }
 
 @keyframes flicker {
