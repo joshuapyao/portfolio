@@ -282,8 +282,16 @@ function openMenu() {
 	var button = $('#logo-menu svg');
 	if (button.hasClass('unspin')) {
 		button.removeClass('unspin').addClass('spin');
+		$('#left-branch').removeClass('left-fold-out').addClass('left-fold-in');
+		$('#right-branch').removeClass('right-fold-out').addClass('right-fold-in');
+		$('#left-tree').removeClass('space-in-left-tree').addClass('space-left-tree');
+		$('#right-tree').removeClass('space-in-right-tree').addClass('space-right-tree');
 	} else {
 		button.addClass('spin');
+		$('#left-branch').addClass('left-fold-in');
+		$('#right-branch').addClass('right-fold-in');
+		$('#left-tree').addClass('space-left-tree');
+		$('#right-tree').addClass('space-right-tree');
 	}
 }
 
@@ -292,6 +300,10 @@ function closeMenu() {
 	$('.dd-menu div').fadeOut(100);
 	var button = $('#logo-menu svg');
 	button.removeClass('spin').addClass('unspin');
+	$('#left-branch').removeClass('left-fold-in').addClass('left-fold-out');
+	$('#right-branch').removeClass('right-fold-in').addClass('right-fold-out');	
+	$('#left-tree').removeClass('space-left-tree').addClass('space-in-left-tree');
+	$('#right-tree').removeClass('space-right-tree').addClass('space-in-right-tree');
 }
 
 function openWork() {

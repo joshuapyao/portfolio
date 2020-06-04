@@ -195,14 +195,63 @@ body {
   height: 3em;
 }
 
-.spin {
-  animation: spin 1s forwards ease-in-out;
+
+/* animations for logo menu */
+#left-branch { transform-origin: 40% 95%; }
+#right-branch { transform-origin: 45% 50%; }
+
+.spin { animation: spin 0.5s forwards ease-in-out; }
+.unspin { animation: unspin 0.5s backwards ease-in-out; }
+.space-left-tree { animation: space-out-left 0.4s forwards ease-in-out; }
+.space-right-tree { animation: space-out-right 0.4s forwards ease-in-out;  }
+.space-in-left-tree { animation: space-in-left 0.4s forwards ease-in-out; }
+.space-in-right-tree { animation: space-in-right 0.4s forwards ease-in-out;  }
+.left-fold-in { animation: left-fold 1s forwards ease-in-out; }
+.left-fold-out { animation: left-fold-x 0.3s forwards ease-in-out; }
+.right-fold-in { animation: right-fold 1s forwards ease-in-out; }
+.right-fold-out { animation: right-fold-x 0.3s forwards ease-in-out; }
+
+@keyframes space-out-left {
+  0% { transform: translateX(0em); }
+  100% { transform: translateX(-4em); }
 }
 
-.unspin {
-  animation: unspin 0.5s backwards ease-in-out;
+@keyframes space-out-right {
+  0% { transform: translateX(0em); }
+  100% { transform: translateX(4em); }
 }
 
+@keyframes space-in-left {
+  0% { transform: translateX(-4em); }
+  100% { transform: translateX(0em); }
+}
+
+@keyframes space-in-right {
+  0% { transform: translateX(4em); }
+  100% { transform: translate(0em); }
+}
+ 
+@keyframes left-fold {
+  0% { transform: rotate(0deg); }
+  20% { transform: rotate(0deg); }
+  100% { transform: rotate(45deg); }
+}
+
+@keyframes left-fold-x {
+  0% { transform: rotate(45deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes right-fold {
+  0% { transform: rotate(0deg); }
+  20% { transform: rotate(0deg); }
+  100% { transform: rotate(-45deg); }
+}
+
+@keyframes right-fold-x {
+  0% { transform: rotate(-45deg); }
+  100% { transform: rotate(0deg); }
+}
 
 @keyframes spin {
   0% { transform: rotate(0deg); }
@@ -2067,7 +2116,8 @@ nav[data-toggle=toc] .nav>.active>a {
   top: 0;
   z-index: 888;
   background-color: #fefefe;
-  opacity: 0.9;
+  opacity: 0.8;
+  backdrop-filter: saturate(100%) blur(20px);
   border-bottom: 1px solid #ddd;
 }
 
