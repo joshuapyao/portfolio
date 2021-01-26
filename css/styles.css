@@ -138,7 +138,6 @@ body {
   text-align: center;
   cursor: pointer;
   padding: 1em;
-  margin-left: auto;
   z-index: 2;
   margin-right: auto;
   position: fixed;
@@ -525,14 +524,16 @@ body {
 }
 
 .text-center {
-    margin-left: auto;
-    margin-right: auto;
-    white-space: nowrap;
+  margin-left: auto;
+  margin-right: auto;
+  white-space: nowrap;
+  text-align: inherit;
 }
 
 .row.text-center p {
   width: 50%;
   display: inline-flex;
+  flex-direction: row;
   justify-content: center;
   font-weight: 700;
 }
@@ -576,6 +577,7 @@ body {
 .menu-block {
   top: 12em;
   position: relative;
+  text-align: center;
 }
 
 .menu-divider {
@@ -589,9 +591,20 @@ body {
 }
 
 .reachout {
-  text-align: center;
+  text-align: inherit;
   font-family: Halant;
   font-weight: 200;
+}
+
+#page-mask {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0,0,0,0.6);
+  backdrop-filter: blur(4px);
 }
 
 /*For Safari */
@@ -1132,22 +1145,19 @@ body {
   .row .col-sm-1 {
     display: none;
   }
-}
-
-@media only screen and (max-width: 1270px) {
-
-  .scrollContainer {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 900px) {
   .big-project {
     max-width: 100%;
   }
 
   .small-project {
     max-width: 48%;
+  }
+}
+
+@media only screen and (max-width: 1270px) {
+
+  .scrollContainer {
+    display: none;
   }
 }
 .carousel-inner {
@@ -1232,7 +1242,7 @@ body {
 }
 .links {
   margin-top: 1em;
-  text-align: center;
+  text-align: inherit;
   margin-bottom: 1em;
 }
 .links a {
@@ -1275,10 +1285,41 @@ body {
   #splash-text h2 {
     font-size: 1em;
   }
+
+  /* header dropdown */
+  #logo-menu {
+    margin-left: auto;
+    left: 2.5em;
+  }
+
+  #logo-menu:hover + .dd-menu {
+    width: 5.5em;
+    height: 100%;
+  }
+
+  .row.text-center p {
+    flex-direction: column;
+  }
+
   .row.text-center p .nav-object {
-    font-size: 1em;
+    font-size: 2em;
     margin-left: 5%;
     margin-right: 5%;
+    margin-bottom: 40%;
+  }
+
+  .dd-menu {
+    width: 0%;
+    height: 100%;
+  }
+
+  .dd-menu .menu-block {
+    padding-left: 2.5em;
+    text-align: left;
+  }
+
+  .dd-menu .menu-divider {
+    margin-left: initial;
   }
 
   .links {

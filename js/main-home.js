@@ -17,7 +17,7 @@ jQuery(document).ready(function($){
 	// handles outside clicking for dropdown menu
 	$(document).click(function(event) {
 		$target = $(event.target);
-		if(!$target.closest('.dd-menu').length && $('.dd-menu').height() > 120) {
+		if(!$target.closest('.dd-menu').length && $('.dd-menu').height() > 120 && $('.dd-menu').width() > 120) {
 			closeMenu();
 		}  
 	});
@@ -277,8 +277,14 @@ function resizeHoverText() {
 	$('.hover-text .hover-subtitle').css({'font-size': targetW*0.03});
 }
 function openMenu() {
-	$('.dd-menu').height('28em');
+	// is mobile
+	if (window.screen.width <= 900) {
+		$('.dd-menu').width('325px');
+	} else {
+		$('.dd-menu').height('28em');
+	}
 	$('.dd-menu div').fadeIn(300);
+	$('#page-mask').fadeIn(300);
 	var button = $('#logo-menu svg');
 	if (button.hasClass('unspin')) {
 		button.removeClass('unspin').addClass('spin');
@@ -296,8 +302,13 @@ function openMenu() {
 }
 
 function closeMenu() {
-	$('.dd-menu').css({'height':''});
+	if (window.screen.width <= 900) {
+		$('.dd-menu').css({'width':''});
+	} else {
+		$('.dd-menu').css({'height':''});
+	}
 	$('.dd-menu div').fadeOut(100);
+	$('#page-mask').fadeOut(100);
 	var button = $('#logo-menu svg');
 	button.removeClass('spin').addClass('unspin');
 	$('#left-branch').removeClass('left-fold-in').addClass('left-fold-out');
