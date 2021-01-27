@@ -737,7 +737,7 @@ body {
   height: 4000px;
 }
 
-.swype #Overview .zoom-spacer {
+.swype .zoom-spacer {
   height: 2800px;
 }
 
@@ -1085,6 +1085,7 @@ body {
 
 .details {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   font-size: 1em;
 }
@@ -1126,7 +1127,7 @@ body {
   }
 
   .zoom-spacer {
-    height: inherit;
+    height: inherit !important;
   }
 
   .tablink {
@@ -1151,6 +1152,11 @@ body {
 
   .small-project {
     max-width: 48%;
+  }
+
+  .details div {
+    width: 45%;
+    margin-top: 2.5em;
   }
 }
 
@@ -1280,7 +1286,7 @@ body {
     width: 200px;
   }
   #splash-text h1 {
-    font-size: 3em;
+    font-size: 2.5em;
   }
   #splash-text h2 {
     font-size: 1em;
@@ -1695,6 +1701,18 @@ a img {
     -webkit-column-count: 2;
     column-count: 2;
   }
+
+  .split-block {
+    max-height: unset;
+    margin-top: 0;
+    margin-bottom: 0;
+    flex-direction: column;
+  }
+
+  .split-block div {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
 }
 
 
@@ -1704,7 +1722,7 @@ a img {
     -webkit-column-count: 1;
     column-count: 1;
   }
-  .split-block .no-mobile {
+  .no-mobile {
     display: none;
   }
 }
@@ -1762,7 +1780,15 @@ a img {
     font-size: 25px;
   }
   .feature-block div {
-    height: 300px;
+    height: 600px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 4em;
+  }
+
+  .final-block {
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
 

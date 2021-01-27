@@ -100,7 +100,6 @@ jQuery(document).ready(function($){
 			var startOffset = $(zoomBoxSpacer).offset().top - 100;
 			var track = $(zoomBoxSpacer).innerHeight();
 			if (fromTop >= startOffset && fromTop < startOffset + track - $(zoomBox).height()) {
-
 				//scroll animations here
 				var scrollDist = (fromTop-startOffset) / (track - $(zoomBox).height()) * 100;
 				if ($('#aws-final').is(":visible")) {
