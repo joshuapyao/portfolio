@@ -17,15 +17,17 @@ jQuery(document).ready(function($){
 
 	// handles scroll to next page on bottom of page
 	window.addEventListener('wheel', function(event) {
-		if ($('.scroll-more').css('opacity') == '1') {
+		// bottom of page detection
+		if ($('.scroll-more').css('opacity') == '1' && $('.scroll-more').css('display') != 'none') {
 			if (currentPage != 'loading') {
 				// detect if it is a scroll down
 				if (event.deltaY > 0) {
 					console.log(currentPage);
 					if (currentPage == 'Overview') {
-						document.getElementById("process-btn").click();
 						currentPage = 'loading';
+						document.getElementById("process-btn").click();
 					} else if (currentPage == 'Process') {
+						currentPage = 'loading';
 						document.getElementById("final-btn").click();
 					}
 				}
