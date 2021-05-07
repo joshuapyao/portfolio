@@ -8,11 +8,12 @@ document.addEventListener("DOMContentLoaded", yall);
 
 jQuery(document).ready(function($){
 
-		// resize elements on window resize
-		$(window).resize(function() {
-			resizeHoverText();
-			AOS.refresh();
-		});
+	// resize elements on window resize
+	$(window).resize(function() {
+		closeMenu();
+		resizeHoverText();
+		AOS.refresh();
+	});
 
 	// handles outside clicking for dropdown menu
 	$(document).click(function(event) {

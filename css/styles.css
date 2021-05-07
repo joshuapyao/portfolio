@@ -1328,10 +1328,10 @@ h2.sub-header {
     left: 2.5em;
   }
 
-  #logo-menu:hover + .dd-menu {
+/*   #logo-menu:hover + .dd-menu {
     width: 5.5em;
     height: 100%;
-  }
+  } */
 
   .row.text-center p {
     flex-direction: column;
@@ -1341,7 +1341,7 @@ h2.sub-header {
     font-size: 2em;
     margin-left: 5%;
     margin-right: 5%;
-    margin-bottom: 40%;
+    margin-bottom: 1em;
   }
 
   .dd-menu {
