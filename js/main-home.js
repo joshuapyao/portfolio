@@ -224,6 +224,16 @@ function loadContent(piece) {
 	$(thisTarget + " video").trigger('play');
 }
 
+function openPassword(link, piece) {
+	$(piece).find('.hover-text .hover-arrow').addClass('shake');
+	$(piece).find('.hover-text .hover-arrow').on(
+		"webkitAnimationEnd oanimationend msAnimationEnd animationend",
+		function() {
+			$(this).removeClass("shake");
+		}
+	);
+}
+
 function openPiece(link, piece) {
 
 	// lock everything in place
