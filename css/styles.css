@@ -438,6 +438,7 @@ body {
   text-align: left;
   position: relative;
   overflow-y: hidden;
+  overflow-x: hidden;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
