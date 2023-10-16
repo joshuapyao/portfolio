@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="UX Designer Portfolio">
+    <meta name="author" content="Joshua Yao">
+
+    <title>Joshua Yao | Xbox Personalization</title>
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+	<link href="css/bootstrap-social.css" rel="stylesheet">
+	<link href="css/aos.css" rel="stylesheet">
+	<link href="css/bootstrap-toc.min.css"rel="stylesheet">
+	<link href="css/lightbox.min.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107932342-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-107932342-1');
+	</script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" class="xboxpersonalization piece">
+<header>
+    <div class="article" id="art1" data-color="#06D6A0" data-background="#06D6A0">
+		<a onclick="closeAnimate(this)" class="close-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></a>
+        <div class="header-image">
+         	<img src="images/xbox-personalization/xbox-personalization.png" alt='Xbox Personlization Hero Image' class="banner">
+        </div>
+        <!-- Page Content -->
+        <div class="container">
+        	<div class="piece-nav">
+				<button class="tablink" onclick="openPage('Overview', this)" id="defaultOpen">Overview</button>
+				<button class="tablink" onclick="openPage('Process', this)" id="process-btn">Design Process</button>
+				<button class="tablink" onclick="openPage('Final', this)" id="final-btn">Final Design</button>
+        		<div id="tab-selector">
+					<div id="tab-progress"></div>
+				</div>
+        	</div>
+			<div id="Overview" class="tabcontent">
+				<div class="overview">
+					<!--<div class="overview-image">
+						<img src="images/swype/aws-final.png" alt="High-Fidelity UX Design">
+					</div> -->
+					<div class="goal">Establishing a personalization feature framework for a converging ecosystem.</div>
+							<div class="details">
+							<div>
+						<p><strong>The User.</strong></p>
+						<div class="strong-underline"></div>
+						<p>Xbox Store users, Game Pass users, and avid Xbox players.</p>
+						</div>
+						<div>
+						<p><strong>The # of Endpoints.</strong></p>
+						<div class="strong-underline"></div>
+						<p>Six.</p>
+						</div>
+						<div>
+						<p><strong>The Tools.</strong></p>
+						<div class="strong-underline"></div>
+						<p>Figma.</p>
+						</div>
+						<div>
+							<p><strong>The Role.</strong></p>
+							<div class="strong-underline"></div>
+							<p>Product Designer.</p>
+						</div>
+					</div>
+				</div>
+				<div class="spacer"></div>
+			<div style="background-color: #121212;">
+				<div class="detailed">
+					<div class="spacer"></div>
+					<h2 class="sub-header" data-toc-skip>The Objective.</h2>
+					<p class="larger-text" data-aos="fade-up">Evaluate the Like/Dislike feature intended for Store and extend it to other endpoints across the ecosystem.</p>
+					<h2 class="sub-header" data-toc-skip>The Design Process.</h2>
+					<ol data-aos="fade-up" class="larger-text">
+						<li>Dissect the current implementation of Like / Dislike
+							<ul style="font-size:smaller; margin-bottom:0;">
+								<li>Establish goals</li>
+								<li>Analyze relevant research</li>
+								<li>Determine user motivations</li>
+								<li>Conduct competitive analysis</li>
+							</ul>
+						</li>
+						<li>Identify other endpoints that could benefit</li>
+						<li>Cross-pollinate between work in the area</li>
+						<li>Establish a design implementation framework</li>
+						<li>Create conceptual comps</li>
+					</ol>
+					<div class="spacer"></div>
+					<img data-aos="fade-up" src="images/xbox-personalization/convergent-experience-graph.png" alt="Convergence graph">
+				</div>
+				<div class="final-hero">
+					<video id="v0" class="autoplay" playsinline muted preload>
+						<source src="images/xbox-personalization/xbox-personalization-flow.webm" type="video/webm" />
+						<source src="images/xbox-personalization/xbox-personalization-flow.mp4" type="video/mp4" />
+						Your browser does not support the video tag.
+					</video>
+				</div>
+				<div class="spacer"></div>
+				<a onclick="openProcess()"><img data-aos="fade-up" src="images/xbox-personalization/small-hero.jpg" alt="Show me more like this Promo"></a>
+				<div class="spacer"></div>
+			</div>
+
+		<hr class="featurette-divider">
+		<div class="next-tab" ><a onclick="openProcess()">EXAMINE THE DESIGN PROCESS<br/>&bigtriangledown;</a></div>
+      </div>
+		<div id="Process" class="tabcontent">
+		  <!-- First Featurette -->
+			<!--<img class="final-hero" data-aos="fade-up" src="images/xbox-personalization/likes-and-dislikes.png" alt="Process Header Image"> -->
+			<div class="concept-row"></div>
+			<nav id="toc" data-toggle="toc" class="sticky-top"></nav>
+        <div class="detailed">
+			<div data-aos="fade-up" class="title-bar bg-match"></div>
+			<h1 data-aos="fade-up">Exploration.</h1>
+			<div class="split-block">
+				<div class="col-sm-6"><p>Starting out, I was given the task of breaking down the implementation of “Likes and Dislikes” in Store, the storefront accessible from the Xbox console, with the goal of extending it to other endpoints.</p></div>
+				<div class="col-sm-6"><img src="images/xbox-personalization/likes-dislikes-icon.png" alt="Thumbs up and Thumbs down"></div>
+			</div>		
+			<p>To begin with, I was given mocks of the current Store implementation:</p>
+			<div data-aos="fade-up">
+				<div class="col-sm-4">
+					<a href="images/xbox-personalization/store-1.png" data-lightbox="process-1"><img class="shadow" src="images/xbox-personalization/store-1.png" alt="Store Trailer Like"></a>
+				</div>
+				<div class="col-sm-4">
+					<a href="images/xbox-personalization/store-2.png" data-lightbox="process-2"><img class="shadow" src="images/xbox-personalization/store-2.png" alt="Game Options Like"></a>
+				</div>
+				<div class="col-sm-4">
+					<a href="images/xbox-personalization/store-3.png" data-lightbox="process-3"><img class="shadow" src="images/xbox-personalization/store-3.png" alt="Game PDP Like"></a>
+				</div>
+			</div>
+			<p>Before beginning anything, I penned out my intended process.</p>
+			<img data-aos="fade-up" class="no-shadow" src="images/xbox-personalization/process.png" alt="Intended process">
+		
+			<h2 id="feature-surface">List Featurest & Surfaces.</h2>
+			<p>The likes and dislikes feature rose on every surface where a game was in focus and we didn’t know the user’s opinion of the game, such as a game product page. As for the interaction flow from the mocks, it was relatively simple and straightforward.</p>
+			<img src="images/xbox-personalization/interaction-flow.png" alt="Interaction Flow">
+
+			<h2 id="endpoints">Determing Endpoints.</h2>
+			<p>The greatest challenge of this was the layout of the different ecosystems and the effort to converge. At this point, the user could use many different Xbox services, yet have a largely different personalized experience on each.</p>
+		</div>
+		<div class="final-hero">
+			<img data-aos="fade-up" src="images/xbox-personalization/endpoint-diagram.png" alt="Diagram of various different endpoints">
+		</div>
+		<div class="detailed">
+			<h2 id="competitiveanalysis">Competitive Analysis.</h2>
+			<p>To get a wider sense of how explicit user personalization was commonly gathered, I conducted competitive analysis on products that used a form of likes/dislikes to parse user interests and help them explore.</p>
+			<div data-aos="fade-up" class="split-block">
+				<div class="col-sm-6"><a href="images/xbox-personalization/Competitive-Analysis-Netflix.png" data-lightbox="process-4"><img class="shadow" src="images/xbox-personalization/Competitive-Analysis-Netflix.png" alt="Netflix Competitve Analysis"></a></div>
+				<div class="col-sm-6"><a href="images/xbox-personalization/Competitive-Analysis-Steam.png" data-lightbox="process-5"><img class="shadow" src="images/xbox-personalization/Competitive-Analysis-Steam.png" alt="Steam Competitive Analysis"></a></div>
+			</div>
+			<p>Through this, there were some key takeaways:</p>
+		</div>
+		<div class="final-hero">
+			<img src="images/xbox-personalization/key-takeaways.png" alt="Key Takeaways">
+		</div>
+		<div class="detailed">
+			<h2 id="paststudies">Past Studies.</h2>
+			<p>Part of the reason I was put on this project was with my past working in personlization for the Xbox ecosystem. I could take that previous knowledge and build on some Xbox personlization principles which I created with another designer.</p>
+		</div>
+		<div class="final-hero">
+			<img data-aos="fade-up" src="images/xbox-personalization/personalization-summary.png" alt="Personalization Summary">
+		</div>
+		<div class="detailed">	
+			<p><br/>This, in addition to findings within Microsoft’s Human Insights Library, helped support me for the next phase of the design process.</p>
+
+			<div data-aos="fade-up" class="title-bar bg-match"></div>
+			<h1 data-aos="fade-up">Ideation.</h1>
+
+			<div class="split-block">
+				<div class="col-sm-6"><p>With a solid space understanding of the space around personalized recommendations, the next step was to flesh out a proposed user experience.</p></div>
+				<div class="col-sm-6"><img src="images/xbox-personalization/road-icon.png" alt="Roadmap icon"></div>
+			</div>
+			<h2 id="usermotivations">User Motivations.</h2>
+			<p>Establishing user motivations were of key importance to do first, as it could bring concensus and convergence between endpoints through agreeing and understanding the shared audience. It would serve as the base when mapping out a user journey.</p>
+			<a href="images/xbox-personalization/persona.png" data-lightbox="process-6"><img class="shadow" data-aos="fade-up" src="images/xbox-personalization/persona.png" alt="Persona"></a>
+			
+			<h2 id="teamAlignment">Team Alignment.</h2>
+			<p>Although this project started from Store, it was important to glean knowledge from other teams regarding their opinion of Likes/Dislikes being integrated in their own product, any of their previous explorations, and their input on the feature itself.</p>
+			<img data-aos="fade-up" src="images/xbox-personalization/team-quotes.png" alt="Quotes from various teams">
+
+			<h2 id="userJourney">User Journey.</h2>
+			<p>In order to tie all this together, I considered the user journey. I wanted to map out the entire “Recommendations” experience related with the feature, including how recommendations are displayed.</p>
+			<p>The initial user journey went as follows, while maintaining a vagueness for iterations, but key design points within to embed the research found:</p>
+		</div>
+		<div class="final-hero">
+			<img data-aos="fade-up" src="images/xbox-personalization/user-journey.png" alt="Basic user journey map">
+		</div>
+		<div class="detailed">
+			<p><br/><br/>Furthermore, in order to compel a cross-ecosystem exchange of user recommendations, I considered how the user could experience the feature across endpoint through the view point of how we collect data and use it to offer recommendations. This visual was extremely useful when sharing to visually communicate convergence.<br/></p>	
+		</div>
+		<div class="final-hero">
+			<img data-aos="fade-up" src="images/xbox-personalization/feedback-map.png" alt="Feedback mapping to a convergent experience">
+		</div>
+		<div class="detailed">
+
+			<div data-aos="fade-up" class="title-bar bg-match"></div>
+			<h1 data-aos="fade-up">Creation.</h1>
+	
+			<div class="split-block">
+				<div class="col-sm-6"><p>Building on the ideation, it was now time for me to build out the deliverable. However, a major question was what deliverable that would be.</p></div>
+				<div class="col-sm-6"><img src="images/xbox-personalization/frame-icon.png" alt="Window frame icon"></div>
+			</div>
+			<p><span class="highlight">With the goal of extending this to other endpoints while also ensuring proper ownership of each designer,</span> I determined a design framework for implementation and conceptual mockups as a more appropriate output. There are many benefits with this form of deliverable:</p>
+			<img src="images/xbox-personalization/framework-principles.png" alt="Framework Principles">
+
+			<h2 id="designFramework">Design Framework.</h2>
+			<p>Breaking down the framework, there were two important parts to convey: how to implement “likes/dislikes” in your own endpoint, and also what the “north star” is.</p>
+			<p>Following the user journey, I could map out key steps to design for when building out the experience.</p>
+		</div>
+		<div class="final-hero">
+			<img data-aos="fade-up" src="images/xbox-personalization/framework-steps.png" alt="Steps in the framework">
+		</div>
+		<div class="detailed">
+			<h2 id="conceptMocks">Concept Mocks.</h2>
+			<p>To help communicate each step, I made sure to include examples for each step. Some of these examples were common applications from everyday products. Others were concept mocks of the endpoint with the feature implemented. This helped jumpstart thinking and discussion while bringing more of an iterative mindset to the table.</p>
+		</div>
+		<div class="final-hero">
+			<img data-aos="fade-up" src="images/xbox-personalization/example-mocks.png" alt="Concept mocks for a mobile and PC endpoint">
+		</div>
+		<div class="detailed">
+			<p><br/><br/>I combined these designs and framework together and shared them with the rest of the company. This helped to <span class="highlight">jumpstart the Likes/Dislikes work for Store</span> when sharing with product managers. It also marked the beginning of the work on <span class="highlight">making ubiquitous data sources for personalized data in the Xbox ecosystem.</span> Other endpoints are now implementing this feature as well, using the framework to ensure consistency across all products.</p>	
+		</div>
+	<hr class="featurette-divider">
+	<div class="next-tab"><a onclick="openFinal()">WITNESS THE FINAL DESIGN<br/>&bigtriangledown;</a></div>
+	</div>
+      
+	<div id="Final" class="tabcontent">
+		<div class="text-white" style="background-color:#121212">
+			<div class="final-hero ">
+				<img src="images/xbox-personalization/small-hero.jpg" alt="Show me more like this">
+			</div>
+			<div class="detailed"><h3 data-toc-skip style="text-align: center;max-width: 600px;margin-left: auto;margin-right: auto;">With improved user personalization and a framework for implementation, <strong>Xbox</strong> can quickly and easily have a unified personalization feature experience.</h3></div>
+			<div class="concept-row"></div>
+			<div class="final-hero "><img style="max-width: 1200px;" src="images/xbox-personalization/likes-dislikes-framework.png" alt="Likes/Dislikes Framework"></div>
+			<div class="concept-row"></div>
+			<div class="concept-row"></div>
+		</div>
+		<div class="final-block detailed">
+            <div class="title-bar bg-match"></div>
+            <h4 data-toc-skip>See it in action.</h4>
+			<div class="feature-block">
+				<div class="col-sm-5" data-aos="fade-right">
+					<img style="margin:0;align-self: flex-start;" src="images/xbox-personalization/STEP 1.png" alt="Step 1">
+					<h3 data-toc-skip>Determine the surfaces first.<br/>For the Game Pass app, it would likely be a game product page and within game categories.</h3>
+				</div>
+				<div class="col-sm-7" data-aos="fade-left">
+					<img src="images/xbox-personalization/step-1-graphic.png" alt="Library surface">
+				</div>
+			</div>
+			<div class="feature-block">
+				<div class="col-sm-7" data-aos="fade-left">
+					<img src="images/xbox-personalization/step-2-graphic.png" alt="Liking a game interation">
+				</div>
+				<div class="col-sm-5" data-aos="fade-right">
+					<img style="margin:0;align-self: flex-start;" src="images/xbox-personalization/STEP 2.png" alt="Step 2">
+					<h3 data-toc-skip>Establish the interactions.<br/>Transparency is key here and it’s important that user are well-educated on their actions.</h3>
+				</div>
+			</div>
+			<div class="feature-block">
+				<div class="col-sm-5" data-aos="fade-right">
+					<img style="margin:0;align-self: flex-start;" src="images/xbox-personalization/STEP 3.png" alt="Step 3">
+					<h3 data-toc-skip>The final part of the experience is determining where recommendations arise. In this app, Home with the game categories would fit well.</h3>
+				</div>
+				<div class="col-sm-7" data-aos="fade-left">
+					<img src="images/xbox-personalization/step-3-graphic.png" alt="Choices surfacing">
+				</div>
+			</div>
+		</div>		
+        <div class="text-white" style="background-color:#121212">
+          <div class="concept-row"></div>
+          <div class="final-block detailed">
+            <div class="title-bar bg-match"></div>
+            <h4 data-toc-skip>Concept Mocks.</h4>
+			<p style="max-width: 400px; margin-left:3em">To illustrate the point, I created concept mocks for each endpoint in the ecosystem.<br/><br/>This helped spark conversation, discussion, and thought.</p>
+		  </div>
+		  <div class="final-hero" data-aos="fade-up">
+            <img src="images/xbox-personalization/cm-game-pass-app.jpg" alt="Game Pass App Concept Mocks">
+		  </div>
+		  <div class="concept-row"></div>
+          <div class="final-hero" data-aos="fade-up">
+            <img src="images/xbox-personalization/cm-xbox-pc-app.jpg" alt="Xbox PC Concept Mocks">
+		  </div>
+		  <div class="concept-row"></div>
+          <div class="final-hero" data-aos="fade-up">
+            <img src="images/xbox-personalization/cm-console.jpg" alt="Xbox Console Concept Mocks">
+		  </div>
+          <div class="concept-row"></div>
+          <div class="concept-row"></div>
+		</div>
+		
+		<div class="detailed">
+			<div class="final-block">
+				<div class="title-bar bg-match"></div>
+				<h4 data-toc-skip>Final Note.</h4>
+				<p class="final-note">My experience working on this was enlightening to me when considering convergence of design as well as how to design within such a broad ecosystem with many different designers and stakeholders.</p>
+				<p class="final-note">One of the most important lessons I learned was that involving other designers to gather early design requirements is invalable and saves a lot of time reiterating designs.</p>
+				<p class="final-note"><span class="highlight">This framework and design mocks are serving as part of the foundation for Xbox’s unified personalized recommendations.</span></p>
+			</div>
+		</div>
+		<div class="concept-row"></div>
+		<div class="final-hero">
+            <img src="images/xbox-personalization/xbox-footer.png" alt="Final Screen Drop">
+		</div>
+				<h4 data-toc-skip class="thank-you">thanks for reading!</h4>
+				<hr class="featurette-divider">
+				<div class="next-tab"><a onclick="closeAnimate(this)">HEAD BACK HOME<br/><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></a></div>
+			</div>
+    </div>
+  </div>
+  <div data-aos="fade-up" data-aos-duration="1600" class="scroll-more">scroll to jump to next tab</div>
+  <div class="next-tab" id="bottom-nav" data-aos="fade-up">
+	  <div class="new-piece light next-project"><a href="lucid.html">SEE ANOTHER PROJECT &blacktriangleright;<br/>Designing Lucidchart's CloudInsights &nbsp;</a></div>
+</div>
+  <div class="footer-space"></div>
+</header>
+    <!-- jQuery -->
+<script src="js/jquery.js"></script>
+<script src="js/aos.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-toc.min.js"></script>
+    <!-- Lightbox -->
+	<script src="js/lightbox.min.js"></script>
+    <!-- main.js -->
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
