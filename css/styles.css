@@ -664,14 +664,14 @@ body {
 
 .detailed {
   font-size: 1em;
-  font-family: Halant, serif;
-  line-height: 2em;
+  font-family: futuraBook, sans-serif;
+  line-height: 1.8em;
+  letter-spacing: 0.04em;
   font-weight: 200;
-  letter-spacing: 0.02em;
   margin-left: auto;
   margin-right: auto;
   width: 60%;
-  color: #222222;
+  color: #333333;
   margin-left:auto;
   margin-right:auto;
 }
@@ -1130,13 +1130,15 @@ h2.sub-header {
 
 .details p {
   margin-bottom: 0px;
-  font-family: Halant, serif;
+  font-family: futuraBook, sans-serif;
   line-height: 1.6em;
+  letter-spacing: 0.04em;
 }
 
 .details p strong {
   font-family: futuraBook, sans-serif;
   white-space: nowrap;
+  letter-spacing: normal;
 }
 
 .details .strong-underline {
